@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304DFD1E70691C00D624DD /* AppDelegate.swift */; };
+		FC304E001E70691C00D624DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304DFF1E70691C00D624DD /* ViewController.swift */; };
+		FC304E031E70691C00D624DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC304E011E70691C00D624DD /* Main.storyboard */; };
+		FC304E051E70691C00D624DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC304E041E70691C00D624DD /* Assets.xcassets */; };
+		FC304E081E70691C00D624DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC304E061E70691C00D624DD /* LaunchScreen.storyboard */; };
+		FC304E131E70691D00D624DD /* WebDeck2017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304E121E70691D00D624DD /* WebDeck2017Tests.swift */; };
+		FC304E1E1E70691D00D624DD /* WebDeck2017UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304E1D1E70691D00D624DD /* WebDeck2017UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC304E0F1E70691D00D624DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC304DF21E70691B00D624DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC304DF91E70691B00D624DD;
+			remoteInfo = WebDeck2017;
+		};
+		FC304E1A1E70691D00D624DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC304DF21E70691B00D624DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC304DF91E70691B00D624DD;
+			remoteInfo = WebDeck2017;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC304DFA1E70691C00D624DD /* WebDeck2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDeck2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC304DFD1E70691C00D624DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC304DFF1E70691C00D624DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC304E021E70691C00D624DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC304E041E70691C00D624DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC304E071E70691C00D624DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC304E091E70691C00D624DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC304E0E1E70691D00D624DD /* WebDeck2017Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebDeck2017Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC304E121E70691D00D624DD /* WebDeck2017Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDeck2017Tests.swift; sourceTree = "<group>"; };
+		FC304E141E70691D00D624DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC304E191E70691D00D624DD /* WebDeck2017UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebDeck2017UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC304E1D1E70691D00D624DD /* WebDeck2017UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDeck2017UITests.swift; sourceTree = "<group>"; };
+		FC304E1F1E70691D00D624DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC304DF71E70691B00D624DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC304E0B1E70691D00D624DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC304E161E70691D00D624DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC304DF11E70691B00D624DD = {
+			isa = PBXGroup;
+			children = (
+				FC304DFC1E70691C00D624DD /* WebDeck2017 */,
+				FC304E111E70691D00D624DD /* WebDeck2017Tests */,
+				FC304E1C1E70691D00D624DD /* WebDeck2017UITests */,
+				FC304DFB1E70691C00D624DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC304DFB1E70691C00D624DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC304DFA1E70691C00D624DD /* WebDeck2017.app */,
+				FC304E0E1E70691D00D624DD /* WebDeck2017Tests.xctest */,
+				FC304E191E70691D00D624DD /* WebDeck2017UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC304DFC1E70691C00D624DD /* WebDeck2017 */ = {
+			isa = PBXGroup;
+			children = (
+				FC304DFD1E70691C00D624DD /* AppDelegate.swift */,
+				FC304DFF1E70691C00D624DD /* ViewController.swift */,
+				FC304E011E70691C00D624DD /* Main.storyboard */,
+				FC304E041E70691C00D624DD /* Assets.xcassets */,
+				FC304E061E70691C00D624DD /* LaunchScreen.storyboard */,
+				FC304E091E70691C00D624DD /* Info.plist */,
+			);
+			path = WebDeck2017;
+			sourceTree = "<group>";
+		};
+		FC304E111E70691D00D624DD /* WebDeck2017Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FC304E121E70691D00D624DD /* WebDeck2017Tests.swift */,
+				FC304E141E70691D00D624DD /* Info.plist */,
+			);
+			path = WebDeck2017Tests;
+			sourceTree = "<group>";
+		};
+		FC304E1C1E70691D00D624DD /* WebDeck2017UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC304E1D1E70691D00D624DD /* WebDeck2017UITests.swift */,
+				FC304E1F1E70691D00D624DD /* Info.plist */,
+			);
+			path = WebDeck2017UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC304DF91E70691B00D624DD /* WebDeck2017 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC304E221E70691D00D624DD /* Build configuration list for PBXNativeTarget "WebDeck2017" */;
+			buildPhases = (
+				FC304DF61E70691B00D624DD /* Sources */,
+				FC304DF71E70691B00D624DD /* Frameworks */,
+				FC304DF81E70691B00D624DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebDeck2017;
+			productName = WebDeck2017;
+			productReference = FC304DFA1E70691C00D624DD /* WebDeck2017.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC304E0D1E70691D00D624DD /* WebDeck2017Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC304E251E70691D00D624DD /* Build configuration list for PBXNativeTarget "WebDeck2017Tests" */;
+			buildPhases = (
+				FC304E0A1E70691D00D624DD /* Sources */,
+				FC304E0B1E70691D00D624DD /* Frameworks */,
+				FC304E0C1E70691D00D624DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC304E101E70691D00D624DD /* PBXTargetDependency */,
+			);
+			name = WebDeck2017Tests;
+			productName = WebDeck2017Tests;
+			productReference = FC304E0E1E70691D00D624DD /* WebDeck2017Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC304E181E70691D00D624DD /* WebDeck2017UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC304E281E70691D00D624DD /* Build configuration list for PBXNativeTarget "WebDeck2017UITests" */;
+			buildPhases = (
+				FC304E151E70691D00D624DD /* Sources */,
+				FC304E161E70691D00D624DD /* Frameworks */,
+				FC304E171E70691D00D624DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC304E1B1E70691D00D624DD /* PBXTargetDependency */,
+			);
+			name = WebDeck2017UITests;
+			productName = WebDeck2017UITests;
+			productReference = FC304E191E70691D00D624DD /* WebDeck2017UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC304DF21E70691B00D624DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Dylan Steck";
+				TargetAttributes = {
+					FC304DF91E70691B00D624DD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CG8RAYC636;
+						ProvisioningStyle = Automatic;
+					};
+					FC304E0D1E70691D00D624DD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CG8RAYC636;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC304DF91E70691B00D624DD;
+					};
+					FC304E181E70691D00D624DD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CG8RAYC636;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC304DF91E70691B00D624DD;
+					};
+				};
+			};
+			buildConfigurationList = FC304DF51E70691B00D624DD /* Build configuration list for PBXProject "WebDeck2017" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC304DF11E70691B00D624DD;
+			productRefGroup = FC304DFB1E70691C00D624DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC304DF91E70691B00D624DD /* WebDeck2017 */,
+				FC304E0D1E70691D00D624DD /* WebDeck2017Tests */,
+				FC304E181E70691D00D624DD /* WebDeck2017UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC304DF81E70691B00D624DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC304E081E70691C00D624DD /* LaunchScreen.storyboard in Resources */,
+				FC304E051E70691C00D624DD /* Assets.xcassets in Resources */,
+				FC304E031E70691C00D624DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC304E0C1E70691D00D624DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC304E171E70691D00D624DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC304DF61E70691B00D624DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC304E001E70691C00D624DD /* ViewController.swift in Sources */,
+				FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC304E0A1E70691D00D624DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC304E131E70691D00D624DD /* WebDeck2017Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC304E151E70691D00D624DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC304E1E1E70691D00D624DD /* WebDeck2017UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC304E101E70691D00D624DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC304DF91E70691B00D624DD /* WebDeck2017 */;
+			targetProxy = FC304E0F1E70691D00D624DD /* PBXContainerItemProxy */;
+		};
+		FC304E1B1E70691D00D624DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC304DF91E70691B00D624DD /* WebDeck2017 */;
+			targetProxy = FC304E1A1E70691D00D624DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC304E011E70691C00D624DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC304E021E70691C00D624DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC304E061E70691C00D624DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC304E071E70691C00D624DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC304E201E70691D00D624DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC304E211E70691D00D624DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC304E231E70691D00D624DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CG8RAYC636;
+				INFOPLIST_FILE = WebDeck2017/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdecko.WebDeck2017;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FC304E241E70691D00D624DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CG8RAYC636;
+				INFOPLIST_FILE = WebDeck2017/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdecko.WebDeck2017;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FC304E261E70691D00D624DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CG8RAYC636;
+				INFOPLIST_FILE = WebDeck2017Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdecko.WebDeck2017Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebDeck2017.app/WebDeck2017";
+			};
+			name = Debug;
+		};
+		FC304E271E70691D00D624DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CG8RAYC636;
+				INFOPLIST_FILE = WebDeck2017Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdecko.WebDeck2017Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebDeck2017.app/WebDeck2017";
+			};
+			name = Release;
+		};
+		FC304E291E70691D00D624DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = CG8RAYC636;
+				INFOPLIST_FILE = WebDeck2017UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdecko.WebDeck2017UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WebDeck2017;
+			};
+			name = Debug;
+		};
+		FC304E2A1E70691D00D624DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = CG8RAYC636;
+				INFOPLIST_FILE = WebDeck2017UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdecko.WebDeck2017UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WebDeck2017;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC304DF51E70691B00D624DD /* Build configuration list for PBXProject "WebDeck2017" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC304E201E70691D00D624DD /* Debug */,
+				FC304E211E70691D00D624DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC304E221E70691D00D624DD /* Build configuration list for PBXNativeTarget "WebDeck2017" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC304E231E70691D00D624DD /* Debug */,
+				FC304E241E70691D00D624DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC304E251E70691D00D624DD /* Build configuration list for PBXNativeTarget "WebDeck2017Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC304E261E70691D00D624DD /* Debug */,
+				FC304E271E70691D00D624DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC304E281E70691D00D624DD /* Build configuration list for PBXNativeTarget "WebDeck2017UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC304E291E70691D00D624DD /* Debug */,
+				FC304E2A1E70691D00D624DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC304DF21E70691B00D624DD /* Project object */;
+}
