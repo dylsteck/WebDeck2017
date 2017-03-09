@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02A12550560DD9138B8DDA9E /* Pods_WebDeck2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1B2292D92951D2B475E674 /* Pods_WebDeck2017.framework */; };
+		28855BD8057CE258AC0D32F1 /* Pods_WebDeck2017Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C33CEA1232CDA0D863A910 /* Pods_WebDeck2017Tests.framework */; };
+		C83C22B6C3653CF790AF0660 /* Pods_WebDeck2017UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA9B2EC427B1753136FDC0F /* Pods_WebDeck2017UITests.framework */; };
 		FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304DFD1E70691C00D624DD /* AppDelegate.swift */; };
-		FC304E001E70691C00D624DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304DFF1E70691C00D624DD /* ViewController.swift */; };
+		FC304E001E70691C00D624DD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304DFF1E70691C00D624DD /* SignInViewController.swift */; };
 		FC304E031E70691C00D624DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC304E011E70691C00D624DD /* Main.storyboard */; };
 		FC304E051E70691C00D624DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC304E041E70691C00D624DD /* Assets.xcassets */; };
-		FC304E081E70691C00D624DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC304E061E70691C00D624DD /* LaunchScreen.storyboard */; };
 		FC304E131E70691D00D624DD /* WebDeck2017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304E121E70691D00D624DD /* WebDeck2017Tests.swift */; };
 		FC304E1E1E70691D00D624DD /* WebDeck2017UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304E1D1E70691D00D624DD /* WebDeck2017UITests.swift */; };
+		FC7BD7CD1E71BAFC000F33A6 /* WeissenhofGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7C51E71BAFC000F33A6 /* WeissenhofGrotesk-Bold.otf */; };
+		FC7BD7CE1E71BAFC000F33A6 /* WeissenhofGrotesk-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7C61E71BAFC000F33A6 /* WeissenhofGrotesk-BoldItalic.otf */; };
+		FC7BD7CF1E71BAFC000F33A6 /* WeissenhofGrotesk-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7C71E71BAFC000F33A6 /* WeissenhofGrotesk-Light.otf */; };
+		FC7BD7D01E71BAFC000F33A6 /* WeissenhofGrotesk-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7C81E71BAFC000F33A6 /* WeissenhofGrotesk-LightItalic.otf */; };
+		FC7BD7D11E71BAFC000F33A6 /* WeissenhofGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7C91E71BAFC000F33A6 /* WeissenhofGrotesk-Medium.otf */; };
+		FC7BD7D21E71BAFC000F33A6 /* WeissenhofGrotesk-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7CA1E71BAFC000F33A6 /* WeissenhofGrotesk-MediumItalic.otf */; };
+		FC7BD7D31E71BAFC000F33A6 /* WeissenhofGrotesk-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7CB1E71BAFC000F33A6 /* WeissenhofGrotesk-Regular.otf */; };
+		FC7BD7D41E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7CC1E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf */; };
+		FC7BD7DA1E71BC1D000F33A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */; };
+		FCEE727E1E7070AA00D55C48 /* WDIcon-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEE727D1E7070AA00D55C48 /* WDIcon-Large.png */; };
+		FCEE72801E70728300D55C48 /* WDSlogan-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEE727F1E70728300D55C48 /* WDSlogan-Large.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +47,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		623597E741861E97A0B47A9A /* Pods-WebDeck2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017/Pods-WebDeck2017.release.xcconfig"; sourceTree = "<group>"; };
+		6DAFD1330C1817C6C0D20FB0 /* Pods-WebDeck2017Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B1B2292D92951D2B475E674 /* Pods_WebDeck2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA9B2EC427B1753136FDC0F /* Pods_WebDeck2017UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck2017UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C33CEA1232CDA0D863A910 /* Pods_WebDeck2017Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck2017Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90DDBA0B5E39310E9CAE4D4E /* Pods-WebDeck2017UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017UITests/Pods-WebDeck2017UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A178E76B6B2B9BCA56E83719 /* Pods-WebDeck2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017/Pods-WebDeck2017.debug.xcconfig"; sourceTree = "<group>"; };
+		BFBDA9EE32FA85926D140EB7 /* Pods-WebDeck2017UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017UITests/Pods-WebDeck2017UITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC304DFA1E70691C00D624DD /* WebDeck2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDeck2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC304DFD1E70691C00D624DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC304DFF1E70691C00D624DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC304DFF1E70691C00D624DD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FC304E021E70691C00D624DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC304E041E70691C00D624DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FC304E071E70691C00D624DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC304E091E70691C00D624DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC304E0E1E70691D00D624DD /* WebDeck2017Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebDeck2017Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC304E121E70691D00D624DD /* WebDeck2017Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDeck2017Tests.swift; sourceTree = "<group>"; };
@@ -47,6 +67,18 @@
 		FC304E191E70691D00D624DD /* WebDeck2017UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebDeck2017UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC304E1D1E70691D00D624DD /* WebDeck2017UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDeck2017UITests.swift; sourceTree = "<group>"; };
 		FC304E1F1E70691D00D624DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC7BD7C51E71BAFC000F33A6 /* WeissenhofGrotesk-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-Bold.otf"; sourceTree = "<group>"; };
+		FC7BD7C61E71BAFC000F33A6 /* WeissenhofGrotesk-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-BoldItalic.otf"; sourceTree = "<group>"; };
+		FC7BD7C71E71BAFC000F33A6 /* WeissenhofGrotesk-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-Light.otf"; sourceTree = "<group>"; };
+		FC7BD7C81E71BAFC000F33A6 /* WeissenhofGrotesk-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-LightItalic.otf"; sourceTree = "<group>"; };
+		FC7BD7C91E71BAFC000F33A6 /* WeissenhofGrotesk-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-Medium.otf"; sourceTree = "<group>"; };
+		FC7BD7CA1E71BAFC000F33A6 /* WeissenhofGrotesk-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-MediumItalic.otf"; sourceTree = "<group>"; };
+		FC7BD7CB1E71BAFC000F33A6 /* WeissenhofGrotesk-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-Regular.otf"; sourceTree = "<group>"; };
+		FC7BD7CC1E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-RegularItalic.otf"; sourceTree = "<group>"; };
+		FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC886721C5F885D6F8E9C8A4 /* Pods-WebDeck2017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FCEE727D1E7070AA00D55C48 /* WDIcon-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WDIcon-Large.png"; sourceTree = "<group>"; };
+		FCEE727F1E70728300D55C48 /* WDSlogan-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WDSlogan-Large.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A12550560DD9138B8DDA9E /* Pods_WebDeck2017.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28855BD8057CE258AC0D32F1 /* Pods_WebDeck2017Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +102,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83C22B6C3653CF790AF0660 /* Pods_WebDeck2017UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B7DCAD8D2AF18BB9181C57A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B1B2292D92951D2B475E674 /* Pods_WebDeck2017.framework */,
+				84C33CEA1232CDA0D863A910 /* Pods_WebDeck2017Tests.framework */,
+				7EA9B2EC427B1753136FDC0F /* Pods_WebDeck2017UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCFBE8A82E5885ED3C94C67C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A178E76B6B2B9BCA56E83719 /* Pods-WebDeck2017.debug.xcconfig */,
+				623597E741861E97A0B47A9A /* Pods-WebDeck2017.release.xcconfig */,
+				6DAFD1330C1817C6C0D20FB0 /* Pods-WebDeck2017Tests.debug.xcconfig */,
+				FC886721C5F885D6F8E9C8A4 /* Pods-WebDeck2017Tests.release.xcconfig */,
+				90DDBA0B5E39310E9CAE4D4E /* Pods-WebDeck2017UITests.debug.xcconfig */,
+				BFBDA9EE32FA85926D140EB7 /* Pods-WebDeck2017UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC304DF11E70691B00D624DD = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +139,8 @@
 				FC304E111E70691D00D624DD /* WebDeck2017Tests */,
 				FC304E1C1E70691D00D624DD /* WebDeck2017UITests */,
 				FC304DFB1E70691C00D624DD /* Products */,
+				BCFBE8A82E5885ED3C94C67C /* Pods */,
+				7B7DCAD8D2AF18BB9181C57A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +157,12 @@
 		FC304DFC1E70691C00D624DD /* WebDeck2017 */ = {
 			isa = PBXGroup;
 			children = (
+				FC7BD7DB1E71BC9B000F33A6 /* controllers */,
+				FCEE727C1E70702D00D55C48 /* public */,
 				FC304DFD1E70691C00D624DD /* AppDelegate.swift */,
-				FC304DFF1E70691C00D624DD /* ViewController.swift */,
 				FC304E011E70691C00D624DD /* Main.storyboard */,
+				FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */,
 				FC304E041E70691C00D624DD /* Assets.xcassets */,
-				FC304E061E70691C00D624DD /* LaunchScreen.storyboard */,
 				FC304E091E70691C00D624DD /* Info.plist */,
 			);
 			path = WebDeck2017;
@@ -125,6 +186,47 @@
 			path = WebDeck2017UITests;
 			sourceTree = "<group>";
 		};
+		FC7BD7D51E71BB24000F33A6 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FC7BD7C51E71BAFC000F33A6 /* WeissenhofGrotesk-Bold.otf */,
+				FC7BD7C61E71BAFC000F33A6 /* WeissenhofGrotesk-BoldItalic.otf */,
+				FC7BD7C71E71BAFC000F33A6 /* WeissenhofGrotesk-Light.otf */,
+				FC7BD7C81E71BAFC000F33A6 /* WeissenhofGrotesk-LightItalic.otf */,
+				FC7BD7C91E71BAFC000F33A6 /* WeissenhofGrotesk-Medium.otf */,
+				FC7BD7CA1E71BAFC000F33A6 /* WeissenhofGrotesk-MediumItalic.otf */,
+				FC7BD7CB1E71BAFC000F33A6 /* WeissenhofGrotesk-Regular.otf */,
+				FC7BD7CC1E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		FC7BD7D61E71BB2E000F33A6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FCEE727D1E7070AA00D55C48 /* WDIcon-Large.png */,
+				FCEE727F1E70728300D55C48 /* WDSlogan-Large.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		FC7BD7DB1E71BC9B000F33A6 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC304DFF1E70691C00D624DD /* SignInViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		FCEE727C1E70702D00D55C48 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				FC7BD7D61E71BB2E000F33A6 /* images */,
+				FC7BD7D51E71BB24000F33A6 /* fonts */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +234,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC304E221E70691D00D624DD /* Build configuration list for PBXNativeTarget "WebDeck2017" */;
 			buildPhases = (
+				4E5C519FC07024F42B6A0612 /* [CP] Check Pods Manifest.lock */,
 				FC304DF61E70691B00D624DD /* Sources */,
 				FC304DF71E70691B00D624DD /* Frameworks */,
 				FC304DF81E70691B00D624DD /* Resources */,
+				494C4EDD3D07027D5A2C03C0 /* [CP] Embed Pods Frameworks */,
+				AFDF557D2D7BACCEC9DF330D /* [CP] Copy Pods Resources */,
+				FCE002D11E71C1FF0096D231 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -149,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC304E251E70691D00D624DD /* Build configuration list for PBXNativeTarget "WebDeck2017Tests" */;
 			buildPhases = (
+				5A4F9CC13D096DF894F50C3A /* [CP] Check Pods Manifest.lock */,
 				FC304E0A1E70691D00D624DD /* Sources */,
 				FC304E0B1E70691D00D624DD /* Frameworks */,
 				FC304E0C1E70691D00D624DD /* Resources */,
+				23FCF7268839CCBC15970E6D /* [CP] Embed Pods Frameworks */,
+				805E72E3C6F56E535FCAFB77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC304E281E70691D00D624DD /* Build configuration list for PBXNativeTarget "WebDeck2017UITests" */;
 			buildPhases = (
+				15920B132F0BDEA8D1CEF4EB /* [CP] Check Pods Manifest.lock */,
 				FC304E151E70691D00D624DD /* Sources */,
 				FC304E161E70691D00D624DD /* Frameworks */,
 				FC304E171E70691D00D624DD /* Resources */,
+				452163324F5465FACDC890DE /* [CP] Embed Pods Frameworks */,
+				E2B553F0D1A969D29895E34A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,9 +347,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC304E081E70691C00D624DD /* LaunchScreen.storyboard in Resources */,
+				FC7BD7CF1E71BAFC000F33A6 /* WeissenhofGrotesk-Light.otf in Resources */,
+				FC7BD7CD1E71BAFC000F33A6 /* WeissenhofGrotesk-Bold.otf in Resources */,
+				FC7BD7CE1E71BAFC000F33A6 /* WeissenhofGrotesk-BoldItalic.otf in Resources */,
+				FC7BD7D41E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf in Resources */,
+				FC7BD7D21E71BAFC000F33A6 /* WeissenhofGrotesk-MediumItalic.otf in Resources */,
+				FC7BD7D01E71BAFC000F33A6 /* WeissenhofGrotesk-LightItalic.otf in Resources */,
 				FC304E051E70691C00D624DD /* Assets.xcassets in Resources */,
+				FC7BD7DA1E71BC1D000F33A6 /* LaunchScreen.storyboard in Resources */,
+				FC7BD7D11E71BAFC000F33A6 /* WeissenhofGrotesk-Medium.otf in Resources */,
+				FC7BD7D31E71BAFC000F33A6 /* WeissenhofGrotesk-Regular.otf in Resources */,
 				FC304E031E70691C00D624DD /* Main.storyboard in Resources */,
+				FCEE72801E70728300D55C48 /* WDSlogan-Large.png in Resources */,
+				FCEE727E1E7070AA00D55C48 /* WDIcon-Large.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,12 +379,163 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15920B132F0BDEA8D1CEF4EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		23FCF7268839CCBC15970E6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		452163324F5465FACDC890DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebDeck2017UITests/Pods-WebDeck2017UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		494C4EDD3D07027D5A2C03C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebDeck2017/Pods-WebDeck2017-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E5C519FC07024F42B6A0612 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A4F9CC13D096DF894F50C3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		805E72E3C6F56E535FCAFB77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFDF557D2D7BACCEC9DF330D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebDeck2017/Pods-WebDeck2017-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2B553F0D1A969D29895E34A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebDeck2017UITests/Pods-WebDeck2017UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCE002D11E71C1FF0096D231 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" be38b5cc74fdfdf5317aee1167c9e96eae7763c5 a5d283250e87d8306551aca9c2f348a77b6c063e1673d86f5ed1050c53b3274d";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC304DF61E70691B00D624DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC304E001E70691C00D624DD /* ViewController.swift in Sources */,
+				FC304E001E70691C00D624DD /* SignInViewController.swift in Sources */,
 				FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,14 +578,6 @@
 				FC304E021E70691C00D624DD /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FC304E061E70691C00D624DD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC304E071E70691C00D624DD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -411,12 +676,18 @@
 		};
 		FC304E231E70691D00D624DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A178E76B6B2B9BCA56E83719 /* Pods-WebDeck2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CG8RAYC636;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WebDeck2017",
+				);
 				INFOPLIST_FILE = WebDeck2017/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.webdecko.WebDeck2017;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdeckco.WebDeck2017;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -424,12 +695,18 @@
 		};
 		FC304E241E70691D00D624DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 623597E741861E97A0B47A9A /* Pods-WebDeck2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CG8RAYC636;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WebDeck2017",
+				);
 				INFOPLIST_FILE = WebDeck2017/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.webdecko.WebDeck2017;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdeckco.WebDeck2017;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -437,6 +714,7 @@
 		};
 		FC304E261E70691D00D624DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DAFD1330C1817C6C0D20FB0 /* Pods-WebDeck2017Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +730,7 @@
 		};
 		FC304E271E70691D00D624DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC886721C5F885D6F8E9C8A4 /* Pods-WebDeck2017Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -467,6 +746,7 @@
 		};
 		FC304E291E70691D00D624DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90DDBA0B5E39310E9CAE4D4E /* Pods-WebDeck2017UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = CG8RAYC636;
@@ -481,6 +761,7 @@
 		};
 		FC304E2A1E70691D00D624DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBDA9EE32FA85926D140EB7 /* Pods-WebDeck2017UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = CG8RAYC636;
@@ -512,6 +793,7 @@
 				FC304E241E70691D00D624DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC304E251E70691D00D624DD /* Build configuration list for PBXNativeTarget "WebDeck2017Tests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +802,7 @@
 				FC304E271E70691D00D624DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC304E281E70691D00D624DD /* Build configuration list for PBXNativeTarget "WebDeck2017UITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +811,7 @@
 				FC304E2A1E70691D00D624DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

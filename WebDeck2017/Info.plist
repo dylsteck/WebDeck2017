@@ -18,10 +18,40 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>be38b5cc74fdfdf5317aee1167c9e96eae7763c5</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>consumerKey</key>
+					<string>QlzZemyKTGSnJicZNcu0Nnyxn</string>
+					<key>consumerSecret</key>
+					<string>jnTluY18dqm721obBiwfzuGqGH6DV42iQMgPW3moT6P7GjT4Os</string>
+				</dict>
+				<key>KitName</key>
+				<string>Digits</string>
+			</dict>
+		</array>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>WeissenhofGrotesk-Bold.otf</string>
+		<string>WeissenhofGrotesk-BoldItalic.otf</string>
+		<string>WeissenhofGrotesk-Light.otf</string>
+		<string>WeissenhofGrotesk-LightItalic.otf</string>
+		<string>WeissenhofGrotesk-Medium.otf</string>
+		<string>WeissenhofGrotesk-MediumItalic.otf</string>
+		<string>WeissenhofGrotesk-Regular.otf</string>
+		<string>WeissenhofGrotesk-RegularItalic.otf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
+	<string>LaunchScreen.storyboard</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
