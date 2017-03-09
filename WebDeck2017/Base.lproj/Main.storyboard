@@ -22,19 +22,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="WDSlogan-Large.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Z0-Ml-od9">
-                                <rect key="frame" x="32" y="219" width="300" height="108"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WDSlogan-Large.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Z0-Ml-od9">
+                                <rect key="frame" x="38" y="163" width="299" height="108"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElA-nk-i14">
+                                <rect key="frame" x="83" y="317" width="208" height="33"/>
+                                <color key="backgroundColor" red="0.69411764705882351" green="0.83529411764705885" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sign In with Phone Number">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwa-i5-xjb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9Z0-Ml-od9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5.5" id="UHH-0a-fO7"/>
-                            <constraint firstItem="9Z0-Ml-od9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.6" constant="72.900000000000006" id="aoE-WK-szS"/>
+                            <constraint firstItem="ElA-nk-i14" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I2f-ea-5aa"/>
+                            <constraint firstItem="9Z0-Ml-od9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OVE-Pr-dQ8"/>
+                            <constraint firstItem="9Z0-Ml-od9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.6" constant="16.900000000000006" id="oYU-UO-yvh"/>
+                            <constraint firstItem="ElA-nk-i14" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xD5-0i-5zk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="ElA-nk-i14" id="Wsd-6r-oG2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
     <resources>
