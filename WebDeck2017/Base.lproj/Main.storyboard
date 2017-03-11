@@ -36,18 +36,46 @@
                                     <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwa-i5-xjb"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n40-V9-gcI">
+                                <rect key="frame" x="83" y="382" width="208" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vuV-t8-cUY">
+                                <rect key="frame" x="83" y="420" width="208" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pny-5I-i3W">
+                                <rect key="frame" x="160" y="453" width="55" height="30"/>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="saveUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gt9-Ml-bxD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="pny-5I-i3W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FeI-Ye-gap"/>
                             <constraint firstItem="ElA-nk-i14" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I2f-ea-5aa"/>
+                            <constraint firstItem="n40-V9-gcI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ib8-Uf-zfO"/>
                             <constraint firstItem="9Z0-Ml-od9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OVE-Pr-dQ8"/>
+                            <constraint firstItem="vuV-t8-cUY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.3" constant="1" id="Ohz-f7-7Cl"/>
+                            <constraint firstItem="n40-V9-gcI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.2" priority="1" constant="1" id="btq-KA-mpg"/>
                             <constraint firstItem="9Z0-Ml-od9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.6" constant="16.900000000000006" id="oYU-UO-yvh"/>
+                            <constraint firstItem="pny-5I-i3W" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.4" constant="1" id="oYs-jP-ivf"/>
+                            <constraint firstItem="vuV-t8-cUY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ucR-8F-RG1"/>
                             <constraint firstItem="ElA-nk-i14" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xD5-0i-5zk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="ElA-nk-i14" id="Wsd-6r-oG2"/>
+                        <outlet property="emailField" destination="vuV-t8-cUY" id="rdW-oU-fXv"/>
                         <outlet property="logo" destination="9Z0-Ml-od9" id="f4F-P8-7mV"/>
+                        <outlet property="signUpButton" destination="pny-5I-i3W" id="HPZ-Uq-C58"/>
+                        <outlet property="usernameField" destination="n40-V9-gcI" id="xUh-l8-10H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
