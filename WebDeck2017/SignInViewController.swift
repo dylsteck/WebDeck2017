@@ -15,14 +15,11 @@ class SignInViewController: UIViewController {
 
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var logo: UIImageView!
-    @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var signUpButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Digits.sharedInstance().logOut()
         animateLogo()
+        self.button.titleLabel?.font = UIFont(name: "WeissenhofGrotesk-Bold", size: 16)!
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,14 +30,17 @@ class SignInViewController: UIViewController {
     @IBAction func signIn(_ sender: UIButton) {
         // Calls on the log in function.
         logIn()
-
     }
     
-    @IBAction func saveUser(_ sender: Any) {
-        var user = PFUser()
-        user["username"] = usernameField.text
-        user["email"] = emailField.text
-    }
+//    @IBAction func saveUser(_ sender: Any) {
+//        var user = PFUser()
+//        user["username"] = usernameField.text
+//        user["email"] = emailField.text
+//        user["password"] = pinField.text
+//        user.signUpInBackground { (succeeded, error) -> Void in
+//            
+//        }
+//    }
     func animateLogo(){
             logo.alpha = 0.0
         UIView.animate(withDuration: 3.0){
@@ -49,7 +49,6 @@ class SignInViewController: UIViewController {
     }
     
     func logIn(){
-        var user = PFUser()
         // Initializing Digits and Digits theming
         let configuration = DGTAuthenticationConfiguration(accountFields: .defaultOptionMask)
         configuration?.appearance = DGTAppearance()
@@ -62,13 +61,11 @@ class SignInViewController: UIViewController {
         // Triggers the Digits on the click of the button
         Digits.sharedInstance().authenticate(with: self, configuration: configuration!) { (session, error) -> Void in
             if (session != nil) {
-               // self.button.setTitle("Your Digits User ID is " + (session?.userID)!, for: UIControlState.normal)
-                user["userID"] = session?.userID
-                self.button.isHidden = true
-                user.signUpInBackground { (succeeded, error) -> Void in
-                    
-                }
-
+                let destination:ContinueSignupViewController = ContinueSignupViewController()
+                destination.userID = (session?.userID)!
+                DispatchQueue.main.async(execute: {
+                self.performSegue(withIdentifier: "digitSegue", sender: self)
+                })
             }
             
         }

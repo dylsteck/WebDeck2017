@@ -27,6 +27,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         Parse.initialize(with: configuration)
         
+        if PFUser.current() != nil {
+            // Code to execute if user is logged in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "NavigationViewController")
+            
+            self.window?.rootViewController = viewController
+            self.window?.makeKeyAndVisible()
+            print("Current user")
+        } else {
+            // Default screen you set in info plist.
+            print("Not current user")
+        }
+            
         // Override point for customization after application launch.
         return true
     }

@@ -28,6 +28,8 @@
 		FC7BD7D31E71BAFC000F33A6 /* WeissenhofGrotesk-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7CB1E71BAFC000F33A6 /* WeissenhofGrotesk-Regular.otf */; };
 		FC7BD7D41E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7CC1E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf */; };
 		FC7BD7DA1E71BC1D000F33A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */; };
+		FCBEBB381E748E71002CFAB6 /* ContinueSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEBB371E748E71002CFAB6 /* ContinueSignupViewController.swift */; };
+		FCBEBB3A1E74A839002CFAB6 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEBB391E74A839002CFAB6 /* NavigationViewController.swift */; };
 		FCEE727E1E7070AA00D55C48 /* WDIcon-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEE727D1E7070AA00D55C48 /* WDIcon-Large.png */; };
 		FCEE72801E70728300D55C48 /* WDSlogan-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEE727F1E70728300D55C48 /* WDSlogan-Large.png */; };
 /* End PBXBuildFile section */
@@ -97,6 +99,8 @@
 		FC7BD7CC1E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-RegularItalic.otf"; sourceTree = "<group>"; };
 		FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC886721C5F885D6F8E9C8A4 /* Pods-WebDeck2017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FCBEBB371E748E71002CFAB6 /* ContinueSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueSignupViewController.swift; sourceTree = "<group>"; };
+		FCBEBB391E74A839002CFAB6 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		FCEE727D1E7070AA00D55C48 /* WDIcon-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WDIcon-Large.png"; sourceTree = "<group>"; };
 		FCEE727F1E70728300D55C48 /* WDSlogan-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WDSlogan-Large.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,6 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				FC304DFF1E70691C00D624DD /* SignInViewController.swift */,
+				FCBEBB371E748E71002CFAB6 /* ContinueSignupViewController.swift */,
+				FCBEBB391E74A839002CFAB6 /* NavigationViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -563,7 +569,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBEBB3A1E74A839002CFAB6 /* NavigationViewController.swift in Sources */,
 				FC304E001E70691C00D624DD /* SignInViewController.swift in Sources */,
+				FCBEBB381E748E71002CFAB6 /* ContinueSignupViewController.swift in Sources */,
 				FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
