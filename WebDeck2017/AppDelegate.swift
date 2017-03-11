@@ -9,6 +9,7 @@
 import UIKit
 import Fabric
 import DigitsKit
+import Parse
 
 
 @UIApplicationMain
@@ -19,6 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Fabric.with([Digits.self])
+        // Set up the Parse SDK
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "WebDeck"
+            $0.server = "https://webdeck-ios-dcs.herokuapp.com/parse"
+        }
+        Parse.initialize(with: configuration)
+        
         // Override point for customization after application launch.
         return true
     }

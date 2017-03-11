@@ -41,7 +41,6 @@ class SignInViewController: UIViewController {
     
     func logIn(){
         // Initializing Digits and Digits theming
-        let digits = Digits.sharedInstance()
         let configuration = DGTAuthenticationConfiguration(accountFields: .defaultOptionMask)
         configuration?.appearance = DGTAppearance()
         
