@@ -1,12 +1,17 @@
 PODS:
   - Alamofire (4.3.0)
+  - Bolts/Tasks (1.8.4)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
   - Digits (2.7.0):
     - TwitterCore (= 2.7.0)
   - Fabric (1.6.11)
-  - Onboard (2.3.1)
+  - Parse (1.14.2):
+    - Bolts/Tasks (~> 1.8)
+  - ParseUI (1.2.0):
+    - Bolts/Tasks (~> 1.3)
+    - Parse (~> 1.9)
   - SwiftyJSON (2.3.2)
   - TwitterCore (2.7.0):
     - Fabric
@@ -16,7 +21,8 @@ DEPENDENCIES:
   - ChameleonFramework/Swift
   - Digits
   - Fabric
-  - Onboard
+  - Parse
+  - ParseUI
   - SwiftyJSON (from `https://github.com/BaiduHiDeviOS/SwiftyJSON.git`, branch `swift3`)
   - TwitterCore
 
@@ -32,13 +38,15 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Digits: 67a14dea7cd470b2438380a09371bcdadc50d94e
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
-  Onboard: b6871f25ac753175b2ab9a362fb2feb26a81a311
+  Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
+  ParseUI: af2eba584799da4a9fbdac0e178662d7438b502e
   SwiftyJSON: 6118fb49d7519c4d31a0c1f3d5af936e9047b556
   TwitterCore: fbdbeaf6d2d20cf7c7aa4136fe5173c1c85df2e2
 
-PODFILE CHECKSUM: b47a799d9310f95561751914a2634e37227184b1
+PODFILE CHECKSUM: a02adbc0e837f8ae3edd38d73dba644de0cc1e8a
 
 COCOAPODS: 1.2.0

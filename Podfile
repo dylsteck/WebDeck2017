@@ -6,13 +6,15 @@ target 'WebDeck2017' do
   use_frameworks!
 
   # Pods for WebDeck2017
-	 pod 'Alamofire', '~> 4.0'
+    pod 'Alamofire', '~> 4.0'
  	pod 'SwiftyJSON', git: 'https://github.com/BaiduHiDeviOS/SwiftyJSON.git', branch: 'swift3'
  	pod 'ChameleonFramework/Swift'
     pod 'Fabric'
     pod 'Digits'
     pod 'TwitterCore'
-	pod 'Onboard'
+    pod 'Parse'
+    pod 'ParseUI'
+    #pod 'ParseFacebookUtilsV4'
   target 'WebDeck2017Tests' do
     inherit! :search_paths
     # Pods for testing

@@ -13,10 +13,12 @@ import DigitsKit
 class SignInViewController: UIViewController {
 
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var logo: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Digits.sharedInstance().logOut()
+        animateLogo()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +27,19 @@ class SignInViewController: UIViewController {
     }
 
     @IBAction func signIn(_ sender: UIButton) {
+        // Calls on the log in function.
+        logIn()
+
+    }
+    
+    func animateLogo(){
+            logo.alpha = 0.0
+        UIView.animate(withDuration: 3.0){
+            self.logo.alpha = 1.0
+        }
+    }
+    
+    func logIn(){
         // Initializing Digits and Digits theming
         let digits = Digits.sharedInstance()
         let configuration = DGTAuthenticationConfiguration(accountFields: .defaultOptionMask)
@@ -41,12 +56,12 @@ class SignInViewController: UIViewController {
                 self.button.setTitle("Your Digits User ID is " + (session?.userID)!, for: UIControlState.normal)
             }
             else {
-                print(error?.localizedDescription)
+                print(error?.localizedDescription as Any)
             }
             
         }
-
     }
+    
 
 }
 
