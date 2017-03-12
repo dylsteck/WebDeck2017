@@ -195,6 +195,7 @@
         <!--Homepage View Controller-->
         <scene sceneID="zdr-QF-BxP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4n-i9-eEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="HomepageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xsS-0r-Ouh" customClass="HomepageViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YaD-Wb-deW"/>
@@ -278,22 +279,32 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNS-2K-7gF">
+                                <rect key="frame" x="190" y="167" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rMA-Np-YDO" firstAttribute="top" secondItem="fGd-rN-KO0" secondAttribute="top" id="7bm-77-j9s"/>
                             <constraint firstAttribute="trailing" secondItem="Sx0-cO-YQs" secondAttribute="trailing" constant="10" id="7pp-qm-ghq"/>
+                            <constraint firstItem="lNS-2K-7gF" firstAttribute="centerX" secondItem="fGd-rN-KO0" secondAttribute="centerX" id="IB1-LV-Gdl"/>
                             <constraint firstItem="Sx0-cO-YQs" firstAttribute="centerY" secondItem="fGd-rN-KO0" secondAttribute="centerY" multiplier="0.2" constant="1" id="Kbl-UL-DOl"/>
                             <constraint firstItem="Sx0-cO-YQs" firstAttribute="leading" secondItem="fGd-rN-KO0" secondAttribute="leading" constant="10" id="QwP-sb-sej"/>
                             <constraint firstItem="rMA-Np-YDO" firstAttribute="leading" secondItem="fGd-rN-KO0" secondAttribute="leading" id="cNy-4j-bzQ"/>
                             <constraint firstItem="Sx0-cO-YQs" firstAttribute="centerX" secondItem="fGd-rN-KO0" secondAttribute="centerX" id="eK3-ah-Pvf"/>
                             <constraint firstAttribute="trailing" secondItem="rMA-Np-YDO" secondAttribute="trailing" id="ecq-aD-1mu"/>
+                            <constraint firstItem="lNS-2K-7gF" firstAttribute="centerY" secondItem="fGd-rN-KO0" secondAttribute="centerY" multiplier="0.3" id="oz8-dA-jJn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="usernameLabel" destination="lNS-2K-7gF" id="dHj-uk-9rl"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c4n-i9-eEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.8" y="36.431784107946029"/>
+            <point key="canvasLocation" x="1586" y="58"/>
         </scene>
     </scenes>
     <resources>
