@@ -1,25 +1,23 @@
 //
-//  ViewController.swift
+//  SignInViewController.swift
 //  WebDeck2017
 //
-//  Created by Dylan Steck on 3/8/17.
+//  Created by Dylan Steck on 3/11/17.
 //  Copyright © 2017 Dylan Steck. All rights reserved.
 //
 
-import Foundation
 import UIKit
-import DigitsKit
 import Parse
 
 class SignInViewController: UIViewController {
 
-    @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var logo: UIImageView!
-    
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var pinField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        animateLogo()
-        self.button.titleLabel?.font = UIFont(name: "WeissenhofGrotesk-Bold", size: 16)!
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,48 +25,47 @@ class SignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
     @IBAction func signIn(_ sender: UIButton) {
-        // Calls on the log in function.
-        logIn()
-    }
-    
-//    @IBAction func saveUser(_ sender: Any) {
-//        var user = PFUser()
-//        user["username"] = usernameField.text
-//        user["email"] = emailField.text
-//        user["password"] = pinField.text
-//        user.signUpInBackground { (succeeded, error) -> Void in
-//            
-//        }
-//    }
-    func animateLogo(){
-            logo.alpha = 0.0
-        UIView.animate(withDuration: 3.0){
-            self.logo.alpha = 1.0
-        }
-    }
-    
-    func logIn(){
-        // Initializing Digits and Digits theming
-        let configuration = DGTAuthenticationConfiguration(accountFields: .defaultOptionMask)
-        configuration?.appearance = DGTAppearance()
-        
-        // Changes the font and logo of this instance of Digits
-        configuration?.appearance.logoImage = UIImage(named: "WDSlogan-Large.png")
-        configuration?.appearance.labelFont = UIFont(name: "WeissenhofGrotesk-Bold", size: 16)
-        configuration?.appearance.bodyFont = UIFont(name: "WeissenhofGrotesk-Regular", size: 16)
-        
-        // Triggers the Digits on the click of the button
-        Digits.sharedInstance().authenticate(with: self, configuration: configuration!) { (session, error) -> Void in
-            if (session != nil) {
-                let destination:ContinueSignupViewController = ContinueSignupViewController()
-                destination.userID = (session?.userID)!
-                DispatchQueue.main.async(execute: {
-                self.performSegue(withIdentifier: "digitSegue", sender: self)
-                })
-            }
+        var username = self.usernameTextField.text
+        var password = self.pinField.text
+        if (username?.length)! < 3 {
+            var alert = UIAlertView(title: "Invalid", message: "Username must be greater than 3 characters", delegate: self, cancelButtonTitle: "OK")
+            alert.show()
+            
+        } else if (password?.length)! > 4  {
+            var alert = UIAlertView(title: "Invalid", message: "Password must be 4 characters", delegate: self, cancelButtonTitle: "OK")
+            alert.show()
             
         }
+        
+        PFUser.logInWithUsername(inBackground: username!, password: password!, block: { (user, error) -> Void in
+            if ((user) != nil) {
+                var alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
+                alert.show()
+                
+                DispatchQueue.main.async(execute: { () -> Void in
+                    self.performSegue(withIdentifier: "signInSegue", sender:self )
+                })
+                
+            } else {
+                var alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
+                alert.show()
+            }
+        })
     }
 }
 
+extension String {
+    var length: Int {
+        return (self as NSString).length
+    }
+}

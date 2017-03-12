@@ -12,9 +12,6 @@ class NavigationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var titleView = UIImageView(image: UIImage(named: "WDIcon-Large.png"))
-        self.navigationItem.titleView?.contentMode = .scaleAspectFit
-        self.navigationItem.titleView = titleView
         // Do any additional setup after loading the view.
     }
 
