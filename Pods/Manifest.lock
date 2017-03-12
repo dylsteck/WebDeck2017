@@ -15,6 +15,7 @@ PODS:
     - Bolts/Tasks (~> 1.3)
     - Parse (~> 1.9)
   - SwiftyJSON (2.3.2)
+  - TwicketSegmentedControl (0.1.2)
   - TwitterCore (2.7.0):
     - Fabric
 
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - Parse
   - ParseUI
   - SwiftyJSON (from `https://github.com/BaiduHiDeviOS/SwiftyJSON.git`, branch `swift3`)
+  - TwicketSegmentedControl
   - TwitterCore
 
 EXTERNAL SOURCES:
@@ -49,8 +51,9 @@ SPEC CHECKSUMS:
   Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
   ParseUI: af2eba584799da4a9fbdac0e178662d7438b502e
   SwiftyJSON: 6118fb49d7519c4d31a0c1f3d5af936e9047b556
+  TwicketSegmentedControl: 6d7a4cf243657e0ac3f00d06d873a25334c04042
   TwitterCore: fbdbeaf6d2d20cf7c7aa4136fe5173c1c85df2e2
 
-PODFILE CHECKSUM: 9fcc83bc2a335fee79130a2db64171b32c9725be
+PODFILE CHECKSUM: 432b3199fef4142421157d476e4bd9a5fb5770b3
 
 COCOAPODS: 1.2.0

@@ -15,6 +15,7 @@ target 'WebDeck2017' do
     pod 'TwitterCore'
     pod 'Parse'
     pod 'ParseUI'
+    pod 'TwicketSegmentedControl'
     #pod 'ParseFacebookUtilsV4'
   target 'WebDeck2017Tests' do
     inherit! :search_paths

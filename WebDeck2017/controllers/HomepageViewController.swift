@@ -9,21 +9,34 @@
 import UIKit
 import Foundation
 import Parse
+import TwicketSegmentedControl
 
 class HomepageViewController: UIViewController {
     @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(PFUser.current())
-        print(PFUser.current()!["username"])
-        
+//        print(PFUser.current())
+//        
+        if let user = PFUser.current(){
         var username = PFUser.current()!["username"] as! String
         self.usernameLabel.font = UIFont(name: "WeissenhofGrotesk-Bold", size: 16)!
         self.usernameLabel.text = ("Hello, " + username + "!")
+        }
+        else{
+            // nothing
+            print("user not logged in?")
+        }
     
+        let titles = ["Home", "Featured", "Your Day", "Sign Out"]
+        let frame = CGRect(x: 2, y: view.frame.height / 2 - 20, width: view.frame.width - 10, height: 40)
+        let segmentedControl = TwicketSegmentedControl(frame: frame)
+        segmentedControl.setSegmentItems(titles)
+        segmentedControl.setSegmentItems(titles)
+        segmentedControl.delegate = self
+        
+        view.addSubview(segmentedControl)
     }
 
     
@@ -42,25 +55,10 @@ class HomepageViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func indexChanged(_ sender: UISegmentedControl) {
-        switch segmentedControl.selectedSegmentIndex
-        {
-        case 3:
-            PFUser.logOut()
-            let currentUser = PFUser.current()
-            if currentUser == nil {
-                print("user is nil")
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let viewController = storyboard.instantiateViewController(withIdentifier :"SignUpViewController") as! UIViewController
-                self.present(viewController, animated: true)
-                
-            }
-            else{
-                print("user is not nil")
-            };
-        default:
-            break; 
-        }
-        
+}
+
+extension HomepageViewController: TwicketSegmentedControlDelegate {
+    func didSelect(_ segmentIndex: Int) {
+        print("Selected index: \(segmentIndex)")
     }
 }

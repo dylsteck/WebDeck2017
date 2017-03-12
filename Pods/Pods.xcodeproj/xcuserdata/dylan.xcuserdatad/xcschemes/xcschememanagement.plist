@@ -49,15 +49,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TwicketSegmentedControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A788EA75A9AA0BEA9408E03EE8DFDCB</key>
+		<key>49DC896E42BEA9DB401197DF188844BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>51CB0AF616C6306147B99C320EB6D3ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>676E363421788F25E8D3EFD73628B0B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +97,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D453FDECB2459675313C15A7E33B6BB3</key>
+		<key>CA87D920DA9E9584A9B24364C81CDE0B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

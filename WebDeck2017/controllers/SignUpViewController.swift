@@ -63,6 +63,7 @@ class SignUpViewController: UIViewController {
             if (session != nil) {
                 let destination:ContinueSignupViewController = ContinueSignupViewController()
                 destination.userID = (session?.userID)!
+                destination.phoneNumber = (session?.phoneNumber)!
                 DispatchQueue.main.async(execute: {
                 self.performSegue(withIdentifier: "digitSegue", sender: self)
                 })

@@ -211,39 +211,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPR-2z-P88">
-                                <rect key="frame" x="0.0" y="4" width="375" height="44"/>
-                                <items>
-                                    <navigationItem id="GMt-5h-vam">
-                                        <nil key="title"/>
-                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" id="Edy-RF-5p0">
-                                            <rect key="frame" x="16" y="8" width="343" height="29"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <segments>
-                                                <segment title="Home"/>
-                                                <segment title="Featured"/>
-                                                <segment title="Your Day"/>
-                                                <segment title="Sign Out"/>
-                                            </segments>
-                                            <connections>
-                                                <action selector="indexChanged:" destination="c0K-zo-7Ma" eventType="valueChanged" id="xPp-j8-aNi"/>
-                                            </connections>
-                                        </segmentedControl>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="UPR-2z-P88" secondAttribute="trailing" id="Hhx-oK-SPG"/>
                             <constraint firstItem="gu8-JT-Dkm" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.3" id="ReU-VO-kzl"/>
-                            <constraint firstItem="UPR-2z-P88" firstAttribute="top" secondItem="NTH-jc-dvR" secondAttribute="top" constant="4" id="Rxg-Hv-Sie"/>
-                            <constraint firstItem="UPR-2z-P88" firstAttribute="leading" secondItem="NTH-jc-dvR" secondAttribute="leading" id="nzU-sm-eJa"/>
                             <constraint firstItem="gu8-JT-Dkm" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" id="xBE-sy-ePZ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="segmentedControl" destination="Edy-RF-5p0" id="soG-Xs-raT"/>
                         <outlet property="usernameLabel" destination="gu8-JT-Dkm" id="Xn8-ru-8ZX"/>
                     </connections>
                 </viewController>
