@@ -12,14 +12,17 @@ import Parse
 
 class HomepageViewController: UIViewController {
     @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(PFUser.current())
         print(PFUser.current()!["username"])
+        
+        var username = PFUser.current()!["username"] as! String
         self.usernameLabel.font = UIFont(name: "WeissenhofGrotesk-Bold", size: 16)!
-        self.usernameLabel.text = PFUser.current()!["username"] as! String
-
+        self.usernameLabel.text = ("Hello, " + username + "!")
     
     }
 
@@ -39,19 +42,25 @@ class HomepageViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func signOut(_ sender: UIButton) {
-        PFUser.logOut()
-        let currentUser = PFUser.current()
-        if currentUser == nil {
-            print("user is nil")
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier :"SignUpViewController") as! UIViewController
-            self.present(viewController, animated: true)
-
+    @IBAction func indexChanged(_ sender: UISegmentedControl) {
+        switch segmentedControl.selectedSegmentIndex
+        {
+        case 3:
+            PFUser.logOut()
+            let currentUser = PFUser.current()
+            if currentUser == nil {
+                print("user is nil")
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier :"SignUpViewController") as! UIViewController
+                self.present(viewController, animated: true)
+                
+            }
+            else{
+                print("user is not nil")
+            };
+        default:
+            break; 
         }
-        else{
-            print("user is not nil")
-        }
+        
     }
-
 }

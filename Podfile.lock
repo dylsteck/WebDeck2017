@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.3.0)
+  - Answers (1.3.4):
+    - Fabric (~> 1.6.3)
   - Bolts/Tasks (1.8.4)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
@@ -18,6 +20,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - Answers
   - ChameleonFramework/Swift
   - Digits
   - Fabric
@@ -38,6 +41,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Answers: 6a4d22973d8550808630a55f526055c9eb6d39a2
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Digits: 67a14dea7cd470b2438380a09371bcdadc50d94e
@@ -47,6 +51,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 6118fb49d7519c4d31a0c1f3d5af936e9047b556
   TwitterCore: fbdbeaf6d2d20cf7c7aa4136fe5173c1c85df2e2
 
-PODFILE CHECKSUM: a02adbc0e837f8ae3edd38d73dba644de0cc1e8a
+PODFILE CHECKSUM: 9fcc83bc2a335fee79130a2db64171b32c9725be
 
 COCOAPODS: 1.2.0

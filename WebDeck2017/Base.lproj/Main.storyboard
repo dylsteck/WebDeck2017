@@ -86,6 +86,7 @@
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="signIn:" destination="3xQ-Qa-MgE" eventType="touchUpInside" id="M0M-Db-k8b"/>
+                                    <segue destination="c0K-zo-7Ma" kind="modal" identifier="signInSegue" id="6jE-oo-jqg"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="73R-8e-fVP">
@@ -124,7 +125,6 @@
                         <outlet property="pinField" destination="Bae-zX-RQw" id="d6e-9J-rVS"/>
                         <outlet property="signInButton" destination="EXZ-GM-4Pg" id="CXZ-jJ-ywx"/>
                         <outlet property="usernameTextField" destination="73R-8e-fVP" id="P2p-kc-nHG"/>
-                        <segue destination="xsS-0r-Ouh" kind="modal" identifier="signInSegue" id="vNj-Lu-tM3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Xu-tY-axX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -166,6 +166,7 @@
                                 <state key="normal" title="Continue"/>
                                 <connections>
                                     <action selector="saveUser:" destination="baq-i3-cPO" eventType="touchUpInside" id="qVb-d1-rMg"/>
+                                    <segue destination="c0K-zo-7Ma" kind="modal" identifier="digitSegue" id="HNg-xC-K2l"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -193,121 +194,68 @@
             <point key="canvasLocation" x="772" y="38"/>
         </scene>
         <!--Homepage View Controller-->
-        <scene sceneID="zdr-QF-BxP">
+        <scene sceneID="AYF-rA-2Sy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c4n-i9-eEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="HomepageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xsS-0r-Ouh" customClass="HomepageViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomepageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c0K-zo-7Ma" customClass="HomepageViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YaD-Wb-deW"/>
-                        <viewControllerLayoutGuide type="bottom" id="KLW-sf-mXD"/>
+                        <viewControllerLayoutGuide type="top" id="w60-Hu-XFL"/>
+                        <viewControllerLayoutGuide type="bottom" id="PkA-CE-0Oc"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fGd-rN-KO0">
+                    <view key="view" contentMode="scaleToFill" id="NTH-jc-dvR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Sx0-cO-YQs">
-                                <rect key="frame" x="10" y="54" width="355" height="29"/>
-                                <segments>
-                                    <segment title="Home"/>
-                                    <segment title="Featured"/>
-                                    <segment title="Your Day"/>
-                                </segments>
-                            </segmentedControl>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMA-Np-YDO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <items>
-                                    <navigationItem id="9fU-TX-1kO">
-                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="YvU-xB-col">
-                                            <color key="tintColor" red="0.88235294117647056" green="0.086274509803921567" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <action selector="signOut:" destination="xsS-0r-Ouh" id="ine-A7-Ktr"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j5F-vt-Ase">
-                                <rect key="frame" x="10" y="102" width="349" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KTq-BE-0ZA">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Kd5-J9-V7T">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JX0-OB-kzL">
-                                        <rect key="frame" x="75" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9pb-rJ-T33">
-                                        <rect key="frame" x="150" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3Ee-EI-JKs">
-                                        <rect key="frame" x="224" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KdO-WM-xsd">
-                                        <rect key="frame" x="299" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNS-2K-7gF">
-                                <rect key="frame" x="190" y="167" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu8-JT-Dkm">
+                                <rect key="frame" x="166" y="76" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPR-2z-P88">
+                                <rect key="frame" x="0.0" y="4" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="GMt-5h-vam">
+                                        <nil key="title"/>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" id="Edy-RF-5p0">
+                                            <rect key="frame" x="16" y="8" width="343" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Home"/>
+                                                <segment title="Featured"/>
+                                                <segment title="Your Day"/>
+                                                <segment title="Sign Out"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="indexChanged:" destination="c0K-zo-7Ma" eventType="valueChanged" id="xPp-j8-aNi"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rMA-Np-YDO" firstAttribute="top" secondItem="fGd-rN-KO0" secondAttribute="top" id="7bm-77-j9s"/>
-                            <constraint firstAttribute="trailing" secondItem="Sx0-cO-YQs" secondAttribute="trailing" constant="10" id="7pp-qm-ghq"/>
-                            <constraint firstItem="lNS-2K-7gF" firstAttribute="centerX" secondItem="fGd-rN-KO0" secondAttribute="centerX" id="IB1-LV-Gdl"/>
-                            <constraint firstItem="Sx0-cO-YQs" firstAttribute="centerY" secondItem="fGd-rN-KO0" secondAttribute="centerY" multiplier="0.2" constant="1" id="Kbl-UL-DOl"/>
-                            <constraint firstItem="Sx0-cO-YQs" firstAttribute="leading" secondItem="fGd-rN-KO0" secondAttribute="leading" constant="10" id="QwP-sb-sej"/>
-                            <constraint firstItem="rMA-Np-YDO" firstAttribute="leading" secondItem="fGd-rN-KO0" secondAttribute="leading" id="cNy-4j-bzQ"/>
-                            <constraint firstItem="Sx0-cO-YQs" firstAttribute="centerX" secondItem="fGd-rN-KO0" secondAttribute="centerX" id="eK3-ah-Pvf"/>
-                            <constraint firstAttribute="trailing" secondItem="rMA-Np-YDO" secondAttribute="trailing" id="ecq-aD-1mu"/>
-                            <constraint firstItem="lNS-2K-7gF" firstAttribute="centerY" secondItem="fGd-rN-KO0" secondAttribute="centerY" multiplier="0.3" id="oz8-dA-jJn"/>
+                            <constraint firstAttribute="trailing" secondItem="UPR-2z-P88" secondAttribute="trailing" id="Hhx-oK-SPG"/>
+                            <constraint firstItem="gu8-JT-Dkm" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.3" id="ReU-VO-kzl"/>
+                            <constraint firstItem="UPR-2z-P88" firstAttribute="top" secondItem="NTH-jc-dvR" secondAttribute="top" constant="4" id="Rxg-Hv-Sie"/>
+                            <constraint firstItem="UPR-2z-P88" firstAttribute="leading" secondItem="NTH-jc-dvR" secondAttribute="leading" id="nzU-sm-eJa"/>
+                            <constraint firstItem="gu8-JT-Dkm" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" id="xBE-sy-ePZ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="usernameLabel" destination="lNS-2K-7gF" id="dHj-uk-9rl"/>
+                        <outlet property="segmentedControl" destination="Edy-RF-5p0" id="soG-Xs-raT"/>
+                        <outlet property="usernameLabel" destination="gu8-JT-Dkm" id="Xn8-ru-8ZX"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fV-zk-VQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586" y="58"/>
+            <point key="canvasLocation" x="1490.4000000000001" y="37.331334332833585"/>
         </scene>
     </scenes>
     <resources>
         <image name="WDSlogan-Large.png" width="299" height="108"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="HNg-xC-K2l"/>
+    </inferredMetricsTieBreakers>
 </document>

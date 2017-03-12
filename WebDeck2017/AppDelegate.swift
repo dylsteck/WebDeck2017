@@ -9,6 +9,7 @@
 import UIKit
 import Fabric
 import DigitsKit
+import Answers
 import Parse
 
 
@@ -19,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Fabric.with([Digits.self])
+        Fabric.with([Digits.self, Answers.self])
         // Set up the Parse SDK
         let configuration = ParseClientConfiguration {
             $0.applicationId = "WebDeck"

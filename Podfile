@@ -11,6 +11,7 @@ target 'WebDeck2017' do
  	pod 'ChameleonFramework/Swift'
     pod 'Fabric'
     pod 'Digits'
+    pod 'Answers'
     pod 'TwitterCore'
     pod 'Parse'
     pod 'ParseUI'
