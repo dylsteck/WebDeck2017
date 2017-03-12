@@ -13,7 +13,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignUpViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignUpViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -76,30 +76,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PIN" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bae-zX-RQw">
-                                <rect key="frame" x="165.5" y="85" width="44" height="30"/>
+                                <rect key="frame" x="166" y="85" width="44" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXZ-GM-4Pg">
-                                <rect key="frame" x="164" y="118.5" width="47" height="30"/>
+                                <rect key="frame" x="164" y="119" width="47" height="30"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="signIn:" destination="3xQ-Qa-MgE" eventType="touchUpInside" id="M0M-Db-k8b"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="73R-8e-fVP">
-                                <rect key="frame" x="144" y="51.5" width="87.5" height="30"/>
+                                <rect key="frame" x="144" y="52" width="88" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Krd-L6-YWv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="WebDeck" id="gDd-sn-dNL">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="VWm-ro-cpk">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="9BO-4y-8ST"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="EXZ-GM-4Pg" firstAttribute="centerX" secondItem="Htd-m9-uNa" secondAttribute="centerX" id="30Y-Ae-iyc"/>
                             <constraint firstItem="Bae-zX-RQw" firstAttribute="centerX" secondItem="Htd-m9-uNa" secondAttribute="centerX" id="3Kt-B1-jNl"/>
+                            <constraint firstItem="Krd-L6-YWv" firstAttribute="top" secondItem="Htd-m9-uNa" secondAttribute="top" id="LdM-3j-e9w"/>
+                            <constraint firstItem="Krd-L6-YWv" firstAttribute="leading" secondItem="Htd-m9-uNa" secondAttribute="leading" id="csG-k1-flw"/>
                             <constraint firstItem="EXZ-GM-4Pg" firstAttribute="centerY" secondItem="Htd-m9-uNa" secondAttribute="centerY" multiplier="0.4" id="d6s-nT-Eec"/>
+                            <constraint firstAttribute="trailing" secondItem="Krd-L6-YWv" secondAttribute="trailing" id="gmJ-wN-S6l"/>
                             <constraint firstItem="73R-8e-fVP" firstAttribute="centerX" secondItem="Htd-m9-uNa" secondAttribute="centerX" id="kmS-Jb-b2R"/>
                             <constraint firstItem="73R-8e-fVP" firstAttribute="centerY" secondItem="Htd-m9-uNa" secondAttribute="centerY" multiplier="0.2" id="qFB-jH-57o"/>
                             <constraint firstItem="Bae-zX-RQw" firstAttribute="centerY" secondItem="Htd-m9-uNa" secondAttribute="centerY" multiplier="0.3" id="u4Q-zf-KqJ"/>
@@ -151,7 +166,6 @@
                                 <state key="normal" title="Continue"/>
                                 <connections>
                                     <action selector="saveUser:" destination="baq-i3-cPO" eventType="touchUpInside" id="qVb-d1-rMg"/>
-                                    <segue destination="iod-uw-4hF" kind="show" id="iVu-rX-smI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -178,10 +192,10 @@
             </objects>
             <point key="canvasLocation" x="772" y="38"/>
         </scene>
-        <!--WebDeck-->
+        <!--Homepage View Controller-->
         <scene sceneID="zdr-QF-BxP">
             <objects>
-                <viewController storyboardIdentifier="NavigationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xsS-0r-Ouh" customClass="NavigationViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomepageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xsS-0r-Ouh" customClass="HomepageViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YaD-Wb-deW"/>
                         <viewControllerLayoutGuide type="bottom" id="KLW-sf-mXD"/>
@@ -191,55 +205,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Sx0-cO-YQs">
-                                <rect key="frame" x="10" y="87" width="355" height="29"/>
+                                <rect key="frame" x="10" y="54" width="355" height="29"/>
                                 <segments>
                                     <segment title="Home"/>
                                     <segment title="Featured"/>
                                     <segment title="Your Day"/>
                                 </segments>
                             </segmentedControl>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMA-Np-YDO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="9fU-TX-1kO">
+                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="YvU-xB-col">
+                                            <color key="tintColor" red="0.88235294117647056" green="0.086274509803921567" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="signOut:" destination="xsS-0r-Ouh" id="ine-A7-Ktr"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rMA-Np-YDO" firstAttribute="top" secondItem="fGd-rN-KO0" secondAttribute="top" id="7bm-77-j9s"/>
                             <constraint firstAttribute="trailing" secondItem="Sx0-cO-YQs" secondAttribute="trailing" constant="10" id="7pp-qm-ghq"/>
-                            <constraint firstItem="Sx0-cO-YQs" firstAttribute="centerY" secondItem="fGd-rN-KO0" secondAttribute="centerY" multiplier="0.3" constant="1" id="Kbl-UL-DOl"/>
+                            <constraint firstItem="Sx0-cO-YQs" firstAttribute="centerY" secondItem="fGd-rN-KO0" secondAttribute="centerY" multiplier="0.2" constant="1" id="Kbl-UL-DOl"/>
                             <constraint firstItem="Sx0-cO-YQs" firstAttribute="leading" secondItem="fGd-rN-KO0" secondAttribute="leading" constant="10" id="QwP-sb-sej"/>
+                            <constraint firstItem="rMA-Np-YDO" firstAttribute="leading" secondItem="fGd-rN-KO0" secondAttribute="leading" id="cNy-4j-bzQ"/>
                             <constraint firstItem="Sx0-cO-YQs" firstAttribute="centerX" secondItem="fGd-rN-KO0" secondAttribute="centerX" id="eK3-ah-Pvf"/>
+                            <constraint firstAttribute="trailing" secondItem="rMA-Np-YDO" secondAttribute="trailing" id="ecq-aD-1mu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="WebDeck" id="85N-oZ-aT3">
-                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="tgp-kG-dKR">
-                            <color key="tintColor" red="0.88235294119999996" green="0.086274509799999996" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4n-i9-eEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2487.1999999999998" y="37.331334332833585"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="VHf-Gb-g2p">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iod-uw-4hF" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="iOi-yD-Zho">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="xsS-0r-Ouh" kind="relationship" relationship="rootViewController" id="EYV-n9-S5q"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tTU-MH-cP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1548" y="37.331334332833585"/>
+            <point key="canvasLocation" x="1593" y="37"/>
         </scene>
     </scenes>
     <resources>
         <image name="WDSlogan-Large.png" width="299" height="108"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="vNj-Lu-tM3"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -11,7 +11,6 @@
 		28855BD8057CE258AC0D32F1 /* Pods_WebDeck2017Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C33CEA1232CDA0D863A910 /* Pods_WebDeck2017Tests.framework */; };
 		C83C22B6C3653CF790AF0660 /* Pods_WebDeck2017UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA9B2EC427B1753136FDC0F /* Pods_WebDeck2017UITests.framework */; };
 		FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304DFD1E70691C00D624DD /* AppDelegate.swift */; };
-		FC304E001E70691C00D624DD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304DFF1E70691C00D624DD /* SignUpViewController.swift */; };
 		FC304E031E70691C00D624DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC304E011E70691C00D624DD /* Main.storyboard */; };
 		FC304E051E70691C00D624DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC304E041E70691C00D624DD /* Assets.xcassets */; };
 		FC304E131E70691D00D624DD /* WebDeck2017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304E121E70691D00D624DD /* WebDeck2017Tests.swift */; };
@@ -19,20 +18,25 @@
 		FC3765641E73D7020097B782 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765611E73D7020097B782 /* Bolts.framework */; };
 		FC3765651E73D7020097B782 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765621E73D7020097B782 /* Parse.framework */; };
 		FC3765661E73D7020097B782 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765631E73D7020097B782 /* ParseUI.framework */; };
-		FC7BD7CD1E71BAFC000F33A6 /* WeissenhofGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7C51E71BAFC000F33A6 /* WeissenhofGrotesk-Bold.otf */; };
-		FC7BD7CE1E71BAFC000F33A6 /* WeissenhofGrotesk-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7C61E71BAFC000F33A6 /* WeissenhofGrotesk-BoldItalic.otf */; };
-		FC7BD7CF1E71BAFC000F33A6 /* WeissenhofGrotesk-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7C71E71BAFC000F33A6 /* WeissenhofGrotesk-Light.otf */; };
-		FC7BD7D01E71BAFC000F33A6 /* WeissenhofGrotesk-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7C81E71BAFC000F33A6 /* WeissenhofGrotesk-LightItalic.otf */; };
-		FC7BD7D11E71BAFC000F33A6 /* WeissenhofGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7C91E71BAFC000F33A6 /* WeissenhofGrotesk-Medium.otf */; };
-		FC7BD7D21E71BAFC000F33A6 /* WeissenhofGrotesk-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7CA1E71BAFC000F33A6 /* WeissenhofGrotesk-MediumItalic.otf */; };
-		FC7BD7D31E71BAFC000F33A6 /* WeissenhofGrotesk-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7CB1E71BAFC000F33A6 /* WeissenhofGrotesk-Regular.otf */; };
-		FC7BD7D41E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7CC1E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf */; };
 		FC7BD7DA1E71BC1D000F33A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */; };
-		FCBEBB381E748E71002CFAB6 /* ContinueSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEBB371E748E71002CFAB6 /* ContinueSignupViewController.swift */; };
-		FCBEBB3A1E74A839002CFAB6 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEBB391E74A839002CFAB6 /* NavigationViewController.swift */; };
-		FCBEBB3C1E74ABC1002CFAB6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBEBB3B1E74ABC1002CFAB6 /* SignInViewController.swift */; };
-		FCEE727E1E7070AA00D55C48 /* WDIcon-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEE727D1E7070AA00D55C48 /* WDIcon-Large.png */; };
-		FCEE72801E70728300D55C48 /* WDSlogan-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCEE727F1E70728300D55C48 /* WDSlogan-Large.png */; };
+		FCE656E61E75196800DE9D85 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E51E75196800DE9D85 /* HomepageViewController.swift */; };
+		FCE656EA1E75220E00DE9D85 /* ContinueSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */; };
+		FCE656EB1E75220E00DE9D85 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E81E75220E00DE9D85 /* SignInViewController.swift */; };
+		FCE656EC1E75220E00DE9D85 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */; };
+		FCE656EF1E75221F00DE9D85 /* WDIcon-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE656ED1E75221F00DE9D85 /* WDIcon-Large.png */; };
+		FCE656F01E75221F00DE9D85 /* WDSlogan-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE656EE1E75221F00DE9D85 /* WDSlogan-Large.png */; };
+		FCE656F91E75238900DE9D85 /* WeissenhofGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F11E75222C00DE9D85 /* WeissenhofGrotesk-Bold.otf */; };
+		FCE656FA1E75238900DE9D85 /* WeissenhofGrotesk-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F21E75222C00DE9D85 /* WeissenhofGrotesk-BoldItalic.otf */; };
+		FCE656FB1E75238900DE9D85 /* WeissenhofGrotesk-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F31E75222C00DE9D85 /* WeissenhofGrotesk-Light.otf */; };
+		FCE656FC1E75238900DE9D85 /* WeissenhofGrotesk-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F41E75222C00DE9D85 /* WeissenhofGrotesk-LightItalic.otf */; };
+		FCE656FD1E75238900DE9D85 /* WeissenhofGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F51E75222C00DE9D85 /* WeissenhofGrotesk-Medium.otf */; };
+		FCE656FE1E75238900DE9D85 /* WeissenhofGrotesk-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F61E75222C00DE9D85 /* WeissenhofGrotesk-MediumItalic.otf */; };
+		FCE656FF1E75238900DE9D85 /* WeissenhofGrotesk-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F71E75222C00DE9D85 /* WeissenhofGrotesk-Regular.otf */; };
+		FCE657001E75238900DE9D85 /* WeissenhofGrotesk-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F81E75222C00DE9D85 /* WeissenhofGrotesk-RegularItalic.otf */; };
+		FCE657011E75239400DE9D85 /* ContinueSignupViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */; };
+		FCE657021E75239400DE9D85 /* SignInViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E81E75220E00DE9D85 /* SignInViewController.swift */; };
+		FCE657031E75239400DE9D85 /* SignUpViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */; };
+		FCE657041E75239400DE9D85 /* HomepageViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E51E75196800DE9D85 /* HomepageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +80,6 @@
 		BFBDA9EE32FA85926D140EB7 /* Pods-WebDeck2017UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017UITests/Pods-WebDeck2017UITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC304DFA1E70691C00D624DD /* WebDeck2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDeck2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC304DFD1E70691C00D624DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC304DFF1E70691C00D624DD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FC304E021E70691C00D624DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC304E041E70691C00D624DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC304E091E70691C00D624DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,21 +93,22 @@
 		FC3765611E73D7020097B782 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework"; sourceTree = "<group>"; };
 		FC3765621E73D7020097B782 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/Parse/Parse.framework"; sourceTree = "<group>"; };
 		FC3765631E73D7020097B782 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/ParseUI/ParseUI.framework"; sourceTree = "<group>"; };
-		FC7BD7C51E71BAFC000F33A6 /* WeissenhofGrotesk-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-Bold.otf"; sourceTree = "<group>"; };
-		FC7BD7C61E71BAFC000F33A6 /* WeissenhofGrotesk-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-BoldItalic.otf"; sourceTree = "<group>"; };
-		FC7BD7C71E71BAFC000F33A6 /* WeissenhofGrotesk-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-Light.otf"; sourceTree = "<group>"; };
-		FC7BD7C81E71BAFC000F33A6 /* WeissenhofGrotesk-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-LightItalic.otf"; sourceTree = "<group>"; };
-		FC7BD7C91E71BAFC000F33A6 /* WeissenhofGrotesk-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-Medium.otf"; sourceTree = "<group>"; };
-		FC7BD7CA1E71BAFC000F33A6 /* WeissenhofGrotesk-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-MediumItalic.otf"; sourceTree = "<group>"; };
-		FC7BD7CB1E71BAFC000F33A6 /* WeissenhofGrotesk-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-Regular.otf"; sourceTree = "<group>"; };
-		FC7BD7CC1E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WeissenhofGrotesk-RegularItalic.otf"; sourceTree = "<group>"; };
 		FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC886721C5F885D6F8E9C8A4 /* Pods-WebDeck2017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FCBEBB371E748E71002CFAB6 /* ContinueSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueSignupViewController.swift; sourceTree = "<group>"; };
-		FCBEBB391E74A839002CFAB6 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
-		FCBEBB3B1E74ABC1002CFAB6 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		FCEE727D1E7070AA00D55C48 /* WDIcon-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WDIcon-Large.png"; sourceTree = "<group>"; };
-		FCEE727F1E70728300D55C48 /* WDSlogan-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WDSlogan-Large.png"; sourceTree = "<group>"; };
+		FCE656E51E75196800DE9D85 /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomepageViewController.swift; path = controllers/HomepageViewController.swift; sourceTree = "<group>"; };
+		FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContinueSignupViewController.swift; path = controllers/ContinueSignupViewController.swift; sourceTree = "<group>"; };
+		FCE656E81E75220E00DE9D85 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = controllers/SignInViewController.swift; sourceTree = "<group>"; };
+		FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = controllers/SignUpViewController.swift; sourceTree = "<group>"; };
+		FCE656ED1E75221F00DE9D85 /* WDIcon-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WDIcon-Large.png"; path = "public/images/WDIcon-Large.png"; sourceTree = "<group>"; };
+		FCE656EE1E75221F00DE9D85 /* WDSlogan-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WDSlogan-Large.png"; path = "public/images/WDSlogan-Large.png"; sourceTree = "<group>"; };
+		FCE656F11E75222C00DE9D85 /* WeissenhofGrotesk-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-Bold.otf"; path = "public/fonts/WeissenhofGrotesk-Bold.otf"; sourceTree = "<group>"; };
+		FCE656F21E75222C00DE9D85 /* WeissenhofGrotesk-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-BoldItalic.otf"; path = "public/fonts/WeissenhofGrotesk-BoldItalic.otf"; sourceTree = "<group>"; };
+		FCE656F31E75222C00DE9D85 /* WeissenhofGrotesk-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-Light.otf"; path = "public/fonts/WeissenhofGrotesk-Light.otf"; sourceTree = "<group>"; };
+		FCE656F41E75222C00DE9D85 /* WeissenhofGrotesk-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-LightItalic.otf"; path = "public/fonts/WeissenhofGrotesk-LightItalic.otf"; sourceTree = "<group>"; };
+		FCE656F51E75222C00DE9D85 /* WeissenhofGrotesk-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-Medium.otf"; path = "public/fonts/WeissenhofGrotesk-Medium.otf"; sourceTree = "<group>"; };
+		FCE656F61E75222C00DE9D85 /* WeissenhofGrotesk-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-MediumItalic.otf"; path = "public/fonts/WeissenhofGrotesk-MediumItalic.otf"; sourceTree = "<group>"; };
+		FCE656F71E75222C00DE9D85 /* WeissenhofGrotesk-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-Regular.otf"; path = "public/fonts/WeissenhofGrotesk-Regular.otf"; sourceTree = "<group>"; };
+		FCE656F81E75222C00DE9D85 /* WeissenhofGrotesk-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-RegularItalic.otf"; path = "public/fonts/WeissenhofGrotesk-RegularItalic.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,14 +226,14 @@
 		FC7BD7D51E71BB24000F33A6 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FC7BD7C51E71BAFC000F33A6 /* WeissenhofGrotesk-Bold.otf */,
-				FC7BD7C61E71BAFC000F33A6 /* WeissenhofGrotesk-BoldItalic.otf */,
-				FC7BD7C71E71BAFC000F33A6 /* WeissenhofGrotesk-Light.otf */,
-				FC7BD7C81E71BAFC000F33A6 /* WeissenhofGrotesk-LightItalic.otf */,
-				FC7BD7C91E71BAFC000F33A6 /* WeissenhofGrotesk-Medium.otf */,
-				FC7BD7CA1E71BAFC000F33A6 /* WeissenhofGrotesk-MediumItalic.otf */,
-				FC7BD7CB1E71BAFC000F33A6 /* WeissenhofGrotesk-Regular.otf */,
-				FC7BD7CC1E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf */,
+				FCE656F11E75222C00DE9D85 /* WeissenhofGrotesk-Bold.otf */,
+				FCE656F21E75222C00DE9D85 /* WeissenhofGrotesk-BoldItalic.otf */,
+				FCE656F31E75222C00DE9D85 /* WeissenhofGrotesk-Light.otf */,
+				FCE656F41E75222C00DE9D85 /* WeissenhofGrotesk-LightItalic.otf */,
+				FCE656F51E75222C00DE9D85 /* WeissenhofGrotesk-Medium.otf */,
+				FCE656F61E75222C00DE9D85 /* WeissenhofGrotesk-MediumItalic.otf */,
+				FCE656F71E75222C00DE9D85 /* WeissenhofGrotesk-Regular.otf */,
+				FCE656F81E75222C00DE9D85 /* WeissenhofGrotesk-RegularItalic.otf */,
 			);
 			name = fonts;
 			sourceTree = "<group>";
@@ -237,8 +241,8 @@
 		FC7BD7D61E71BB2E000F33A6 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				FCEE727D1E7070AA00D55C48 /* WDIcon-Large.png */,
-				FCEE727F1E70728300D55C48 /* WDSlogan-Large.png */,
+				FCE656ED1E75221F00DE9D85 /* WDIcon-Large.png */,
+				FCE656EE1E75221F00DE9D85 /* WDSlogan-Large.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -246,10 +250,10 @@
 		FC7BD7DB1E71BC9B000F33A6 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FC304DFF1E70691C00D624DD /* SignUpViewController.swift */,
-				FCBEBB371E748E71002CFAB6 /* ContinueSignupViewController.swift */,
-				FCBEBB391E74A839002CFAB6 /* NavigationViewController.swift */,
-				FCBEBB3B1E74ABC1002CFAB6 /* SignInViewController.swift */,
+				FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */,
+				FCE656E81E75220E00DE9D85 /* SignInViewController.swift */,
+				FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */,
+				FCE656E51E75196800DE9D85 /* HomepageViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -384,19 +388,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC7BD7CF1E71BAFC000F33A6 /* WeissenhofGrotesk-Light.otf in Resources */,
-				FC7BD7CD1E71BAFC000F33A6 /* WeissenhofGrotesk-Bold.otf in Resources */,
-				FC7BD7CE1E71BAFC000F33A6 /* WeissenhofGrotesk-BoldItalic.otf in Resources */,
-				FC7BD7D41E71BAFC000F33A6 /* WeissenhofGrotesk-RegularItalic.otf in Resources */,
-				FC7BD7D21E71BAFC000F33A6 /* WeissenhofGrotesk-MediumItalic.otf in Resources */,
-				FC7BD7D01E71BAFC000F33A6 /* WeissenhofGrotesk-LightItalic.otf in Resources */,
+				FCE657011E75239400DE9D85 /* ContinueSignupViewController.swift in Resources */,
+				FCE657021E75239400DE9D85 /* SignInViewController.swift in Resources */,
+				FCE657031E75239400DE9D85 /* SignUpViewController.swift in Resources */,
+				FCE657041E75239400DE9D85 /* HomepageViewController.swift in Resources */,
+				FCE656F91E75238900DE9D85 /* WeissenhofGrotesk-Bold.otf in Resources */,
+				FCE656FA1E75238900DE9D85 /* WeissenhofGrotesk-BoldItalic.otf in Resources */,
+				FCE656FB1E75238900DE9D85 /* WeissenhofGrotesk-Light.otf in Resources */,
+				FCE656FC1E75238900DE9D85 /* WeissenhofGrotesk-LightItalic.otf in Resources */,
+				FCE656FD1E75238900DE9D85 /* WeissenhofGrotesk-Medium.otf in Resources */,
+				FCE656FE1E75238900DE9D85 /* WeissenhofGrotesk-MediumItalic.otf in Resources */,
+				FCE656FF1E75238900DE9D85 /* WeissenhofGrotesk-Regular.otf in Resources */,
+				FCE657001E75238900DE9D85 /* WeissenhofGrotesk-RegularItalic.otf in Resources */,
 				FC304E051E70691C00D624DD /* Assets.xcassets in Resources */,
+				FCE656EF1E75221F00DE9D85 /* WDIcon-Large.png in Resources */,
 				FC7BD7DA1E71BC1D000F33A6 /* LaunchScreen.storyboard in Resources */,
-				FC7BD7D11E71BAFC000F33A6 /* WeissenhofGrotesk-Medium.otf in Resources */,
-				FC7BD7D31E71BAFC000F33A6 /* WeissenhofGrotesk-Regular.otf in Resources */,
+				FCE656F01E75221F00DE9D85 /* WDSlogan-Large.png in Resources */,
 				FC304E031E70691C00D624DD /* Main.storyboard in Resources */,
-				FCEE72801E70728300D55C48 /* WDSlogan-Large.png in Resources */,
-				FCEE727E1E7070AA00D55C48 /* WDIcon-Large.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,11 +580,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCBEBB3A1E74A839002CFAB6 /* NavigationViewController.swift in Sources */,
-				FC304E001E70691C00D624DD /* SignUpViewController.swift in Sources */,
-				FCBEBB381E748E71002CFAB6 /* ContinueSignupViewController.swift in Sources */,
-				FCBEBB3C1E74ABC1002CFAB6 /* SignInViewController.swift in Sources */,
+				FCE656EB1E75220E00DE9D85 /* SignInViewController.swift in Sources */,
+				FCE656E61E75196800DE9D85 /* HomepageViewController.swift in Sources */,
+				FCE656EA1E75220E00DE9D85 /* ContinueSignupViewController.swift in Sources */,
 				FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */,
+				FCE656EC1E75220E00DE9D85 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
