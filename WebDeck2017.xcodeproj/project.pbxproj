@@ -37,6 +37,8 @@
 		FCE657021E75239400DE9D85 /* SignInViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E81E75220E00DE9D85 /* SignInViewController.swift */; };
 		FCE657031E75239400DE9D85 /* SignUpViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */; };
 		FCE657041E75239400DE9D85 /* HomepageViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E51E75196800DE9D85 /* HomepageViewController.swift */; };
+		FCE657071E75251E00DE9D85 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE657051E75251E00DE9D85 /* EventKit.framework */; };
+		FCE657081E75251E00DE9D85 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE657061E75251E00DE9D85 /* EventKitUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		FCE656F61E75222C00DE9D85 /* WeissenhofGrotesk-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-MediumItalic.otf"; path = "public/fonts/WeissenhofGrotesk-MediumItalic.otf"; sourceTree = "<group>"; };
 		FCE656F71E75222C00DE9D85 /* WeissenhofGrotesk-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-Regular.otf"; path = "public/fonts/WeissenhofGrotesk-Regular.otf"; sourceTree = "<group>"; };
 		FCE656F81E75222C00DE9D85 /* WeissenhofGrotesk-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-RegularItalic.otf"; path = "public/fonts/WeissenhofGrotesk-RegularItalic.otf"; sourceTree = "<group>"; };
+		FCE657051E75251E00DE9D85 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		FCE657061E75251E00DE9D85 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE657071E75251E00DE9D85 /* EventKit.framework in Frameworks */,
+				FCE657081E75251E00DE9D85 /* EventKitUI.framework in Frameworks */,
 				FC3765641E73D7020097B782 /* Bolts.framework in Frameworks */,
 				FC3765651E73D7020097B782 /* Parse.framework in Frameworks */,
 				FC3765661E73D7020097B782 /* ParseUI.framework in Frameworks */,
@@ -145,6 +151,8 @@
 		7B7DCAD8D2AF18BB9181C57A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCE657051E75251E00DE9D85 /* EventKit.framework */,
+				FCE657061E75251E00DE9D85 /* EventKitUI.framework */,
 				FC3765611E73D7020097B782 /* Bolts.framework */,
 				FC3765621E73D7020097B782 /* Parse.framework */,
 				FC3765631E73D7020097B782 /* ParseUI.framework */,
