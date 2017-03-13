@@ -30,12 +30,11 @@ class HomepageViewController: UIViewController {
         }
     
         let titles = ["Home", "Featured", "Your Day", "Sign Out"]
-        let frame = CGRect(x: 2, y: view.frame.height / 2 - 20, width: view.frame.width - 10, height: 40)
+        let frame = CGRect(x: 2, y: 5.5, width: view.frame.width - 10, height: 40)
         let segmentedControl = TwicketSegmentedControl(frame: frame)
         segmentedControl.setSegmentItems(titles)
         segmentedControl.setSegmentItems(titles)
         segmentedControl.delegate = self
-        
         view.addSubview(segmentedControl)
     }
 
@@ -60,5 +59,20 @@ class HomepageViewController: UIViewController {
 extension HomepageViewController: TwicketSegmentedControlDelegate {
     func didSelect(_ segmentIndex: Int) {
         print("Selected index: \(segmentIndex)")
+        if segmentIndex == 3 {
+            PFUser.logOut()
+            let currentUser = PFUser.current()
+            if currentUser == nil {
+                print("user is nil")
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier :"SignUpViewController") as! UIViewController
+                self.present(viewController, animated: true)
+                
+            }
+            else{
+                print("user is not nil")
+            };
+        }
     }
+
 }
