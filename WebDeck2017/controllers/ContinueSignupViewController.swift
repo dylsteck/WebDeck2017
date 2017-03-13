@@ -33,7 +33,7 @@ class ContinueSignupViewController: UIViewController {
     
 
       @IBAction func saveUser(_ sender: UIButton) {
-            var user = PFUser()
+            let user = PFUser()
             user["dgtsUserID"] = userID
             user["username"] = usernameField.text
             user["email"] = emailField.text

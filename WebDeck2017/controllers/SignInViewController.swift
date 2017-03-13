@@ -35,21 +35,21 @@ class SignInViewController: UIViewController {
     }
     */
     @IBAction func signIn(_ sender: UIButton) {
-        var username = self.usernameTextField.text
-        var password = self.pinField.text
+        let username = self.usernameTextField.text
+        let password = self.pinField.text
         if (username?.length)! < 3 {
-            var alert = UIAlertView(title: "Invalid", message: "Username must be greater than 3 characters", delegate: self, cancelButtonTitle: "OK")
+            let alert = UIAlertView(title: "Invalid", message: "Username must be greater than 3 characters", delegate: self, cancelButtonTitle: "OK")
             alert.show()
             
         } else if (password?.length)! > 4  {
-            var alert = UIAlertView(title: "Invalid", message: "Password must be 4 characters", delegate: self, cancelButtonTitle: "OK")
+            let alert = UIAlertView(title: "Invalid", message: "Password must be 4 characters", delegate: self, cancelButtonTitle: "OK")
             alert.show()
             
         }
         
         PFUser.logInWithUsername(inBackground: username!, password: password!, block: { (user, error) -> Void in
             if ((user) != nil) {
-                var alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
+                let alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
                 alert.show()
                 
                 DispatchQueue.main.async(execute: { () -> Void in
@@ -57,7 +57,7 @@ class SignInViewController: UIViewController {
                 })
                 
             } else {
-                var alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
+                let alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
                 alert.show()
             }
         })

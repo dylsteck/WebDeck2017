@@ -205,8 +205,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu8-JT-Dkm">
-                                <rect key="frame" x="166" y="76" width="42" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKv-eD-VZu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WDIcon-Large.png" translatesAutoresizingMaskIntoConstraints="NO" id="jsb-ph-39U">
+                                        <rect key="frame" x="156" y="22" width="62" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="B7c-pd-Rgw"/>
+                                            <constraint firstAttribute="width" constant="62" id="MqW-zU-rip"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="qDW-I9-dfK"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu8-JT-Dkm">
+                                <rect key="frame" x="187" y="151" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -214,11 +230,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gu8-JT-Dkm" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.3" id="ReU-VO-kzl"/>
-                            <constraint firstItem="gu8-JT-Dkm" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" id="xBE-sy-ePZ"/>
+                            <constraint firstAttribute="trailing" secondItem="qKv-eD-VZu" secondAttribute="trailing" id="BbT-Er-Obe"/>
+                            <constraint firstItem="jsb-ph-39U" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" id="TgL-lF-HG1"/>
+                            <constraint firstItem="qKv-eD-VZu" firstAttribute="top" secondItem="NTH-jc-dvR" secondAttribute="top" id="d9H-dT-zJU"/>
+                            <constraint firstItem="gu8-JT-Dkm" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" id="hSC-Se-Tfa"/>
+                            <constraint firstItem="qKv-eD-VZu" firstAttribute="leading" secondItem="NTH-jc-dvR" secondAttribute="leading" id="k8a-QF-Mnh"/>
+                            <constraint firstItem="gu8-JT-Dkm" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.45" constant="1" id="zlb-kS-j30"/>
+                            <constraint firstItem="jsb-ph-39U" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.15" constant="3.4750000000000014" id="zzy-th-wUv"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="topView" destination="qKv-eD-VZu" id="luR-Dr-QUN"/>
                         <outlet property="usernameLabel" destination="gu8-JT-Dkm" id="Xn8-ru-8ZX"/>
                     </connections>
                 </viewController>
@@ -228,6 +250,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="WDIcon-Large.png" width="136" height="138"/>
         <image name="WDSlogan-Large.png" width="299" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>
