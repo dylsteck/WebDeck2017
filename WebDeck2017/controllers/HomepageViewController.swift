@@ -22,6 +22,11 @@ class HomepageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         topView.backgroundColor = UIColor(red:0.96, green:0.98, blue:0.99, alpha:1.00)
+        
+        let tableView: UITableView = UITableView()
+        tableView.frame = CGRect(x: 10, y: 10, width: 100, height: 500)
+        self.view.addSubview(tableView)
+        
         if PFUser.current() != nil{
         let username = PFUser.current()!["username"] as! String
         self.usernameLabel.font = UIFont(name: "WeissenhofGrotesk-Bold", size: 16)!
@@ -40,8 +45,8 @@ class HomepageViewController: UIViewController {
         segmentedControl.setSegmentItems(titles)
         segmentedControl.delegate = self
         view.addSubview(segmentedControl)
-        let button = UIButton(frame: frame)
-        self.view.addSubview(button)
+//        let button = UIButton(frame: frame)
+//        self.view.addSubview(button)
     }
 
     
@@ -127,5 +132,27 @@ extension HomepageViewController: TwicketSegmentedControlDelegate {
             };
         }
     }
+}
+
+extension HomepageViewController: UITableViewDataSource, UITableViewDelegate{
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        NSLog("sections")
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        NSLog("rows")
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        NSLog("get cell")
+        let cell = UITableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: "Cell")
+        cell.textLabel!.text = "foo"
+        return cell
+    }
+
+
 }
 
