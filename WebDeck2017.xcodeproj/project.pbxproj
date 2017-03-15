@@ -15,6 +15,7 @@
 		FC304E051E70691C00D624DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC304E041E70691C00D624DD /* Assets.xcassets */; };
 		FC304E131E70691D00D624DD /* WebDeck2017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304E121E70691D00D624DD /* WebDeck2017Tests.swift */; };
 		FC304E1E1E70691D00D624DD /* WebDeck2017UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304E1D1E70691D00D624DD /* WebDeck2017UITests.swift */; };
+		FC33AE151E79721F00748BA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC33AE141E79721F00748BA5 /* CoreLocation.framework */; };
 		FC3765641E73D7020097B782 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765611E73D7020097B782 /* Bolts.framework */; };
 		FC3765651E73D7020097B782 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765621E73D7020097B782 /* Parse.framework */; };
 		FC3765661E73D7020097B782 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765631E73D7020097B782 /* ParseUI.framework */; };
@@ -91,6 +92,7 @@
 		FC304E191E70691D00D624DD /* WebDeck2017UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebDeck2017UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC304E1D1E70691D00D624DD /* WebDeck2017UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDeck2017UITests.swift; sourceTree = "<group>"; };
 		FC304E1F1E70691D00D624DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC33AE141E79721F00748BA5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FC3765511E73D6630097B782 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		FC3765611E73D7020097B782 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework"; sourceTree = "<group>"; };
 		FC3765621E73D7020097B782 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/Parse/Parse.framework"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC33AE151E79721F00748BA5 /* CoreLocation.framework in Frameworks */,
 				FCE657071E75251E00DE9D85 /* EventKit.framework in Frameworks */,
 				FCE657081E75251E00DE9D85 /* EventKitUI.framework in Frameworks */,
 				FC3765641E73D7020097B782 /* Bolts.framework in Frameworks */,
@@ -151,6 +154,7 @@
 		7B7DCAD8D2AF18BB9181C57A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC33AE141E79721F00748BA5 /* CoreLocation.framework */,
 				FCE657051E75251E00DE9D85 /* EventKit.framework */,
 				FCE657061E75251E00DE9D85 /* EventKitUI.framework */,
 				FC3765611E73D7020097B782 /* Bolts.framework */,

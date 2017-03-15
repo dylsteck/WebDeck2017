@@ -14,9 +14,10 @@ import TwicketSegmentedControl
 import Alamofire
 import EventKit
 import EventKitUI
+import CoreLocation
 
 
-class HomepageViewController: UIViewController {
+class HomepageViewController: UIViewController, CLLocationManagerDelegate {
     //IBOutlet
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var topView: UIView!
@@ -27,6 +28,8 @@ class HomepageViewController: UIViewController {
      var calendar = EKCalendar(for: .event, eventStore: EKEventStore())
     var events: [EKEvent]?
     var eventStore = EKEventStore()
+    //Location
+   var locationManager: CLLocationManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,9 +63,24 @@ class HomepageViewController: UIViewController {
         formatter.dateFormat = "EEEE, MMM d, y"
         let dateObj = formatter.string(from: currentDate)
         
-        //checks for calendar authorization
-        checkCalendarAuthorizationStatus()
+        //location
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        
+    } //end of viewDidLoad()
+    
+    //location
+    func locationManager(_ _, manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedAlways {
+            if CLLocationManager.isMonitoringAvailable(for: CLBeaconRegion.self) {
+                if CLLocationManager.isRangingAvailable() {
+                    // do stuff
+                }
+            }
+        }
     }
+    
     // adds the segmented control
         func addSegmentedControl(){
         let titles = ["Home", "Featured", "Your Day", "Sign Out"]
