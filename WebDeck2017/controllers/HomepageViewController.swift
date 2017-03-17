@@ -24,12 +24,14 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
     //News
      var myArticles = [JSON]()
     var myArray = [String]()
+    var weatherData = [JSON]()
+    
     //Calendar
      var calendar = EKCalendar(for: .event, eventStore: EKEventStore())
     var events: [EKEvent]?
     var eventStore = EKEventStore()
     //Location
-   var locationManager: CLLocationManager!
+      var locationManager:CLLocationManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,24 +65,11 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
         formatter.dateFormat = "EEEE, MMM d, y"
         let dateObj = formatter.string(from: currentDate)
         
-        //location
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.requestAlwaysAuthorization()
+     
         
     } //end of viewDidLoad()
     
-    //location
-    func locationManager(_ _, manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedAlways {
-            if CLLocationManager.isMonitoringAvailable(for: CLBeaconRegion.self) {
-                if CLLocationManager.isRangingAvailable() {
-                    // do stuff
-                }
-            }
-        }
-    }
-    
+   
     // adds the segmented control
         func addSegmentedControl(){
         let titles = ["Home", "Featured", "Your Day", "Sign Out"]
@@ -146,7 +135,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
             print("You have no events today.")
         }
         else {
-            print(events)
+//            print(events)
             // Querrys through the events, prints them to the console, and logs it in Answers if there are events.
             for event in events {
                 //Answers
@@ -182,8 +171,9 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
 //                        print(image)
 //                        print(url)
                         self.myArray.append(title)
-                        print (self.myArray)
+                   
                     }
+                         print (self.myArray)
                 case .failure(let error):
                     print(error)
                 }
@@ -191,6 +181,63 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
         
 
     }
+    //all below is location and weather
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        getCurrentLocation()
+    }
+    
+    func getCurrentLocation(){
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled(){
+            locationManager.startUpdatingLocation()
+    
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let userLocation:CLLocation = locations[0] as CLLocation
+        
+        // Call stopUpdatingLocation() to stop listening for location updates,
+        // other wise this function will be called every time when user location changes.
+        
+        // manager.stopUpdatingLocation()
+        
+        print("user latitude = \(userLocation.coordinate.latitude)")
+        print("user longitude = \(userLocation.coordinate.longitude)")
+        manager.stopUpdatingLocation()
+        
+        Alamofire.request("http://forecast.weather.gov/MapClick.php?lat=\(userLocation.coordinate.latitude)&lon=\(userLocation.coordinate.longitude)&FcstType=json").validate().responseJSON
+            { response in
+                switch response.result {
+                case .success(let data):
+                    let json = JSON(data)
+                    self.weatherData = json["location"].arrayValue
+                        for weather in self.weatherData{
+                            let weatherDescription = weather["data"]["weather"]
+                           self.weatherData.append(weatherDescription)
+                    }
+                    print (self.weatherData)
+                    
+                case .failure(let error):
+                    print(error)
+                }
+        }
+
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
+    {
+        print("Error \(error)")
+    }
+    
+    //end of location and weather
     
     
 }
