@@ -25,6 +25,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
      var myArticles = [JSON]()
     var myArray = [String]()
     var weatherData = [JSON]()
+     var weatherString = [String]()
     
     //Calendar
      var calendar = EKCalendar(for: .event, eventStore: EKEventStore())
@@ -32,6 +33,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
     var eventStore = EKEventStore()
     //Location
       var locationManager:CLLocationManager!
+    var startLocation: CLLocation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -201,29 +203,26 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let userLocation:CLLocation = locations[0] as CLLocation
-        
-        // Call stopUpdatingLocation() to stop listening for location updates,
-        // other wise this function will be called every time when user location changes.
-        
-        // manager.stopUpdatingLocation()
-        
+        var userLocation:CLLocation = locations[0] as CLLocation
         print("user latitude = \(userLocation.coordinate.latitude)")
         print("user longitude = \(userLocation.coordinate.longitude)")
-        manager.stopUpdatingLocation()
-        
-        Alamofire.request("http://forecast.weather.gov/MapClick.php?lat=\(userLocation.coordinate.latitude)&lon=\(userLocation.coordinate.longitude)&FcstType=json").validate().responseJSON
+        let requestLink = "http://forecast.weather.gov/MapClick.php?lat=\(userLocation.coordinate.latitude)&lon=\(userLocation.coordinate.longitude)&FcstType=json"
+        print(requestLink)
+        Alamofire.request(requestLink).validate().responseJSON
             { response in
                 switch response.result {
                 case .success(let data):
                     let json = JSON(data)
-                    self.weatherData = json["location"].arrayValue
+                    self.weatherData = json["data"].arrayValue
                         for weather in self.weatherData{
-                            let weatherDescription = weather["data"]["weather"]
-                           self.weatherData.append(weatherDescription)
+                        let temp = weather["weather"].stringValue
+                           self.weatherString.append(temp)
                     }
-                    print (self.weatherData)
-                    
+                    print (self.weatherString)
+                    if self.startLocation == nil {
+                        self.startLocation = userLocation 
+                        self.locationManager.stopUpdatingLocation()
+                    }
                 case .failure(let error):
                     print(error)
                 }
