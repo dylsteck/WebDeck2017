@@ -34,6 +34,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
     //Location
       var locationManager:CLLocationManager!
     var startLocation: CLLocation!
+    var myLocation: CLLocationCoordinate2D!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +68,11 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
         formatter.dateFormat = "EEEE, MMM d, y"
         let dateObj = formatter.string(from: currentDate)
         
-     
+        //weather
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
         
     } //end of viewDidLoad()
     
@@ -158,6 +163,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+                getCurrentLocation()
         Alamofire.request("https://newsapi.org/v1/articles?source=the-wall-street-journal&sortBy=top&apiKey=88729f588b05434099e6bcbbba4ab167").validate().responseJSON
             { response in
                 switch response.result {
@@ -172,6 +178,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
 //                        print("title \(title)")
 //                        print(image)
 //                        print(url)
+                        //my array is actualy a string
                         self.myArray.append(title)
                    
                     }
@@ -183,19 +190,10 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
         
 
     }
-    //all below is location and weather
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        getCurrentLocation()
-    }
+    
+    //weather
     
     func getCurrentLocation(){
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
-        
         if CLLocationManager.locationServicesEnabled(){
             locationManager.startUpdatingLocation()
     
@@ -203,33 +201,45 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        var userLocation:CLLocation = locations[0] as CLLocation
-        print("user latitude = \(userLocation.coordinate.latitude)")
-        print("user longitude = \(userLocation.coordinate.longitude)")
-        let requestLink = "http://forecast.weather.gov/MapClick.php?lat=\(userLocation.coordinate.latitude)&lon=\(userLocation.coordinate.longitude)&FcstType=json"
-        print(requestLink)
-        Alamofire.request(requestLink).validate().responseJSON
-            { response in
-                switch response.result {
-                case .success(let data):
-                    let json = JSON(data)
-                    self.weatherData = json["data"].arrayValue
-                        for weather in self.weatherData{
-                        let temp = weather["weather"].stringValue
-                           self.weatherString.append(temp)
-                    }
-                    print (self.weatherString)
-                    if self.startLocation == nil {
-                        self.startLocation = userLocation 
-                        self.locationManager.stopUpdatingLocation()
-                    }
-                case .failure(let error):
-                    print(error)
-                }
+        
+        let newLocation = locations.last
+        
+        //check accuracy and timestamp of location to make sure its not a cached/old location (if you don't care about accuracy or time, you can remove this check)
+        
+        if (newLocation?.horizontalAccuracy)!<=(newLocation?.horizontalAccuracy)!{
+            
+            //stop updating location
+            self.locationManager.stopUpdatingLocation()
+            
+            //set currentUserLocation
+             self.myLocation = newLocation?.coordinate
+            
+            
+            //call function to get weather
+            getWeatherFunc()
+            
+            //remove delegate
+            self.locationManager.delegate = nil
+            
         }
-
+        
+    }
+    func getWeatherFunc(){
+        let requestLink = "http://forecast.weather.gov/MapClick.php?lat=\(myLocation.latitude)&lon=\(myLocation.longitude)&FcstType=json"
+        print(requestLink)
+        Alamofire.request(requestLink).responseJSON{ response in
+//            .responseString { response in
+//                print("Response String: \(response.result.value)")
+//            }
+             if let json = response.result.value {
+                print("Response JSON: \(json)")
+                print(json["data"]["weather"])
+        }
     }
     
+
+
+
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
     {
