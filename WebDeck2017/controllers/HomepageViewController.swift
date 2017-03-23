@@ -231,16 +231,36 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
 //            .responseString { response in
 //                print("Response String: \(response.result.value)")
 //            }
-             if let json = response.result.value {
+            switch response.result {
+            case .success(let data):
+                let json = JSON(data)
                 print("Response JSON: \(json)")
-                print(json["data"]["weather"])
+//                print(json["location"]["areaDescription"])
+                print("\(json["time"]["startPeriodName"][1]): \(json["data"]["weather"][1])")
+                print("\(json["time"]["startPeriodName"][2]): \(json["data"]["weather"][2])")
+                
+                let weatherView = UIView(frame: CGRect(x: 0, y: 500, width: 1000 , height: 100 ))
+                weatherView.backgroundColor = UIColor(red:0.95, green:0.98, blue:0.99, alpha:1.00)
+                self.view.addSubview(weatherView)
+                //label zero is for data set 0 of weather
+                let labelZero = UILabel(frame: CGRect(x: 50, y: 500, width: 800 , height: 15 ))
+                    // the 4 params for the cgrect is x, y, width, height
+                labelZero.text = ("\(json["time"]["startPeriodName"][0]): \(json["data"]["weather"][0])")
+                labelZero.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 16)!
+                self.view.addSubview(labelZero)
+                
+                
+            case .failure(let error):
+            print(error)
+            }
         }
+
     }
-    
 
 
 
-    
+
+
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
     {
         print("Error \(error)")
