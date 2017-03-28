@@ -236,18 +236,62 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
                 let json = JSON(data)
                 print("Response JSON: \(json)")
 //                print(json["location"]["areaDescription"])
-                print("\(json["time"]["startPeriodName"][1]): \(json["data"]["weather"][1])")
-                print("\(json["time"]["startPeriodName"][2]): \(json["data"]["weather"][2])")
                 
                 let weatherView = UIView(frame: CGRect(x: 0, y: 500, width: 1000 , height: 100 ))
                 weatherView.backgroundColor = UIColor(red:0.95, green:0.98, blue:0.99, alpha:1.00)
                 self.view.addSubview(weatherView)
+                
                 //label zero is for data set 0 of weather
-                let labelZero = UILabel(frame: CGRect(x: 50, y: 500, width: 800 , height: 15 ))
-                    // the 4 params for the cgrect is x, y, width, height
-                labelZero.text = ("\(json["time"]["startPeriodName"][0]): \(json["data"]["weather"][0])")
-                labelZero.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 16)!
+                let weatherNameLabel = UILabel(frame: CGRect(x: 20, y: 480, width: 800 , height: 15 ))
+                // the 4 params for the cgrect is x, y, width, height
+                weatherNameLabel.text = ("Weather")
+                weatherNameLabel.font =  UIFont(name: "WeissenhofGrotesk-Bold", size: 16)!
+                self.view.addSubview(weatherNameLabel)
+                
+                
+                //label zero is for data set 0 of weather
+                let labelZero = UILabel(frame: CGRect(x: 20, y: 580, width: 800 , height: 15 ))
+                // the 4 params for the cgrect is x, y, width, height
+                labelZero.text = ("\(json["data"]["weather"][0])")
+                labelZero.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 13)!
                 self.view.addSubview(labelZero)
+                
+                //label zeroDate is for data set 0 date of weather
+                let labelZeroDate = UILabel(frame: CGRect(x: 20, y: 510, width: 800 , height: 15 ))
+                // the 4 params for the cgrect is x, y, width, height
+                labelZeroDate.text = ("\(json["time"]["startPeriodName"][0])")
+                labelZeroDate.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 13)!
+                self.view.addSubview(labelZeroDate)
+                
+                //label one is for data set 1 of weather
+                let labelOne = UILabel(frame: CGRect(x: 120, y: 580, width: 800 , height: 15 ))
+                // the 4 params for the cgrect is x, y, width, height
+                labelOne.text = ("\(json["data"]["weather"][1])")
+                labelOne.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 13)!
+                self.view.addSubview(labelOne)
+                
+                //label oneDate is for data set 1 date of weather
+                let labelOneDate = UILabel(frame: CGRect(x: 120, y: 510, width: 800 , height: 15 ))
+                // the 4 params for the cgrect is x, y, width, height
+                labelOneDate.text = ("\(json["time"]["startPeriodName"][1])")
+                labelOneDate.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 13)!
+                self.view.addSubview(labelOneDate)
+                
+
+                
+                //label two is for data set 2 of weather
+                let labelTwo = UILabel(frame: CGRect(x: 220, y: 580, width: 800 , height: 15 ))
+                // the 4 params for the cgrect is x, y, width, height
+                labelTwo.text = ("\(json["data"]["weather"][2])")
+                labelTwo.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 13)!
+                self.view.addSubview(labelTwo)
+
+                //label twoDate is for data set 2 date of weather
+                let labelTwoDate = UILabel(frame: CGRect(x: 220, y: 510, width: 800 , height: 15 ))
+                // the 4 params for the cgrect is x, y, width, height
+                labelTwoDate.text = ("\(json["time"]["startPeriodName"][2])")
+                labelTwoDate.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 13)!
+                self.view.addSubview(labelTwoDate)
                 
                 
             case .failure(let error):
