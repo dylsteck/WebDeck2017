@@ -15,7 +15,8 @@ import Alamofire
 import EventKit
 import EventKitUI
 import CoreLocation
-
+import Accounts
+import TwitterAPI
 
 class HomepageViewController: UIViewController, CLLocationManagerDelegate {
     //IBOutlet
@@ -31,7 +32,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
      var calendar = EKCalendar(for: .event, eventStore: EKEventStore())
     var events: [EKEvent]?
     var eventStore = EKEventStore()
-    //Location
+    //Location and Weather
       var locationManager:CLLocationManager!
     var startLocation: CLLocation!
     var myLocation: CLLocationCoordinate2D!
@@ -74,7 +75,8 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
         
-    } //end of viewDidLoad()
+        
+    }//end of viewDidLoad()
     
    
     // adds the segmented control
@@ -241,57 +243,73 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
                 weatherView.backgroundColor = UIColor(red:0.95, green:0.98, blue:0.99, alpha:1.00)
                 self.view.addSubview(weatherView)
                 
-                //label zero is for data set 0 of weather
-                let weatherNameLabel = UILabel(frame: CGRect(x: 20, y: 480, width: 800 , height: 15 ))
+                //weathername label is for the weather name
+                let weatherNameLabel = UILabel(frame: CGRect(x: 10, y: 380, width: 200 , height: 200 ))
                 // the 4 params for the cgrect is x, y, width, height
                 weatherNameLabel.text = ("Weather")
                 weatherNameLabel.font =  UIFont(name: "WeissenhofGrotesk-Bold", size: 16)!
+                weatherNameLabel.textColor = UIColor(red:0.15, green:0.18, blue:0.22, alpha:1.00)
+                weatherNameLabel.contentMode = UIViewContentMode.scaleAspectFit
+                weatherNameLabel.numberOfLines = 0
                 self.view.addSubview(weatherNameLabel)
                 
                 
                 //label zero is for data set 0 of weather
-                let labelZero = UILabel(frame: CGRect(x: 20, y: 580, width: 800 , height: 15 ))
+                let labelZero = UILabel(frame: CGRect(x: 10, y: -20, width: 200 , height: 200 ))
                 // the 4 params for the cgrect is x, y, width, height
                 labelZero.text = ("\(json["data"]["weather"][0])")
                 labelZero.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 13)!
-                self.view.addSubview(labelZero)
+                labelZero.textColor = UIColor(red:0.15, green:0.18, blue:0.22, alpha:1.00)
+                labelZero.contentMode = UIViewContentMode.scaleAspectFit
+                labelZero.numberOfLines = 0
+                weatherView.addSubview(labelZero)
                 
                 //label zeroDate is for data set 0 date of weather
-                let labelZeroDate = UILabel(frame: CGRect(x: 20, y: 510, width: 800 , height: 15 ))
+                let labelZeroDate = UILabel(frame: CGRect(x: 10, y: -90, width: 200 , height: 200 ))
                 // the 4 params for the cgrect is x, y, width, height
                 labelZeroDate.text = ("\(json["time"]["startPeriodName"][0])")
                 labelZeroDate.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 13)!
-                self.view.addSubview(labelZeroDate)
+                labelZeroDate.contentMode = UIViewContentMode.scaleAspectFit
+                labelZeroDate.numberOfLines = 0
+                weatherView.addSubview(labelZeroDate)
                 
                 //label one is for data set 1 of weather
-                let labelOne = UILabel(frame: CGRect(x: 120, y: 580, width: 800 , height: 15 ))
+                let labelOne = UILabel(frame: CGRect(x: 150, y: 25, width: 120 , height: 120 ))
                 // the 4 params for the cgrect is x, y, width, height
                 labelOne.text = ("\(json["data"]["weather"][1])")
                 labelOne.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 13)!
-                self.view.addSubview(labelOne)
+                labelOne.contentMode = UIViewContentMode.scaleAspectFit
+                labelOne.numberOfLines = 2
+                weatherView.addSubview(labelOne)
                 
                 //label oneDate is for data set 1 date of weather
-                let labelOneDate = UILabel(frame: CGRect(x: 120, y: 510, width: 800 , height: 15 ))
+                let labelOneDate = UILabel(frame: CGRect(x: 150, y: -90, width: 200 , height: 200 ))
                 // the 4 params for the cgrect is x, y, width, height
                 labelOneDate.text = ("\(json["time"]["startPeriodName"][1])")
                 labelOneDate.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 13)!
-                self.view.addSubview(labelOneDate)
+                labelOneDate.contentMode = UIViewContentMode.scaleAspectFit
+                labelOneDate.numberOfLines = 0
+                weatherView.addSubview(labelOneDate)
                 
 
                 
                 //label two is for data set 2 of weather
-                let labelTwo = UILabel(frame: CGRect(x: 220, y: 580, width: 800 , height: 15 ))
+                let labelTwo = UILabel(frame: CGRect(x: 300, y: 25, width: 120 , height: 120 ))
                 // the 4 params for the cgrect is x, y, width, height
                 labelTwo.text = ("\(json["data"]["weather"][2])")
                 labelTwo.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 13)!
-                self.view.addSubview(labelTwo)
+                labelTwo.contentMode = UIViewContentMode.scaleAspectFit
+                labelTwo.numberOfLines = 2
+                weatherView.addSubview(labelTwo)
 
                 //label twoDate is for data set 2 date of weather
-                let labelTwoDate = UILabel(frame: CGRect(x: 220, y: 510, width: 800 , height: 15 ))
+                let labelTwoDate = UILabel(frame: CGRect(x: 300, y: -90, width: 200 , height: 200 ))
                 // the 4 params for the cgrect is x, y, width, height
                 labelTwoDate.text = ("\(json["time"]["startPeriodName"][2])")
                 labelTwoDate.font =  UIFont(name: "WeissenhofGrotesk-Regular", size: 13)!
-                self.view.addSubview(labelTwoDate)
+                labelTwoDate.contentMode = UIViewContentMode.scaleAspectFit
+                labelTwoDate.numberOfLines = 0
+                weatherView.addSubview(labelTwoDate)
                 
                 
             case .failure(let error):
@@ -312,7 +330,45 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
     
     //end of location and weather
     
+    //beginning of twitter
+//    func getHomeTimeline(){
+//        let accountStore = ACAccountStore()
+//        let accountType = accountStore.accountType(withAccountTypeIdentifier: ACAccountTypeIdentifierTwitter)
+//        
+//        // Prompt the user for permission to their twitter account stored in the phone's settings
+//        accountStore.requestAccessToAccounts(with: accountType, options: nil) {
+//            granted, error in
+//            
+//            if !granted {
+//                let message = error.debugDescription
+//                let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//                self.present(alert, animated: true, completion: nil)
+//                return
+//            }
+//            
+//            let accounts = accountStore.accounts(with: accountType) as! [ACAccount]
+//            
+//            guard let account = accounts.first else {
+//                let message = "There are no Twitter accounts configured. You can add or create a Twitter account in Settings."
+//                let alert = UIAlertController(title: "Error", message: message,
+//                                              preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//                self.present(alert, animated: true, completion: nil)
+//                return
+//            }
+//            
+//            let client = AccountClient(account: account)
+//            client
+//            .get("https://api.twitter.com/1.1/statuses/home_timeline.json")
+//                .response { (responseData: NSData?, response: HTTPURLResponse?, error: NSError?) -> Void in
+//                    
+//            }
+//        }
+//        
+//    }
     
+
 }
 //Extension for the segmented control
 extension HomepageViewController: TwicketSegmentedControlDelegate {
@@ -332,29 +388,11 @@ extension HomepageViewController: TwicketSegmentedControlDelegate {
                 print("user is not nil")
             };
         }
+        if segmentIndex == 1{
+            
+        }
     }
 }
 
-//would work for a uitableview
-//extension HomepageViewController: UITableViewDataSource, UITableViewDelegate{
-//    
-//    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        NSLog("sections")
-//        return 2
-//    }
-//    
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        NSLog("rows")
-//        return 3
-//    }
-//    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        NSLog("get cell")
-//        let cell = UITableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: "Cell")
-//        cell.textLabel!.text = "foo"
-//        return cell
-//    }
-//
-//
-//}
+
 

@@ -12,7 +12,7 @@ target 'WebDeck2017' do
     pod 'Fabric'
     pod 'Digits'
     pod 'Answers'
-    pod 'TwitterCore'
+    pod 'TwitterAPI'
     pod 'Parse'
     pod 'ParseUI'
     pod 'TwicketSegmentedControl'

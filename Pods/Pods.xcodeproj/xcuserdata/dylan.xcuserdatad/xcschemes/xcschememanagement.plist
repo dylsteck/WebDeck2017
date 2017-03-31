@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MutableDataScanner.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>OAuthSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -54,10 +64,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TwitterAPI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>49DC896E42BEA9DB401197DF188844BA</key>
+		<key>3F1FFFEDB426A1EB44717440744FC7A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +82,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>676E363421788F25E8D3EFD73628B0B3</key>
+		<key>62AF137E8580EFECE330465A23854EA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71A81992C4CCA2B7F13A713BBA8D4353</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>76BD4592010354D6C23D6ECCA20D83A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77B9A1C4337B4724E5FC85B3C61D459F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,6 +112,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8CF2021B93010DCF27E7910C8D154858</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A5E41E7110A7D41C72587D9CE061588F</key>
 		<dict>
 			<key>primary</key>
@@ -97,7 +127,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA87D920DA9E9584A9B24364C81CDE0B</key>
+		<key>F2847240B22F490E71D63E2A0AA318C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

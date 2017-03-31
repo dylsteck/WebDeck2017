@@ -40,6 +40,7 @@
 		FCE657041E75239400DE9D85 /* HomepageViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E51E75196800DE9D85 /* HomepageViewController.swift */; };
 		FCE657071E75251E00DE9D85 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE657051E75251E00DE9D85 /* EventKit.framework */; };
 		FCE657081E75251E00DE9D85 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE657061E75251E00DE9D85 /* EventKitUI.framework */; };
+		FCF76A601E8DDAB7007C83BA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF76A5F1E8DDAB7007C83BA /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		FCE656F81E75222C00DE9D85 /* WeissenhofGrotesk-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-RegularItalic.otf"; path = "public/fonts/WeissenhofGrotesk-RegularItalic.otf"; sourceTree = "<group>"; };
 		FCE657051E75251E00DE9D85 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		FCE657061E75251E00DE9D85 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		FCF76A5F1E8DDAB7007C83BA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF76A601E8DDAB7007C83BA /* Social.framework in Frameworks */,
 				FC33AE151E79721F00748BA5 /* CoreLocation.framework in Frameworks */,
 				FCE657071E75251E00DE9D85 /* EventKit.framework in Frameworks */,
 				FCE657081E75251E00DE9D85 /* EventKitUI.framework in Frameworks */,
@@ -154,6 +157,7 @@
 		7B7DCAD8D2AF18BB9181C57A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCF76A5F1E8DDAB7007C83BA /* Social.framework */,
 				FC33AE141E79721F00748BA5 /* CoreLocation.framework */,
 				FCE657051E75251E00DE9D85 /* EventKit.framework */,
 				FCE657061E75251E00DE9D85 /* EventKitUI.framework */,
@@ -206,6 +210,7 @@
 		FC304DFC1E70691C00D624DD /* WebDeck2017 */ = {
 			isa = PBXGroup;
 			children = (
+				FCF110B91E8C36FC00887CBB /* views */,
 				FC7BD7DB1E71BC9B000F33A6 /* controllers */,
 				FCEE727C1E70702D00D55C48 /* public */,
 				FC304DFD1E70691C00D624DD /* AppDelegate.swift */,
@@ -277,6 +282,13 @@
 				FC7BD7D51E71BB24000F33A6 /* fonts */,
 			);
 			name = public;
+			sourceTree = "<group>";
+		};
+		FCF110B91E8C36FC00887CBB /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
