@@ -36,7 +36,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
       var locationManager:CLLocationManager!
     var startLocation: CLLocation!
     var myLocation: CLLocationCoordinate2D!
-    
+    var weatherView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 //        let tableView: UITableView = UITableView()
@@ -81,7 +81,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
    
     // adds the segmented control
         func addSegmentedControl(){
-        let titles = ["Home", "Featured", "Your Day", "Sign Out"]
+        let titles = ["Home", "Featured", "Your Day", "Reactions", "Sign Out"]
         //x is where it is on the x axis, y is where it is on the y axis, width is width, and height is height. Higher numbers in the y column get closer to the top of the frame, and smaller get it closer to the bottom.
         let frame = CGRect(x: 2, y: view.frame.height / 7, width: view.frame.width - 10, height: 40)
         let segmentedControl = TwicketSegmentedControl(frame: frame)
@@ -106,7 +106,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
             print("authorized")
         case EKAuthorizationStatus.restricted, EKAuthorizationStatus.denied:
             // We need to help them give us permission
-            print("access deinid")
+            print("access denied")
         }
     }
     //requests access to the calendar
@@ -331,42 +331,44 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
     //end of location and weather
     
     //beginning of twitter
-//    func getHomeTimeline(){
-//        let accountStore = ACAccountStore()
-//        let accountType = accountStore.accountType(withAccountTypeIdentifier: ACAccountTypeIdentifierTwitter)
-//        
-//        // Prompt the user for permission to their twitter account stored in the phone's settings
-//        accountStore.requestAccessToAccounts(with: accountType, options: nil) {
-//            granted, error in
-//            
-//            if !granted {
-//                let message = error.debugDescription
-//                let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//                self.present(alert, animated: true, completion: nil)
-//                return
-//            }
-//            
-//            let accounts = accountStore.accounts(with: accountType) as! [ACAccount]
-//            
-//            guard let account = accounts.first else {
-//                let message = "There are no Twitter accounts configured. You can add or create a Twitter account in Settings."
-//                let alert = UIAlertController(title: "Error", message: message,
-//                                              preferredStyle: .alert)
-//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//                self.present(alert, animated: true, completion: nil)
-//                return
-//            }
-//            
-//            let client = AccountClient(account: account)
-//            client
-//            .get("https://api.twitter.com/1.1/statuses/home_timeline.json")
-//                .response { (responseData: NSData?, response: HTTPURLResponse?, error: NSError?) -> Void in
-//                    
-//            }
-//        }
-//        
-//    }
+    func getHomeTimeline(){
+        let accountStore = ACAccountStore()
+        let accountType = accountStore.accountType(withAccountTypeIdentifier: ACAccountTypeIdentifierTwitter)
+
+        // Prompt the user for permission to their twitter account stored in the phone's settings
+        accountStore.requestAccessToAccounts(with: accountType, options: nil) {
+            granted, error in
+
+            if !granted {
+                let message = error.debugDescription
+                let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                return
+                print("error with accounts")
+            }
+
+            let accounts = accountStore.accounts(with: accountType) as! [ACAccount]
+
+            guard let account = accounts.first else {
+                let message = "There are no Twitter accounts configured. You can add or create a Twitter account in Settings."
+                let alert = UIAlertController(title: "Error", message: message,
+                                              preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                return
+                print("no twitter accounts")
+            }
+
+            let client = AccountClient(account: account)
+            client
+            .get("https://api.twitter.com/1.1/statuses/home_timeline.json")
+                .response { (responseData: Data?, response: HTTPURLResponse?, error: NSError?) -> Void in
+                    print("got api")
+            }
+        }
+
+    }
     
 
 }
@@ -374,22 +376,23 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
 extension HomepageViewController: TwicketSegmentedControlDelegate {
     func didSelect(_ segmentIndex: Int) {
         print("Selected index: \(segmentIndex)")
-        if segmentIndex == 3 {
+        if segmentIndex == 4 {
             PFUser.logOut()
             let currentUser = PFUser.current()
             if currentUser == nil {
-                print("user is nil")
+                print("user is nil(logged out)")
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let viewController = storyboard.instantiateViewController(withIdentifier :"SignUpViewController") 
+                let viewController = storyboard.instantiateViewController(withIdentifier: "SignUpViewController")
                 self.present(viewController, animated: true)
-                
-            }
-            else{
+
+            } else {
                 print("user is not nil")
             };
         }
-        if segmentIndex == 1{
-            
+        if segmentIndex == 3 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "ReactionsViewController")
+            self.present(viewController, animated: true)
         }
     }
 }

@@ -7,7 +7,7 @@
 		<key>WebDeck.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>1</integer>
 		</dict>
 		<key>WebDeck2017.xcscheme</key>
 		<dict>
@@ -20,22 +20,22 @@
 		<key>FC304DF91E70691B00D624DD</key>
 		<dict>
 			<key>primary</key>
-			<true/>
+			<true />
 		</dict>
 		<key>FC304E0D1E70691D00D624DD</key>
 		<dict>
 			<key>primary</key>
-			<true/>
+			<true />
 		</dict>
 		<key>FC304E181E70691D00D624DD</key>
 		<dict>
 			<key>primary</key>
-			<true/>
+			<true />
 		</dict>
 		<key>FC37654F1E73D6630097B782</key>
 		<dict>
 			<key>primary</key>
-			<true/>
+			<true />
 		</dict>
 	</dict>
 </dict>
