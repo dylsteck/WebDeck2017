@@ -12,6 +12,7 @@ import Parse
 
 class ReactionsViewController: UIViewController {
 
+    var reactionsfield: UITextField!
     override func viewDidLoad(){
         runReactions()
 
@@ -27,11 +28,15 @@ class ReactionsViewController: UIViewController {
         descriptionLabel.numberOfLines = 6
         self.view.addSubview(descriptionLabel)
         
-        let goBackButton = UIButton(frame: CGRect(x: 50, y: 300, width: 200 , height: 200 ))
+        let goBackButton = UIButton(frame: CGRect(x: 100, y: 350, width: 30 , height: 30 ))
         goBackButton.backgroundColor = UIColor(red:0.15, green:0.18, blue:0.22, alpha:1.00)
-        goBackButton.setTitle("Go Back", for: .normal)
+        goBackButton.setTitle("Submit", for: .normal)
         goBackButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         self.view.addSubview(goBackButton)
+        
+        let reactionsfield = UITextField(frame: CGRect(x: 100, y: 300, width: 200 , height: 200 ))
+        reactionsfield.textColor = UIColor.white
+        self.view.addSubview(reactionsfield)
         
 
     
@@ -39,9 +44,21 @@ class ReactionsViewController: UIViewController {
     }
     
     func buttonAction(sender: UIButton!) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "HomepageViewController")
-        self.present(viewController, animated: true)
+        var reaction = PFObject(className:"Reactions")
+        reaction["text"] = reactionsfield.text
+        reaction.saveInBackground { (succeeded, error) -> Void in
+            if succeeded{
+                print("Success with Parse yyyaboi")
+                print(reaction)
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier: "HomepageViewController")
+                self.present(viewController, animated: true)
+            }
+            else{
+                print("parse failure :(")
+            }
+        }
+
 
     }
 }

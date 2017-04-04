@@ -260,7 +260,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9t-kM-xKa">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9t-kM-xKa">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="WDIcon-Large.png" translatesAutoresizingMaskIntoConstraints="NO" id="2UX-t7-JaD">
@@ -278,6 +278,13 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2UX-t7-JaD" firstAttribute="centerX" secondItem="EBc-8S-Keq" secondAttribute="centerX" id="8tQ-DW-3Jl"/>
+                            <constraint firstItem="c9t-kM-xKa" firstAttribute="top" secondItem="EBc-8S-Keq" secondAttribute="top" id="AAl-4g-Ytg"/>
+                            <constraint firstItem="c9t-kM-xKa" firstAttribute="leading" secondItem="EBc-8S-Keq" secondAttribute="leading" id="DgC-3u-dpt"/>
+                            <constraint firstItem="c9t-kM-xKa" firstAttribute="centerX" secondItem="EBc-8S-Keq" secondAttribute="centerX" id="txh-nX-EfX"/>
+                            <constraint firstAttribute="trailing" secondItem="c9t-kM-xKa" secondAttribute="trailing" id="ylO-vd-wfG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVx-Ff-GAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -290,6 +297,6 @@
         <image name="WDSlogan-Large.png" width="299" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HNg-xC-K2l"/>
+        <segue reference="6jE-oo-jqg"/>
     </inferredMetricsTieBreakers>
 </document>
