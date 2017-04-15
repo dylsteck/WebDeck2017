@@ -9,6 +9,7 @@ target 'WebDeck2017' do
     pod 'Alamofire', '~> 4.0'
  	pod 'SwiftyJSON', git: 'https://github.com/BaiduHiDeviOS/SwiftyJSON.git', branch: 'swift3'
  	pod 'ChameleonFramework/Swift'
+    pod 'Kingfisher'
     pod 'Fabric'
     pod 'Digits'
     pod 'Answers'

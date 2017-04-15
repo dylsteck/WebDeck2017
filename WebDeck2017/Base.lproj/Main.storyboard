@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E191a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F54b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -276,20 +276,41 @@
                                     <constraint firstAttribute="height" constant="87" id="dGg-3N-HvY"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HUK-8W-mfd">
+                                <rect key="frame" x="16" y="241" width="330" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uM-Ga-mZ8">
+                                <rect key="frame" x="158" y="343" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="sendReaction:" destination="UcD-uC-Scw" eventType="touchUpInside" id="b6i-t8-t0F"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="HUK-8W-mfd" firstAttribute="centerY" secondItem="EBc-8S-Keq" secondAttribute="centerY" constant="-77.5" id="679-wT-ALZ"/>
                             <constraint firstItem="2UX-t7-JaD" firstAttribute="centerX" secondItem="EBc-8S-Keq" secondAttribute="centerX" id="8tQ-DW-3Jl"/>
                             <constraint firstItem="c9t-kM-xKa" firstAttribute="top" secondItem="EBc-8S-Keq" secondAttribute="top" id="AAl-4g-Ytg"/>
                             <constraint firstItem="c9t-kM-xKa" firstAttribute="leading" secondItem="EBc-8S-Keq" secondAttribute="leading" id="DgC-3u-dpt"/>
+                            <constraint firstItem="HUK-8W-mfd" firstAttribute="centerX" secondItem="EBc-8S-Keq" secondAttribute="centerX" constant="-6.5" id="bG1-AR-qAW"/>
+                            <constraint firstItem="6uM-Ga-mZ8" firstAttribute="centerY" secondItem="EBc-8S-Keq" secondAttribute="centerY" multiplier="1.2" id="d7D-eX-JLu"/>
+                            <constraint firstItem="6uM-Ga-mZ8" firstAttribute="centerX" secondItem="EBc-8S-Keq" secondAttribute="centerX" id="rTk-7B-Q1t"/>
                             <constraint firstItem="c9t-kM-xKa" firstAttribute="centerX" secondItem="EBc-8S-Keq" secondAttribute="centerX" id="txh-nX-EfX"/>
                             <constraint firstAttribute="trailing" secondItem="c9t-kM-xKa" secondAttribute="trailing" id="ylO-vd-wfG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="reactionsField" destination="HUK-8W-mfd" id="2G4-dE-GgW"/>
+                        <segue destination="c0K-zo-7Ma" kind="modal" identifier="reactionSegue" id="1MB-lv-I7T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVx-Ff-GAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2191" y="39"/>
+            <point key="canvasLocation" x="2156" y="36.431784107946029"/>
         </scene>
     </scenes>
     <resources>
@@ -297,6 +318,6 @@
         <image name="WDSlogan-Large.png" width="299" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6jE-oo-jqg"/>
+        <segue reference="1MB-lv-I7T"/>
     </inferredMetricsTieBreakers>
 </document>

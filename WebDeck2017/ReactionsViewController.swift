@@ -12,7 +12,7 @@ import Parse
 
 class ReactionsViewController: UIViewController {
 
-    var reactionsfield: UITextField!
+    @IBOutlet weak var reactionsField: UITextField!
     override func viewDidLoad(){
         runReactions()
 
@@ -27,25 +27,14 @@ class ReactionsViewController: UIViewController {
         descriptionLabel.contentMode = UIViewContentMode.scaleAspectFit
         descriptionLabel.numberOfLines = 6
         self.view.addSubview(descriptionLabel)
-        
-        let goBackButton = UIButton(frame: CGRect(x: 100, y: 350, width: 30 , height: 30 ))
-        goBackButton.backgroundColor = UIColor(red:0.15, green:0.18, blue:0.22, alpha:1.00)
-        goBackButton.setTitle("Submit", for: .normal)
-        goBackButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        self.view.addSubview(goBackButton)
-        
-        let reactionsfield = UITextField(frame: CGRect(x: 100, y: 300, width: 200 , height: 200 ))
-        reactionsfield.textColor = UIColor.white
-        self.view.addSubview(reactionsfield)
-        
-
-    
     
     }
     
-    func buttonAction(sender: UIButton!) {
+    @IBAction func sendReaction(_ sender: UIButton) {
+        
         var reaction = PFObject(className:"Reactions")
-        reaction["text"] = reactionsfield.text
+        reaction["text"] = reactionsField.text
+        //reaction["belongs_to"] = PFUser.current()
         reaction.saveInBackground { (succeeded, error) -> Void in
             if succeeded{
                 print("Success with Parse yyyaboi")
@@ -58,7 +47,7 @@ class ReactionsViewController: UIViewController {
                 print("parse failure :(")
             }
         }
-
-
+        
+        
     }
 }

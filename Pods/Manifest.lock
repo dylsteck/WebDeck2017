@@ -9,6 +9,7 @@ PODS:
   - Digits (2.7.0):
     - TwitterCore (= 2.7.0)
   - Fabric (1.6.11)
+  - Kingfisher (3.5.2)
   - MutableDataScanner (1.1.0)
   - OAuthSwift (1.0.0)
   - Parse (1.14.2):
@@ -30,6 +31,7 @@ DEPENDENCIES:
   - ChameleonFramework/Swift
   - Digits
   - Fabric
+  - Kingfisher
   - Parse
   - ParseUI
   - SwiftyJSON (from `https://github.com/BaiduHiDeviOS/SwiftyJSON.git`, branch `swift3`)
@@ -53,6 +55,7 @@ SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Digits: 67a14dea7cd470b2438380a09371bcdadc50d94e
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
   MutableDataScanner: 07330dfa3b4ec383f342e25d2b1e8697f85a3894
   OAuthSwift: dd4f502ffd4f6e122b861b5e4529bf6454a30fe6
   Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
@@ -62,6 +65,6 @@ SPEC CHECKSUMS:
   TwitterAPI: 092e249cc69fbb9b955940766d42da01573d688f
   TwitterCore: fbdbeaf6d2d20cf7c7aa4136fe5173c1c85df2e2
 
-PODFILE CHECKSUM: eee726a5207ea5e2311298fb7fc2484f74150a9f
+PODFILE CHECKSUM: c5af13472147eb102e20d6065ced7867fd28256a
 
 COCOAPODS: 1.2.0

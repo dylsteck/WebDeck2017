@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import SwiftyJSON
+import Kingfisher
 import Parse
 import TwicketSegmentedControl
 import Alamofire
@@ -18,7 +19,7 @@ import CoreLocation
 import Accounts
 import TwitterAPI
 
-class HomepageViewController: UIViewController, CLLocationManagerDelegate {
+class HomepageViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     //IBOutlet
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var topView: UIView!
@@ -32,6 +33,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
      var calendar = EKCalendar(for: .event, eventStore: EKEventStore())
     var events: [EKEvent]?
     var eventStore = EKEventStore()
+    var calendarCollectionView: UICollectionView!
     //Location and Weather
       var locationManager:CLLocationManager!
     var startLocation: CLLocation!
@@ -39,10 +41,6 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
     var weatherView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let tableView: UITableView = UITableView()
-//        tableView.frame = CGRect(x: 10, y: 10, width: 100, height: 500)
-//        self.view.addSubview(tableView)
-        
         if PFUser.current() != nil{
         let username = PFUser.current()!["username"] as! String
         self.usernameLabel.font = UIFont(name: "WeissenhofGrotesk-Bold", size: 16)!
@@ -58,6 +56,16 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
         
          //Calling on the function that gets events from the user
         loadEvents()
+
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
+        layout.itemSize = CGSize(width: 90, height: 120)
+        calendarCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        calendarCollectionView.delegate = self
+        calendarCollectionView.dataSource = self
+        calendarCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        calendarCollectionView.backgroundColor = UIColor.white
+        self.view.addSubview(calendarCollectionView)
         
         //adds the segmented control
         
@@ -158,6 +166,21 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
 
+        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return 3
+        }
+ 
+    func collectionView(_ cellForItemAtcollectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            let cell = calendarCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath as IndexPath)
+            var kfImage: UIImage!
+            let url = URL(string: "https://source.unsplash.com/1600x900/?city,work")
+        KingfisherManager.shared.retrieveImage(with: url!, options: nil, progressBlock: nil, completionHandler: { image, error, cacheType, imageURL in
+            print(image)
+            kfImage = image
+            cell.backgroundColor = UIColor(patternImage: kfImage)
+            })
+            return cell
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
