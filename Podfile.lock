@@ -6,6 +6,7 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
+  - DGCollectionViewPaginableBehavior (1.0.4)
   - Digits (2.7.0):
     - TwitterCore (= 2.7.0)
   - Fabric (1.6.11)
@@ -29,6 +30,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.0)
   - Answers
   - ChameleonFramework/Swift
+  - DGCollectionViewPaginableBehavior
   - Digits
   - Fabric
   - Kingfisher
@@ -53,6 +55,7 @@ SPEC CHECKSUMS:
   Answers: 6a4d22973d8550808630a55f526055c9eb6d39a2
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  DGCollectionViewPaginableBehavior: be97bc2177b22e4afa1028ad39d376dc1b6bc940
   Digits: 67a14dea7cd470b2438380a09371bcdadc50d94e
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
@@ -65,6 +68,6 @@ SPEC CHECKSUMS:
   TwitterAPI: 092e249cc69fbb9b955940766d42da01573d688f
   TwitterCore: fbdbeaf6d2d20cf7c7aa4136fe5173c1c85df2e2
 
-PODFILE CHECKSUM: c5af13472147eb102e20d6065ced7867fd28256a
+PODFILE CHECKSUM: 4613383c088dde5265825195e512a90672f6ff92
 
 COCOAPODS: 1.2.0

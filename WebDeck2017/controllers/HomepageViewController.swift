@@ -34,6 +34,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate, UICol
     var events: [EKEvent]?
     var eventStore = EKEventStore()
     var calendarCollectionView: UICollectionView!
+    var label: UILabel!
     //Location and Weather
       var locationManager:CLLocationManager!
     var startLocation: CLLocation!
@@ -56,16 +57,18 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate, UICol
         
          //Calling on the function that gets events from the user
         loadEvents()
-
+        checkCalendarAuthorizationStatus()
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-        layout.itemSize = CGSize(width: 90, height: 120)
-        calendarCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
-        calendarCollectionView.delegate = self
-        calendarCollectionView.dataSource = self
-        calendarCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
-        calendarCollectionView.backgroundColor = UIColor.white
-        self.view.addSubview(calendarCollectionView)
+        layout.itemSize = CGSize(width: 100, height: 80)
+        
+        // we create the collection view object
+        calendarCollectionView = UICollectionView(frame: CGRectMake(0, 0, screenWidth, screenHeight), collectionViewLayout: layout)
+        calendarCollectionView!.dataSource = self
+        calendarCollectionView!.delegate = self
+        calendarCollectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        calendarCollectionView!.backgroundColor = UIColor.white
+        self.view.addSubview(calendarCollectionView!)
         
         //adds the segmented control
         
@@ -169,17 +172,26 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate, UICol
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             return 3
         }
+    
+        func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+        }
  
     func collectionView(_ cellForItemAtcollectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = calendarCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath as IndexPath)
+        let cell =  calendarCollectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
             var kfImage: UIImage!
             let url = URL(string: "https://source.unsplash.com/1600x900/?city,work")
         KingfisherManager.shared.retrieveImage(with: url!, options: nil, progressBlock: nil, completionHandler: { image, error, cacheType, imageURL in
-            print(image)
             kfImage = image
             cell.backgroundColor = UIColor(patternImage: kfImage)
             })
-            return cell
+        var textLabel = UILabel(frame: CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height))
+        textLabel.textAlignment = NSTextAlignment.center
+        textLabel.textColor = UIColor.whiteColor
+        textLabel.text =  "Cell\(indexPath.row)"
+        cell.contentView.addSubview(textLabel)
+        
+        return cell
     }
     
     override func didReceiveMemoryWarning() {

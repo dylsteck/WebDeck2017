@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DGCollectionViewPaginableBehavior.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,16 +82,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0E3FD5FFCCC3EF20D2E2132EA6A2728B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>21DEF4E6D0343711B71F76C9753C81AD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>3F1FFFEDB426A1EB44717440744FC7A8</key>
 		<dict>
 			<key>primary</key>
@@ -97,12 +92,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6CFAF41D1D955BBC0CBD2A83A43A760C</key>
+		<key>76BD4592010354D6C23D6ECCA20D83A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>76BD4592010354D6C23D6ECCA20D83A8</key>
+		<key>7700461747FE5BABB281136FA9DB1338</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,6 +117,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9181EE78AC34987B5EBE57B7962F09D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A5E41E7110A7D41C72587D9CE061588F</key>
 		<dict>
 			<key>primary</key>
@@ -132,12 +132,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C4944FEC314D1A66588651D006273ADE</key>
+		<key>ACC4CD591A300FD0B6D84C16A48D2600</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E6BACE1F6484DF1CD9C46228F7130E9B</key>
+		<key>B25A931E88A5A764B65A91DAF18A717E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C0D1D54EB4C400454E6335F3524D1828</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4944FEC314D1A66588651D006273ADE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
