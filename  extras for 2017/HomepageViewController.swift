@@ -17,6 +17,7 @@ import EventKit
 import EventKitUI
 import CoreLocation
 import Accounts
+import MaterialComponents.MaterialFlexibleHeader
 import TwitterAPI
 
 class HomepageViewController: UIViewController, CLLocationManagerDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
@@ -63,7 +64,7 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate, UICol
         layout.itemSize = CGSize(width: 100, height: 80)
         
         // we create the collection view object
-        calendarCollectionView = UICollectionView(frame: CGRectMake(0, 0, screenWidth, screenHeight), collectionViewLayout: layout)
+        calendarCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         calendarCollectionView!.dataSource = self
         calendarCollectionView!.delegate = self
         calendarCollectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
@@ -178,19 +179,13 @@ class HomepageViewController: UIViewController, CLLocationManagerDelegate, UICol
         }
  
     func collectionView(_ cellForItemAtcollectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell =  calendarCollectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
+        let cell =  calendarCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as UICollectionViewCell
             var kfImage: UIImage!
             let url = URL(string: "https://source.unsplash.com/1600x900/?city,work")
         KingfisherManager.shared.retrieveImage(with: url!, options: nil, progressBlock: nil, completionHandler: { image, error, cacheType, imageURL in
             kfImage = image
             cell.backgroundColor = UIColor(patternImage: kfImage)
             })
-        var textLabel = UILabel(frame: CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height))
-        textLabel.textAlignment = NSTextAlignment.center
-        textLabel.textColor = UIColor.whiteColor
-        textLabel.text =  "Cell\(indexPath.row)"
-        cell.contentView.addSubview(textLabel)
-        
         return cell
     }
     

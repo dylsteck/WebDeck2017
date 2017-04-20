@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F54b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F60a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -193,10 +193,10 @@
             </objects>
             <point key="canvasLocation" x="772" y="38"/>
         </scene>
-        <!--Homepage View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="AYF-rA-2Sy">
             <objects>
-                <viewController storyboardIdentifier="HomepageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c0K-zo-7Ma" customClass="HomepageViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c0K-zo-7Ma" customClass="HomeViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w60-Hu-XFL"/>
                         <viewControllerLayoutGuide type="bottom" id="PkA-CE-0Oc"/>
@@ -204,120 +204,18 @@
                     <view key="view" contentMode="scaleToFill" id="NTH-jc-dvR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKv-eD-VZu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WDIcon-Large.png" translatesAutoresizingMaskIntoConstraints="NO" id="jsb-ph-39U">
-                                        <rect key="frame" x="156" y="22" width="62" height="63"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="63" id="B7c-pd-Rgw"/>
-                                            <constraint firstAttribute="width" constant="62" id="MqW-zU-rip"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.95686274509803915" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="qDW-I9-dfK"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu8-JT-Dkm">
-                                <rect key="frame" x="187" y="151" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="qKv-eD-VZu" secondAttribute="trailing" id="BbT-Er-Obe"/>
-                            <constraint firstItem="jsb-ph-39U" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" id="TgL-lF-HG1"/>
-                            <constraint firstItem="qKv-eD-VZu" firstAttribute="top" secondItem="NTH-jc-dvR" secondAttribute="top" id="d9H-dT-zJU"/>
-                            <constraint firstItem="gu8-JT-Dkm" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" id="hSC-Se-Tfa"/>
-                            <constraint firstItem="qKv-eD-VZu" firstAttribute="leading" secondItem="NTH-jc-dvR" secondAttribute="leading" id="k8a-QF-Mnh"/>
-                            <constraint firstItem="gu8-JT-Dkm" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.45" constant="1" id="zlb-kS-j30"/>
-                            <constraint firstItem="jsb-ph-39U" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.15" constant="3.4750000000000014" id="zzy-th-wUv"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="topView" destination="qKv-eD-VZu" id="luR-Dr-QUN"/>
-                        <outlet property="usernameLabel" destination="gu8-JT-Dkm" id="Xn8-ru-8ZX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0fV-zk-VQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1490.4000000000001" y="37.331334332833585"/>
         </scene>
-        <!--Reactions View Controller-->
-        <scene sceneID="1BL-WM-drF">
-            <objects>
-                <viewController storyboardIdentifier="ReactionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UcD-uC-Scw" customClass="ReactionsViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mur-ND-gRh"/>
-                        <viewControllerLayoutGuide type="bottom" id="gJJ-wH-2zS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EBc-8S-Keq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9t-kM-xKa">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="WDIcon-Large.png" translatesAutoresizingMaskIntoConstraints="NO" id="2UX-t7-JaD">
-                                        <rect key="frame" x="156" y="12" width="62" height="63"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="63" id="1WX-Kf-6tF"/>
-                                            <constraint firstAttribute="width" constant="62" id="h8t-M9-Ykj"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.95686274510000002" green="0.97647058819999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="dGg-3N-HvY"/>
-                                </constraints>
-                            </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HUK-8W-mfd">
-                                <rect key="frame" x="16" y="241" width="330" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uM-Ga-mZ8">
-                                <rect key="frame" x="158" y="343" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="sendReaction:" destination="UcD-uC-Scw" eventType="touchUpInside" id="b6i-t8-t0F"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="HUK-8W-mfd" firstAttribute="centerY" secondItem="EBc-8S-Keq" secondAttribute="centerY" constant="-77.5" id="679-wT-ALZ"/>
-                            <constraint firstItem="2UX-t7-JaD" firstAttribute="centerX" secondItem="EBc-8S-Keq" secondAttribute="centerX" id="8tQ-DW-3Jl"/>
-                            <constraint firstItem="c9t-kM-xKa" firstAttribute="top" secondItem="EBc-8S-Keq" secondAttribute="top" id="AAl-4g-Ytg"/>
-                            <constraint firstItem="c9t-kM-xKa" firstAttribute="leading" secondItem="EBc-8S-Keq" secondAttribute="leading" id="DgC-3u-dpt"/>
-                            <constraint firstItem="HUK-8W-mfd" firstAttribute="centerX" secondItem="EBc-8S-Keq" secondAttribute="centerX" constant="-6.5" id="bG1-AR-qAW"/>
-                            <constraint firstItem="6uM-Ga-mZ8" firstAttribute="centerY" secondItem="EBc-8S-Keq" secondAttribute="centerY" multiplier="1.2" id="d7D-eX-JLu"/>
-                            <constraint firstItem="6uM-Ga-mZ8" firstAttribute="centerX" secondItem="EBc-8S-Keq" secondAttribute="centerX" id="rTk-7B-Q1t"/>
-                            <constraint firstItem="c9t-kM-xKa" firstAttribute="centerX" secondItem="EBc-8S-Keq" secondAttribute="centerX" id="txh-nX-EfX"/>
-                            <constraint firstAttribute="trailing" secondItem="c9t-kM-xKa" secondAttribute="trailing" id="ylO-vd-wfG"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="reactionsField" destination="HUK-8W-mfd" id="2G4-dE-GgW"/>
-                        <segue destination="c0K-zo-7Ma" kind="modal" identifier="reactionSegue" id="1MB-lv-I7T"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dVx-Ff-GAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2156" y="36.431784107946029"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="WDIcon-Large.png" width="136" height="138"/>
         <image name="WDSlogan-Large.png" width="299" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1MB-lv-I7T"/>
+        <segue reference="HNg-xC-K2l"/>
     </inferredMetricsTieBreakers>
 </document>

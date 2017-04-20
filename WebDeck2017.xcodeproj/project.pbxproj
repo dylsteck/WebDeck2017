@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		02A12550560DD9138B8DDA9E /* Pods_WebDeck2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1B2292D92951D2B475E674 /* Pods_WebDeck2017.framework */; };
 		28855BD8057CE258AC0D32F1 /* Pods_WebDeck2017Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C33CEA1232CDA0D863A910 /* Pods_WebDeck2017Tests.framework */; };
-		5B9D0D382F9197572BCE6ADF /* ReactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D0E7521EA40D3DD1EE1F9 /* ReactionsViewController.swift */; };
 		C83C22B6C3653CF790AF0660 /* Pods_WebDeck2017UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA9B2EC427B1753136FDC0F /* Pods_WebDeck2017UITests.framework */; };
 		FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304DFD1E70691C00D624DD /* AppDelegate.swift */; };
 		FC304E031E70691C00D624DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC304E011E70691C00D624DD /* Main.storyboard */; };
@@ -21,7 +20,7 @@
 		FC3765651E73D7020097B782 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765621E73D7020097B782 /* Parse.framework */; };
 		FC3765661E73D7020097B782 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765631E73D7020097B782 /* ParseUI.framework */; };
 		FC7BD7DA1E71BC1D000F33A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */; };
-		FCE656E61E75196800DE9D85 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E51E75196800DE9D85 /* HomepageViewController.swift */; };
+		FCE3C0011EA90F0500CD9C2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */; };
 		FCE656EA1E75220E00DE9D85 /* ContinueSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */; };
 		FCE656EB1E75220E00DE9D85 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E81E75220E00DE9D85 /* SignInViewController.swift */; };
 		FCE656EC1E75220E00DE9D85 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */; };
@@ -38,7 +37,6 @@
 		FCE657011E75239400DE9D85 /* ContinueSignupViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */; };
 		FCE657021E75239400DE9D85 /* SignInViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E81E75220E00DE9D85 /* SignInViewController.swift */; };
 		FCE657031E75239400DE9D85 /* SignUpViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */; };
-		FCE657041E75239400DE9D85 /* HomepageViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E51E75196800DE9D85 /* HomepageViewController.swift */; };
 		FCE657071E75251E00DE9D85 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE657051E75251E00DE9D85 /* EventKit.framework */; };
 		FCE657081E75251E00DE9D85 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE657061E75251E00DE9D85 /* EventKitUI.framework */; };
 		FCF76A601E8DDAB7007C83BA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF76A5F1E8DDAB7007C83BA /* Social.framework */; };
@@ -75,7 +73,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5B9D0E7521EA40D3DD1EE1F9 /* ReactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactionsViewController.swift; sourceTree = "<group>"; };
 		623597E741861E97A0B47A9A /* Pods-WebDeck2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017/Pods-WebDeck2017.release.xcconfig"; sourceTree = "<group>"; };
 		6DAFD1330C1817C6C0D20FB0 /* Pods-WebDeck2017Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B1B2292D92951D2B475E674 /* Pods_WebDeck2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +99,7 @@
 		FC3765631E73D7020097B782 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/ParseUI/ParseUI.framework"; sourceTree = "<group>"; };
 		FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC886721C5F885D6F8E9C8A4 /* Pods-WebDeck2017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FCE656E51E75196800DE9D85 /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomepageViewController.swift; path = controllers/HomepageViewController.swift; sourceTree = "<group>"; };
+		FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = controllers/HomeViewController.swift; sourceTree = "<group>"; };
 		FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContinueSignupViewController.swift; path = controllers/ContinueSignupViewController.swift; sourceTree = "<group>"; };
 		FCE656E81E75220E00DE9D85 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = controllers/SignInViewController.swift; sourceTree = "<group>"; };
 		FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = controllers/SignUpViewController.swift; sourceTree = "<group>"; };
@@ -272,8 +269,7 @@
 				FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */,
 				FCE656E81E75220E00DE9D85 /* SignInViewController.swift */,
 				FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */,
-				FCE656E51E75196800DE9D85 /* HomepageViewController.swift */,
-				5B9D0E7521EA40D3DD1EE1F9 /* ReactionsViewController.swift */,
+				FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -418,7 +414,6 @@
 				FCE657011E75239400DE9D85 /* ContinueSignupViewController.swift in Resources */,
 				FCE657021E75239400DE9D85 /* SignInViewController.swift in Resources */,
 				FCE657031E75239400DE9D85 /* SignUpViewController.swift in Resources */,
-				FCE657041E75239400DE9D85 /* HomepageViewController.swift in Resources */,
 				FCE656F91E75238900DE9D85 /* WeissenhofGrotesk-Bold.otf in Resources */,
 				FCE656FA1E75238900DE9D85 /* WeissenhofGrotesk-BoldItalic.otf in Resources */,
 				FCE656FB1E75238900DE9D85 /* WeissenhofGrotesk-Light.otf in Resources */,
@@ -607,12 +602,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE3C0011EA90F0500CD9C2A /* HomeViewController.swift in Sources */,
 				FCE656EB1E75220E00DE9D85 /* SignInViewController.swift in Sources */,
-				FCE656E61E75196800DE9D85 /* HomepageViewController.swift in Sources */,
 				FCE656EA1E75220E00DE9D85 /* ContinueSignupViewController.swift in Sources */,
 				FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */,
 				FCE656EC1E75220E00DE9D85 /* SignUpViewController.swift in Sources */,
-				5B9D0D382F9197572BCE6ADF /* ReactionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

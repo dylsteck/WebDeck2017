@@ -17,7 +17,7 @@ target 'WebDeck2017' do
     pod 'Parse'
     pod 'ParseUI'
     pod 'TwicketSegmentedControl'
-    pod 'DGCollectionViewPaginableBehavior'
+    pod 'MaterialComponents'
     #pod 'ParseFacebookUtilsV4'
   target 'WebDeck2017Tests' do
     inherit! :search_paths

@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if PFUser.current() != nil {
             // Code to execute if user is logged in
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: "HomepageViewController")
+            let viewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
             
             self.window?.rootViewController = viewController
             self.window?.makeKeyAndVisible()
