@@ -20,6 +20,8 @@
 		FC3765651E73D7020097B782 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765621E73D7020097B782 /* Parse.framework */; };
 		FC3765661E73D7020097B782 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765631E73D7020097B782 /* ParseUI.framework */; };
 		FC7BD7DA1E71BC1D000F33A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */; };
+		FC7E8BF61EBA4A5300CF3EF5 /* NewsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7E8BF51EBA4A5300CF3EF5 /* NewsModule.swift */; };
+		FCD4B30F1EA9AA19008A413D /* WDIcon-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD4B30E1EA9AA19008A413D /* WDIcon-Large.png */; };
 		FCE3C0011EA90F0500CD9C2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */; };
 		FCE656EA1E75220E00DE9D85 /* ContinueSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */; };
 		FCE656EB1E75220E00DE9D85 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E81E75220E00DE9D85 /* SignInViewController.swift */; };
@@ -98,7 +100,9 @@
 		FC3765621E73D7020097B782 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/Parse/Parse.framework"; sourceTree = "<group>"; };
 		FC3765631E73D7020097B782 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/ParseUI/ParseUI.framework"; sourceTree = "<group>"; };
 		FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC7E8BF51EBA4A5300CF3EF5 /* NewsModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsModule.swift; path = WebDeck2017/modules/NewsModule.swift; sourceTree = SOURCE_ROOT; };
 		FC886721C5F885D6F8E9C8A4 /* Pods-WebDeck2017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FCD4B30E1EA9AA19008A413D /* WDIcon-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WDIcon-Large.png"; sourceTree = "<group>"; };
 		FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = controllers/HomeViewController.swift; sourceTree = "<group>"; };
 		FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContinueSignupViewController.swift; path = controllers/ContinueSignupViewController.swift; sourceTree = "<group>"; };
 		FCE656E81E75220E00DE9D85 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = controllers/SignInViewController.swift; sourceTree = "<group>"; };
@@ -209,7 +213,8 @@
 		FC304DFC1E70691C00D624DD /* WebDeck2017 */ = {
 			isa = PBXGroup;
 			children = (
-				FCF110B91E8C36FC00887CBB /* views */,
+				FCD4B30E1EA9AA19008A413D /* WDIcon-Large.png */,
+				FCF110B91E8C36FC00887CBB /* modules */,
 				FC7BD7DB1E71BC9B000F33A6 /* controllers */,
 				FCEE727C1E70702D00D55C48 /* public */,
 				FC304DFD1E70691C00D624DD /* AppDelegate.swift */,
@@ -283,10 +288,12 @@
 			name = public;
 			sourceTree = "<group>";
 		};
-		FCF110B91E8C36FC00887CBB /* views */ = {
+		FCF110B91E8C36FC00887CBB /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				FC7E8BF51EBA4A5300CF3EF5 /* NewsModule.swift */,
 			);
+			name = modules;
 			path = views;
 			sourceTree = "<group>";
 		};
@@ -420,6 +427,7 @@
 				FCE656FC1E75238900DE9D85 /* WeissenhofGrotesk-LightItalic.otf in Resources */,
 				FCE656FD1E75238900DE9D85 /* WeissenhofGrotesk-Medium.otf in Resources */,
 				FCE656FE1E75238900DE9D85 /* WeissenhofGrotesk-MediumItalic.otf in Resources */,
+				FCD4B30F1EA9AA19008A413D /* WDIcon-Large.png in Resources */,
 				FCE656FF1E75238900DE9D85 /* WeissenhofGrotesk-Regular.otf in Resources */,
 				FCE657001E75238900DE9D85 /* WeissenhofGrotesk-RegularItalic.otf in Resources */,
 				FC304E051E70691C00D624DD /* Assets.xcassets in Resources */,
@@ -602,6 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC7E8BF61EBA4A5300CF3EF5 /* NewsModule.swift in Sources */,
 				FCE3C0011EA90F0500CD9C2A /* HomeViewController.swift in Sources */,
 				FCE656EB1E75220E00DE9D85 /* SignInViewController.swift in Sources */,
 				FCE656EA1E75220E00DE9D85 /* ContinueSignupViewController.swift in Sources */,
