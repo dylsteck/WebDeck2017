@@ -5,56 +5,72 @@
 //  Created by Dylan Steck on 4/20/17.
 //  Copyright © 2017 Dylan Steck. All rights reserved.
 //
+import Foundation
 import UIKit
 import TwicketSegmentedControl
 import MaterialComponents.MaterialPageControl
+import SwiftyJSON
+import Kingfisher
+import Alamofire
 
 class HomeViewController: UIViewController, UIScrollViewDelegate {
 
     var logoImageView = UIImageView(image: UIImage(named: "WebDeckLogo"))
-    var pageControl = MDCPageControl()
+    let pageControl = MDCPageControl()
     let scrollView = UIScrollView()
     let pages = NSMutableArray()
-    var news = NewsModule()
+    var newsArray = [JSON]()
+    var newsString = [String]()
+
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-
-        let pageColors = [
-            type(of: self).ColorFromRGB(0x55C4f5),
-            type(of: self).ColorFromRGB(0x35B7F3),
-            type(of: self).ColorFromRGB(0x1EAAF1),
-            type(of: self).ColorFromRGB(0x55C4f5),
-            type(of: self).ColorFromRGB(0x35B7F3),
-            type(of: self).ColorFromRGB(0x1EAAF1)
-        ]
-
+        
         scrollView.frame = self.view.bounds
         scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         scrollView.delegate = self
         scrollView.isPagingEnabled = true
-        scrollView.contentSize = CGSize(width: view.bounds.width * CGFloat(pageColors.count),
-                                        height: view.bounds.height)
         scrollView.showsHorizontalScrollIndicator = false
         view.addSubview(scrollView)
+        
+        
 
-        // Add pages to scrollView.
-        for (i, pageColor) in pageColors.enumerated() {
-            let pageFrame: CGRect = self.view.bounds.offsetBy(dx: CGFloat(i) * view.bounds.width, dy: 0)
-            let page = UILabel.init(frame: pageFrame)
-            page.text = String(format: "Page %zd", i + 1)
-            page.font = page.font.withSize(50)
-            page.textColor = UIColor.init(white: 0, alpha: 0.8)
-            page.backgroundColor = pageColor
-            page.textAlignment = NSTextAlignment.center
-            page.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin]
-            scrollView.addSubview(page)
-            pages.add(page)
+        // getnews
+        Alamofire.request("https://newsapi.org/v1/articles?source=the-wall-street-journal&sortBy=top&apiKey=88729f588b05434099e6bcbbba4ab167").validate().responseJSON
+            { response in
+                switch response.result {
+                case .success(let data):
+                    let json = JSON(data)
+                    self.newsArray = json["articles"].arrayValue
+                    self.scrollView.contentSize = CGSize(width: self.view.bounds.width * CGFloat(self.newsArray.count),
+                                                    height: self.view.bounds.height)
+                        // Add pages to scrollView.
+                        for (i, article) in self.newsArray.enumerated() {
+                            let pageFrame: CGRect = self.view.bounds.offsetBy(dx: CGFloat(i) * self.view.bounds.width, dy: 0)
+                            let page = UILabel.init(frame:pageFrame)
+                            page.text = String(format: "\(article["title"].stringValue)")
+                            page.font = page.font.withSize(50)
+                            page.textColor = UIColor.init(white: 0, alpha: 0.8)
+                            page.backgroundColor = UIColor.red
+                            page.textAlignment = NSTextAlignment.center
+                            page.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin]
+                            self.scrollView.addSubview(page)
+                            self.pages.add(page)
+                    }
+                        self.pageControl.numberOfPages = self.newsArray.count
+
+                case .failure(let error):
+                    print(error)
+                }
         }
+        //end of news
+        
 
-
+        
+    
+      
         let pageControlSize = pageControl.sizeThatFits(view.bounds.size)
         pageControl.frame = CGRect(x: 0,
                                    y: view.bounds.height - pageControlSize.height,
