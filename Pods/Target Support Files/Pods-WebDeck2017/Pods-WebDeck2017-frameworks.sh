@@ -91,10 +91,6 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Bolts/Bolts.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ChameleonFramework/ChameleonFramework.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/MDFTextAccessibility/MDFTextAccessibility.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/MaterialComponents/MaterialComponents.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MutableDataScanner/MutableDataScanner.framework"
   install_framework "$BUILT_PRODUCTS_DIR/OAuthSwift/OAuthSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Parse/Parse.framework"
@@ -106,10 +102,6 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Bolts/Bolts.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ChameleonFramework/ChameleonFramework.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/MDFTextAccessibility/MDFTextAccessibility.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/MaterialComponents/MaterialComponents.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MutableDataScanner/MutableDataScanner.framework"
   install_framework "$BUILT_PRODUCTS_DIR/OAuthSwift/OAuthSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Parse/Parse.framework"

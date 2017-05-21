@@ -10,6 +10,7 @@
 		02A12550560DD9138B8DDA9E /* Pods_WebDeck2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1B2292D92951D2B475E674 /* Pods_WebDeck2017.framework */; };
 		28855BD8057CE258AC0D32F1 /* Pods_WebDeck2017Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C33CEA1232CDA0D863A910 /* Pods_WebDeck2017Tests.framework */; };
 		C83C22B6C3653CF790AF0660 /* Pods_WebDeck2017UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA9B2EC427B1753136FDC0F /* Pods_WebDeck2017UITests.framework */; };
+		FC0588281ED12FF6006C4F80 /* CalendarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0588271ED12FF6006C4F80 /* CalendarModule.swift */; };
 		FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304DFD1E70691C00D624DD /* AppDelegate.swift */; };
 		FC304E031E70691C00D624DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC304E011E70691C00D624DD /* Main.storyboard */; };
 		FC304E051E70691C00D624DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC304E041E70691C00D624DD /* Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		FC3765651E73D7020097B782 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765621E73D7020097B782 /* Parse.framework */; };
 		FC3765661E73D7020097B782 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765631E73D7020097B782 /* ParseUI.framework */; };
 		FC7BD7DA1E71BC1D000F33A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */; };
-		FC7E8BF61EBA4A5300CF3EF5 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7E8BF51EBA4A5300CF3EF5 /* NewsModel.swift */; };
 		FCD4B30F1EA9AA19008A413D /* WDIcon-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD4B30E1EA9AA19008A413D /* WDIcon-Large.png */; };
 		FCE3C0011EA90F0500CD9C2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */; };
 		FCE656EA1E75220E00DE9D85 /* ContinueSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */; };
@@ -83,6 +83,7 @@
 		90DDBA0B5E39310E9CAE4D4E /* Pods-WebDeck2017UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017UITests/Pods-WebDeck2017UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A178E76B6B2B9BCA56E83719 /* Pods-WebDeck2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017/Pods-WebDeck2017.debug.xcconfig"; sourceTree = "<group>"; };
 		BFBDA9EE32FA85926D140EB7 /* Pods-WebDeck2017UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017UITests/Pods-WebDeck2017UITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC0588271ED12FF6006C4F80 /* CalendarModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarModule.swift; path = modules/CalendarModule.swift; sourceTree = "<group>"; };
 		FC304DFA1E70691C00D624DD /* WebDeck2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDeck2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC304DFD1E70691C00D624DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC304E021E70691C00D624DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,7 +101,6 @@
 		FC3765621E73D7020097B782 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/Parse/Parse.framework"; sourceTree = "<group>"; };
 		FC3765631E73D7020097B782 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/ParseUI/ParseUI.framework"; sourceTree = "<group>"; };
 		FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FC7E8BF51EBA4A5300CF3EF5 /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsModel.swift; path = WebDeck2017/modules/NewsModel.swift; sourceTree = SOURCE_ROOT; };
 		FC886721C5F885D6F8E9C8A4 /* Pods-WebDeck2017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FCD4B30E1EA9AA19008A413D /* WDIcon-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WDIcon-Large.png"; sourceTree = "<group>"; };
 		FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = controllers/HomeViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +188,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FC0588261ED12FDE006C4F80 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				FC0588271ED12FF6006C4F80 /* CalendarModule.swift */,
+			);
+			name = modules;
+			sourceTree = "<group>";
+		};
 		FC304DF11E70691B00D624DD = {
 			isa = PBXGroup;
 			children = (
@@ -213,8 +221,8 @@
 		FC304DFC1E70691C00D624DD /* WebDeck2017 */ = {
 			isa = PBXGroup;
 			children = (
+				FC0588261ED12FDE006C4F80 /* modules */,
 				FCD4B30E1EA9AA19008A413D /* WDIcon-Large.png */,
-				FCF110B91E8C36FC00887CBB /* models */,
 				FC7BD7DB1E71BC9B000F33A6 /* controllers */,
 				FCEE727C1E70702D00D55C48 /* public */,
 				FC304DFD1E70691C00D624DD /* AppDelegate.swift */,
@@ -286,15 +294,6 @@
 				FC7BD7D51E71BB24000F33A6 /* fonts */,
 			);
 			name = public;
-			sourceTree = "<group>";
-		};
-		FCF110B91E8C36FC00887CBB /* models */ = {
-			isa = PBXGroup;
-			children = (
-				FC7E8BF51EBA4A5300CF3EF5 /* NewsModel.swift */,
-			);
-			name = models;
-			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -610,10 +609,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC7E8BF61EBA4A5300CF3EF5 /* NewsModel.swift in Sources */,
 				FCE3C0011EA90F0500CD9C2A /* HomeViewController.swift in Sources */,
 				FCE656EB1E75220E00DE9D85 /* SignInViewController.swift in Sources */,
 				FCE656EA1E75220E00DE9D85 /* ContinueSignupViewController.swift in Sources */,
+				FC0588281ED12FF6006C4F80 /* CalendarModule.swift in Sources */,
 				FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */,
 				FCE656EC1E75220E00DE9D85 /* SignUpViewController.swift in Sources */,
 			);
