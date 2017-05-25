@@ -12,7 +12,6 @@
 		C83C22B6C3653CF790AF0660 /* Pods_WebDeck2017UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA9B2EC427B1753136FDC0F /* Pods_WebDeck2017UITests.framework */; };
 		FC0588281ED12FF6006C4F80 /* CalendarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0588271ED12FF6006C4F80 /* CalendarModule.swift */; };
 		FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304DFD1E70691C00D624DD /* AppDelegate.swift */; };
-		FC304E031E70691C00D624DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC304E011E70691C00D624DD /* Main.storyboard */; };
 		FC304E051E70691C00D624DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC304E041E70691C00D624DD /* Assets.xcassets */; };
 		FC304E131E70691D00D624DD /* WebDeck2017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304E121E70691D00D624DD /* WebDeck2017Tests.swift */; };
 		FC304E1E1E70691D00D624DD /* WebDeck2017UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304E1D1E70691D00D624DD /* WebDeck2017UITests.swift */; };
@@ -20,7 +19,10 @@
 		FC3765641E73D7020097B782 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765611E73D7020097B782 /* Bolts.framework */; };
 		FC3765651E73D7020097B782 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765621E73D7020097B782 /* Parse.framework */; };
 		FC3765661E73D7020097B782 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765631E73D7020097B782 /* ParseUI.framework */; };
-		FC7BD7DA1E71BC1D000F33A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */; };
+		FC8C74261ED7364000110481 /* NewsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8C74251ED7364000110481 /* NewsModule.swift */; };
+		FC8C742C1ED736A400110481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C742A1ED736A400110481 /* LaunchScreen.storyboard */; };
+		FC8C742D1ED736A400110481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C742B1ED736A400110481 /* Main.storyboard */; };
+		FCB094671ED5E572007A8E56 /* WeatherModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB094661ED5E572007A8E56 /* WeatherModule.swift */; };
 		FCD4B30F1EA9AA19008A413D /* WDIcon-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD4B30E1EA9AA19008A413D /* WDIcon-Large.png */; };
 		FCE3C0011EA90F0500CD9C2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */; };
 		FCE656EA1E75220E00DE9D85 /* ContinueSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */; };
@@ -28,20 +30,27 @@
 		FCE656EC1E75220E00DE9D85 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */; };
 		FCE656EF1E75221F00DE9D85 /* WDIcon-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE656ED1E75221F00DE9D85 /* WDIcon-Large.png */; };
 		FCE656F01E75221F00DE9D85 /* WDSlogan-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE656EE1E75221F00DE9D85 /* WDSlogan-Large.png */; };
-		FCE656F91E75238900DE9D85 /* WeissenhofGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F11E75222C00DE9D85 /* WeissenhofGrotesk-Bold.otf */; };
-		FCE656FA1E75238900DE9D85 /* WeissenhofGrotesk-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F21E75222C00DE9D85 /* WeissenhofGrotesk-BoldItalic.otf */; };
-		FCE656FB1E75238900DE9D85 /* WeissenhofGrotesk-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F31E75222C00DE9D85 /* WeissenhofGrotesk-Light.otf */; };
-		FCE656FC1E75238900DE9D85 /* WeissenhofGrotesk-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F41E75222C00DE9D85 /* WeissenhofGrotesk-LightItalic.otf */; };
-		FCE656FD1E75238900DE9D85 /* WeissenhofGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F51E75222C00DE9D85 /* WeissenhofGrotesk-Medium.otf */; };
-		FCE656FE1E75238900DE9D85 /* WeissenhofGrotesk-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F61E75222C00DE9D85 /* WeissenhofGrotesk-MediumItalic.otf */; };
-		FCE656FF1E75238900DE9D85 /* WeissenhofGrotesk-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F71E75222C00DE9D85 /* WeissenhofGrotesk-Regular.otf */; };
-		FCE657001E75238900DE9D85 /* WeissenhofGrotesk-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCE656F81E75222C00DE9D85 /* WeissenhofGrotesk-RegularItalic.otf */; };
 		FCE657011E75239400DE9D85 /* ContinueSignupViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */; };
 		FCE657021E75239400DE9D85 /* SignInViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E81E75220E00DE9D85 /* SignInViewController.swift */; };
 		FCE657031E75239400DE9D85 /* SignUpViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */; };
 		FCE657071E75251E00DE9D85 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE657051E75251E00DE9D85 /* EventKit.framework */; };
 		FCE657081E75251E00DE9D85 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE657061E75251E00DE9D85 /* EventKitUI.framework */; };
 		FCF76A601E8DDAB7007C83BA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF76A5F1E8DDAB7007C83BA /* Social.framework */; };
+		FCFA40861ED7789000B99DDA /* ReactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFA40851ED7789000B99DDA /* ReactionsViewController.swift */; };
+		FCFA40881ED7798100B99DDA /* Reaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFA40871ED7798100B99DDA /* Reaction.swift */; };
+		FCFA40BA1ED77ED400B99DDA /* Geog-MdIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AB1ED77ED400B99DDA /* Geog-MdIt.otf */; };
+		FCFA40BB1ED77ED400B99DDA /* Geog-RgIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AC1ED77ED400B99DDA /* Geog-RgIt.otf */; };
+		FCFA40BC1ED77ED400B99DDA /* Geog-SbIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AD1ED77ED400B99DDA /* Geog-SbIt.otf */; };
+		FCFA40BD1ED77ED400B99DDA /* Geog-ThIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AE1ED77ED400B99DDA /* Geog-ThIt.otf */; };
+		FCFA40BE1ED77ED400B99DDA /* Geog-UlIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AF1ED77ED400B99DDA /* Geog-UlIt.otf */; };
+		FCFA40C11ED77ED400B99DDA /* Geogtq-Bd.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B21ED77ED400B99DDA /* Geogtq-Bd.otf */; };
+		FCFA40C21ED77ED400B99DDA /* Geogtq-Lg.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B31ED77ED400B99DDA /* Geogtq-Lg.otf */; };
+		FCFA40C31ED77ED400B99DDA /* Geogtq-Md.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B41ED77ED400B99DDA /* Geogtq-Md.otf */; };
+		FCFA40C41ED77ED400B99DDA /* Geogtq-Rg.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B51ED77ED400B99DDA /* Geogtq-Rg.otf */; };
+		FCFA40C51ED77ED400B99DDA /* Geogtq-Sb.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B61ED77ED400B99DDA /* Geogtq-Sb.otf */; };
+		FCFA40C61ED77ED400B99DDA /* Geogtq-Th.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B71ED77ED400B99DDA /* Geogtq-Th.otf */; };
+		FCFA40C71ED77ED400B99DDA /* Geogtq-Ul.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B81ED77ED400B99DDA /* Geogtq-Ul.otf */; };
+		FCFA40C81ED77ED400B99DDA /* Nouvelle-Vague.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B91ED77ED400B99DDA /* Nouvelle-Vague.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +95,6 @@
 		FC0588271ED12FF6006C4F80 /* CalendarModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarModule.swift; path = modules/CalendarModule.swift; sourceTree = "<group>"; };
 		FC304DFA1E70691C00D624DD /* WebDeck2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDeck2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC304DFD1E70691C00D624DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC304E021E70691C00D624DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC304E041E70691C00D624DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC304E091E70691C00D624DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC304E0E1E70691D00D624DD /* WebDeck2017Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebDeck2017Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,8 +108,11 @@
 		FC3765611E73D7020097B782 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework"; sourceTree = "<group>"; };
 		FC3765621E73D7020097B782 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/Parse/Parse.framework"; sourceTree = "<group>"; };
 		FC3765631E73D7020097B782 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/ParseUI/ParseUI.framework"; sourceTree = "<group>"; };
-		FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC886721C5F885D6F8E9C8A4 /* Pods-WebDeck2017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FC8C74251ED7364000110481 /* NewsModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsModule.swift; path = modules/NewsModule.swift; sourceTree = "<group>"; };
+		FC8C742A1ED736A400110481 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = views/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC8C742B1ED736A400110481 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = views/Main.storyboard; sourceTree = "<group>"; };
+		FCB094661ED5E572007A8E56 /* WeatherModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherModule.swift; path = modules/WeatherModule.swift; sourceTree = "<group>"; };
 		FCD4B30E1EA9AA19008A413D /* WDIcon-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WDIcon-Large.png"; sourceTree = "<group>"; };
 		FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = controllers/HomeViewController.swift; sourceTree = "<group>"; };
 		FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContinueSignupViewController.swift; path = controllers/ContinueSignupViewController.swift; sourceTree = "<group>"; };
@@ -109,17 +120,24 @@
 		FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = controllers/SignUpViewController.swift; sourceTree = "<group>"; };
 		FCE656ED1E75221F00DE9D85 /* WDIcon-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WDIcon-Large.png"; path = "public/images/WDIcon-Large.png"; sourceTree = "<group>"; };
 		FCE656EE1E75221F00DE9D85 /* WDSlogan-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WDSlogan-Large.png"; path = "public/images/WDSlogan-Large.png"; sourceTree = "<group>"; };
-		FCE656F11E75222C00DE9D85 /* WeissenhofGrotesk-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-Bold.otf"; path = "public/fonts/WeissenhofGrotesk-Bold.otf"; sourceTree = "<group>"; };
-		FCE656F21E75222C00DE9D85 /* WeissenhofGrotesk-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-BoldItalic.otf"; path = "public/fonts/WeissenhofGrotesk-BoldItalic.otf"; sourceTree = "<group>"; };
-		FCE656F31E75222C00DE9D85 /* WeissenhofGrotesk-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-Light.otf"; path = "public/fonts/WeissenhofGrotesk-Light.otf"; sourceTree = "<group>"; };
-		FCE656F41E75222C00DE9D85 /* WeissenhofGrotesk-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-LightItalic.otf"; path = "public/fonts/WeissenhofGrotesk-LightItalic.otf"; sourceTree = "<group>"; };
-		FCE656F51E75222C00DE9D85 /* WeissenhofGrotesk-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-Medium.otf"; path = "public/fonts/WeissenhofGrotesk-Medium.otf"; sourceTree = "<group>"; };
-		FCE656F61E75222C00DE9D85 /* WeissenhofGrotesk-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-MediumItalic.otf"; path = "public/fonts/WeissenhofGrotesk-MediumItalic.otf"; sourceTree = "<group>"; };
-		FCE656F71E75222C00DE9D85 /* WeissenhofGrotesk-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-Regular.otf"; path = "public/fonts/WeissenhofGrotesk-Regular.otf"; sourceTree = "<group>"; };
-		FCE656F81E75222C00DE9D85 /* WeissenhofGrotesk-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WeissenhofGrotesk-RegularItalic.otf"; path = "public/fonts/WeissenhofGrotesk-RegularItalic.otf"; sourceTree = "<group>"; };
 		FCE657051E75251E00DE9D85 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		FCE657061E75251E00DE9D85 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		FCF76A5F1E8DDAB7007C83BA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		FCFA40851ED7789000B99DDA /* ReactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReactionsViewController.swift; path = controllers/ReactionsViewController.swift; sourceTree = "<group>"; };
+		FCFA40871ED7798100B99DDA /* Reaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reaction.swift; path = modules/Reaction.swift; sourceTree = "<group>"; };
+		FCFA40AB1ED77ED400B99DDA /* Geog-MdIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-MdIt.otf"; path = "public/fonts/Geog-MdIt.otf"; sourceTree = "<group>"; };
+		FCFA40AC1ED77ED400B99DDA /* Geog-RgIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-RgIt.otf"; path = "public/fonts/Geog-RgIt.otf"; sourceTree = "<group>"; };
+		FCFA40AD1ED77ED400B99DDA /* Geog-SbIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-SbIt.otf"; path = "public/fonts/Geog-SbIt.otf"; sourceTree = "<group>"; };
+		FCFA40AE1ED77ED400B99DDA /* Geog-ThIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-ThIt.otf"; path = "public/fonts/Geog-ThIt.otf"; sourceTree = "<group>"; };
+		FCFA40AF1ED77ED400B99DDA /* Geog-UlIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-UlIt.otf"; path = "public/fonts/Geog-UlIt.otf"; sourceTree = "<group>"; };
+		FCFA40B21ED77ED400B99DDA /* Geogtq-Bd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Bd.otf"; path = "public/fonts/Geogtq-Bd.otf"; sourceTree = "<group>"; };
+		FCFA40B31ED77ED400B99DDA /* Geogtq-Lg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Lg.otf"; path = "public/fonts/Geogtq-Lg.otf"; sourceTree = "<group>"; };
+		FCFA40B41ED77ED400B99DDA /* Geogtq-Md.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Md.otf"; path = "public/fonts/Geogtq-Md.otf"; sourceTree = "<group>"; };
+		FCFA40B51ED77ED400B99DDA /* Geogtq-Rg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Rg.otf"; path = "public/fonts/Geogtq-Rg.otf"; sourceTree = "<group>"; };
+		FCFA40B61ED77ED400B99DDA /* Geogtq-Sb.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Sb.otf"; path = "public/fonts/Geogtq-Sb.otf"; sourceTree = "<group>"; };
+		FCFA40B71ED77ED400B99DDA /* Geogtq-Th.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Th.otf"; path = "public/fonts/Geogtq-Th.otf"; sourceTree = "<group>"; };
+		FCFA40B81ED77ED400B99DDA /* Geogtq-Ul.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Ul.otf"; path = "public/fonts/Geogtq-Ul.otf"; sourceTree = "<group>"; };
+		FCFA40B91ED77ED400B99DDA /* Nouvelle-Vague.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nouvelle-Vague.ttf"; path = "public/fonts/Nouvelle-Vague.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +210,9 @@
 			isa = PBXGroup;
 			children = (
 				FC0588271ED12FF6006C4F80 /* CalendarModule.swift */,
+				FCB094661ED5E572007A8E56 /* WeatherModule.swift */,
+				FC8C74251ED7364000110481 /* NewsModule.swift */,
+				FCFA40871ED7798100B99DDA /* Reaction.swift */,
 			);
 			name = modules;
 			sourceTree = "<group>";
@@ -226,8 +247,7 @@
 				FC7BD7DB1E71BC9B000F33A6 /* controllers */,
 				FCEE727C1E70702D00D55C48 /* public */,
 				FC304DFD1E70691C00D624DD /* AppDelegate.swift */,
-				FC304E011E70691C00D624DD /* Main.storyboard */,
-				FC7BD7D91E71BC1D000F33A6 /* LaunchScreen.storyboard */,
+				FC8C74271ED7367200110481 /* views */,
 				FC304E041E70691C00D624DD /* Assets.xcassets */,
 				FC304E091E70691C00D624DD /* Info.plist */,
 			);
@@ -255,14 +275,19 @@
 		FC7BD7D51E71BB24000F33A6 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FCE656F11E75222C00DE9D85 /* WeissenhofGrotesk-Bold.otf */,
-				FCE656F21E75222C00DE9D85 /* WeissenhofGrotesk-BoldItalic.otf */,
-				FCE656F31E75222C00DE9D85 /* WeissenhofGrotesk-Light.otf */,
-				FCE656F41E75222C00DE9D85 /* WeissenhofGrotesk-LightItalic.otf */,
-				FCE656F51E75222C00DE9D85 /* WeissenhofGrotesk-Medium.otf */,
-				FCE656F61E75222C00DE9D85 /* WeissenhofGrotesk-MediumItalic.otf */,
-				FCE656F71E75222C00DE9D85 /* WeissenhofGrotesk-Regular.otf */,
-				FCE656F81E75222C00DE9D85 /* WeissenhofGrotesk-RegularItalic.otf */,
+				FCFA40AB1ED77ED400B99DDA /* Geog-MdIt.otf */,
+				FCFA40AC1ED77ED400B99DDA /* Geog-RgIt.otf */,
+				FCFA40AD1ED77ED400B99DDA /* Geog-SbIt.otf */,
+				FCFA40AE1ED77ED400B99DDA /* Geog-ThIt.otf */,
+				FCFA40AF1ED77ED400B99DDA /* Geog-UlIt.otf */,
+				FCFA40B21ED77ED400B99DDA /* Geogtq-Bd.otf */,
+				FCFA40B31ED77ED400B99DDA /* Geogtq-Lg.otf */,
+				FCFA40B41ED77ED400B99DDA /* Geogtq-Md.otf */,
+				FCFA40B51ED77ED400B99DDA /* Geogtq-Rg.otf */,
+				FCFA40B61ED77ED400B99DDA /* Geogtq-Sb.otf */,
+				FCFA40B71ED77ED400B99DDA /* Geogtq-Th.otf */,
+				FCFA40B81ED77ED400B99DDA /* Geogtq-Ul.otf */,
+				FCFA40B91ED77ED400B99DDA /* Nouvelle-Vague.ttf */,
 			);
 			name = fonts;
 			sourceTree = "<group>";
@@ -283,8 +308,18 @@
 				FCE656E81E75220E00DE9D85 /* SignInViewController.swift */,
 				FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */,
 				FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */,
+				FCFA40851ED7789000B99DDA /* ReactionsViewController.swift */,
 			);
 			name = controllers;
+			sourceTree = "<group>";
+		};
+		FC8C74271ED7367200110481 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FC8C742A1ED736A400110481 /* LaunchScreen.storyboard */,
+				FC8C742B1ED736A400110481 /* Main.storyboard */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 		FCEE727C1E70702D00D55C48 /* public */ = {
@@ -418,22 +453,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCE657011E75239400DE9D85 /* ContinueSignupViewController.swift in Resources */,
+				FCFA40C61ED77ED400B99DDA /* Geogtq-Th.otf in Resources */,
 				FCE657021E75239400DE9D85 /* SignInViewController.swift in Resources */,
+				FCFA40C11ED77ED400B99DDA /* Geogtq-Bd.otf in Resources */,
+				FCFA40BD1ED77ED400B99DDA /* Geog-ThIt.otf in Resources */,
+				FCFA40C51ED77ED400B99DDA /* Geogtq-Sb.otf in Resources */,
+				FCFA40C41ED77ED400B99DDA /* Geogtq-Rg.otf in Resources */,
+				FCFA40C71ED77ED400B99DDA /* Geogtq-Ul.otf in Resources */,
 				FCE657031E75239400DE9D85 /* SignUpViewController.swift in Resources */,
-				FCE656F91E75238900DE9D85 /* WeissenhofGrotesk-Bold.otf in Resources */,
-				FCE656FA1E75238900DE9D85 /* WeissenhofGrotesk-BoldItalic.otf in Resources */,
-				FCE656FB1E75238900DE9D85 /* WeissenhofGrotesk-Light.otf in Resources */,
-				FCE656FC1E75238900DE9D85 /* WeissenhofGrotesk-LightItalic.otf in Resources */,
-				FCE656FD1E75238900DE9D85 /* WeissenhofGrotesk-Medium.otf in Resources */,
-				FCE656FE1E75238900DE9D85 /* WeissenhofGrotesk-MediumItalic.otf in Resources */,
+				FCFA40BA1ED77ED400B99DDA /* Geog-MdIt.otf in Resources */,
+				FC8C742D1ED736A400110481 /* Main.storyboard in Resources */,
+				FC8C742C1ED736A400110481 /* LaunchScreen.storyboard in Resources */,
+				FCFA40C81ED77ED400B99DDA /* Nouvelle-Vague.ttf in Resources */,
 				FCD4B30F1EA9AA19008A413D /* WDIcon-Large.png in Resources */,
-				FCE656FF1E75238900DE9D85 /* WeissenhofGrotesk-Regular.otf in Resources */,
-				FCE657001E75238900DE9D85 /* WeissenhofGrotesk-RegularItalic.otf in Resources */,
+				FCFA40BB1ED77ED400B99DDA /* Geog-RgIt.otf in Resources */,
 				FC304E051E70691C00D624DD /* Assets.xcassets in Resources */,
+				FCFA40BC1ED77ED400B99DDA /* Geog-SbIt.otf in Resources */,
 				FCE656EF1E75221F00DE9D85 /* WDIcon-Large.png in Resources */,
-				FC7BD7DA1E71BC1D000F33A6 /* LaunchScreen.storyboard in Resources */,
+				FCFA40C31ED77ED400B99DDA /* Geogtq-Md.otf in Resources */,
 				FCE656F01E75221F00DE9D85 /* WDSlogan-Large.png in Resources */,
-				FC304E031E70691C00D624DD /* Main.storyboard in Resources */,
+				FCFA40BE1ED77ED400B99DDA /* Geog-UlIt.otf in Resources */,
+				FCFA40C21ED77ED400B99DDA /* Geogtq-Lg.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,11 +649,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFA40861ED7789000B99DDA /* ReactionsViewController.swift in Sources */,
 				FCE3C0011EA90F0500CD9C2A /* HomeViewController.swift in Sources */,
 				FCE656EB1E75220E00DE9D85 /* SignInViewController.swift in Sources */,
 				FCE656EA1E75220E00DE9D85 /* ContinueSignupViewController.swift in Sources */,
+				FCB094671ED5E572007A8E56 /* WeatherModule.swift in Sources */,
 				FC0588281ED12FF6006C4F80 /* CalendarModule.swift in Sources */,
+				FCFA40881ED7798100B99DDA /* Reaction.swift in Sources */,
 				FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */,
+				FC8C74261ED7364000110481 /* NewsModule.swift in Sources */,
 				FCE656EC1E75220E00DE9D85 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -648,17 +692,6 @@
 			targetProxy = FC304E1A1E70691D00D624DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FC304E011E70691C00D624DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC304E021E70691C00D624DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FC304E201E70691D00D624DD /* Debug */ = {

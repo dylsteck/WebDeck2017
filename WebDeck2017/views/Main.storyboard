@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F60a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G8c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -206,16 +207,110 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="3DQ-3x-5eo" kind="show" identifier="reactionTriggerSegue" id="fOH-Yb-aG4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0fV-zk-VQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1490.4000000000001" y="36.431784107946029"/>
+        </scene>
+        <!--Reactions View Controller-->
+        <scene sceneID="cEy-NC-6uh">
+            <objects>
+                <viewController id="3DQ-3x-5eo" customClass="ReactionsViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iyJ-Vu-5Go"/>
+                        <viewControllerLayoutGuide type="bottom" id="C5o-rf-NWP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TC3-OO-PBR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TZ-wp-gsI">
+                                <rect key="frame" x="37" y="89.5" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyW-oJ-R2g">
+                                <rect key="frame" x="26.5" y="122" width="322" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="ROS-ep-jeU"/>
+                                    <constraint firstAttribute="width" constant="322" id="un5-OD-mtQ"/>
+                                </constraints>
+                                <string key="text">Add attachments like work you have done, comment on news, react and more. Experience reactions and post your own to the community.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V2k-Bo-dBa">
+                                <rect key="frame" x="137.5" y="319" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="rUQ-df-xWI"/>
+                                    <constraint firstAttribute="height" constant="30" id="uW4-9X-q8U"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypn-zE-u7V">
+                                <rect key="frame" x="163" y="585.5" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="sendReaction:" destination="3DQ-3x-5eo" eventType="touchUpInside" id="U8e-iY-zgo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxS-XL-j1O">
+                                <rect key="frame" x="149.5" y="18.5" width="77" height="30"/>
+                                <state key="normal" title="Back home"/>
+                                <connections>
+                                    <segue destination="c0K-zo-7Ma" kind="show" id="eTP-GY-Hht"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Content" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSj-Cx-D6p">
+                                <rect key="frame" x="72" y="375.5" width="255" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ZV7-MY-MFt"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.97647058823529409" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ypn-zE-u7V" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="1.8" id="5RO-K3-9pA"/>
+                            <constraint firstItem="ypn-zE-u7V" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" id="7I9-U8-OKf"/>
+                            <constraint firstItem="LxS-XL-j1O" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="0.1" id="HyJ-57-5k8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pSj-Cx-D6p" secondAttribute="trailing" constant="32" id="Mhm-Mn-nPU"/>
+                            <constraint firstItem="LxS-XL-j1O" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" id="SeU-6R-zw2"/>
+                            <constraint firstItem="V2k-Bo-dBa" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" id="UH4-QC-cZB"/>
+                            <constraint firstItem="pSj-Cx-D6p" firstAttribute="leading" secondItem="TC3-OO-PBR" secondAttribute="leadingMargin" constant="56" id="WYa-wk-Nrs"/>
+                            <constraint firstItem="6TZ-wp-gsI" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="0.3" id="YGU-9Z-JMs"/>
+                            <constraint firstItem="6TZ-wp-gsI" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" multiplier="0.4" id="a0m-9P-EPp"/>
+                            <constraint firstItem="eyW-oJ-R2g" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" id="dh1-BQ-5aN"/>
+                            <constraint firstItem="eyW-oJ-R2g" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="0.5" id="m5i-AU-2mS"/>
+                            <constraint firstItem="V2k-Bo-dBa" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" id="ssH-Ar-Epe"/>
+                            <constraint firstItem="ypn-zE-u7V" firstAttribute="top" secondItem="pSj-Cx-D6p" secondAttribute="bottom" constant="60" id="swx-PW-4K6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="eyW-oJ-R2g" id="Hw9-Et-IS1"/>
+                        <outlet property="headerLabel" destination="6TZ-wp-gsI" id="v8v-rQ-XVh"/>
+                        <outlet property="reactionContent" destination="pSj-Cx-D6p" id="sgg-Qo-uvy"/>
+                        <outlet property="reactionTitle" destination="V2k-Bo-dBa" id="a9P-4b-Pto"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0A-Gb-Cm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2256.8000000000002" y="36.431784107946029"/>
         </scene>
     </scenes>
     <resources>
         <image name="WDSlogan-Large.png" width="299" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HNg-xC-K2l"/>
+        <segue reference="eTP-GY-Hht"/>
     </inferredMetricsTieBreakers>
 </document>

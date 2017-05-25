@@ -10,6 +10,8 @@ import Foundation
 
 import TwicketSegmentedControl
 
+import Parse
+
 import SwiftyJSON
 import Alamofire
 
@@ -27,9 +29,48 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         calendar.requestAccessToCalendar()
         calendar.loadEvents()
         
-        logoImageView.center = view.center
-        view.addSubview(logoImageView)
+        addSegmentedControl()
+        
+        //logoImageView.center = view.center
+        //view.addSubview(logoImageView)
         
         
     } // end of viewDidLoad
+    
+    func addSegmentedControl(){
+        let titles = ["Home", "Reactions", "Sign Out"]
+        //x is where it is on the x axis, y is where it is on the y axis, width is width, and height is height. Higher numbers in the y column get closer to the top of the frame, and smaller get it closer to the bottom.
+        let frame = CGRect(x: 2, y: view.frame.height / 7, width: view.frame.width - 10, height: 40)
+        let segmentedControl = TwicketSegmentedControl(frame: frame)
+        segmentedControl.setSegmentItems(titles)
+        segmentedControl.setSegmentItems(titles)
+        segmentedControl.delegate = self
+        view.addSubview(segmentedControl)
+        //        let button = UIButton(frame: frame)
+        //        self.view.addSubview(button)
+    }
 } //end of Class
+
+//Extension for the segmented control
+extension HomeViewController: TwicketSegmentedControlDelegate {
+    func didSelect(_ segmentIndex: Int) {
+        print("Selected index: \(segmentIndex)")
+        if segmentIndex == 2 {
+            PFUser.logOut()
+            let currentUser = PFUser.current()
+            if currentUser == nil {
+                print("user is nil(logged out)")
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier: "SignUpViewController")
+                self.present(viewController, animated: true)
+                
+            } else {
+                print("user is not nil")
+            };
+        }
+        if segmentIndex == 1 {
+            performSegue(withIdentifier: "reactionTriggerSegue", sender: self)
+        }
+    }
+}
+

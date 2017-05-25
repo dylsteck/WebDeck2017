@@ -2,11 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -46,6 +41,11 @@
 	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSCalendarsUsageDescription</key>
 	<string>$(PRODUCT_NAME) calendar events</string>
 	<key>NSLocationAlwaysUsageDescription</key>
@@ -54,17 +54,21 @@
 	<string>$(PRODUCT_NAME) needs your location to get weather around you</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>WeissenhofGrotesk-Bold.otf</string>
-		<string>WeissenhofGrotesk-BoldItalic.otf</string>
-		<string>WeissenhofGrotesk-Light.otf</string>
-		<string>WeissenhofGrotesk-LightItalic.otf</string>
-		<string>WeissenhofGrotesk-Medium.otf</string>
-		<string>WeissenhofGrotesk-MediumItalic.otf</string>
-		<string>WeissenhofGrotesk-Regular.otf</string>
-		<string>WeissenhofGrotesk-RegularItalic.otf</string>
+		<string>Geog-MdIt.otf</string>
+		<string>Geog-Rglt.otf</string>
+		<string>Geog-Sblt.otf</string>
+		<string>Geog-Thlt.otf</string>
+		<string>Geog-Ullt.otf</string>
+		<string>Geog-Bd.otf</string>
+		<string>Geog-Lg.otf</string>
+		<string>Geog-Md.otf</string>
+		<string>Geog-Rg.otf</string>
+		<string>Geog-Th.otf</string>
+		<string>Geog-Ul.otf</string>
+		<string>Nouvelle-Vague.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen.storyboard</string>
+	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
