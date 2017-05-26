@@ -12,7 +12,7 @@ import Parse
 class Reaction {
 
 
-    func sendReaction(reactionTitle: UITextField!, reactionContent: UITextField!, sVar: Reaction) {
+    func sendReaction(reactionTitle: UITextField!, reactionContent: UITextField!, showPresent: ()) {
         let reaction = PFObject(className: "Reactions")
         reaction["title"] = reactionTitle.text
         reaction["content"] = reactionContent.text
@@ -21,12 +21,17 @@ class Reaction {
             if succeeded {
                 print("Success with Parse yyyaboi")
                 print(reaction)
-                self.presentViewController(HomeViewController, animated:true, completion:nil)
+                self.showPresent()
             }
                 else {
+                let alert = UIAlertView(title: "Error", message: "There has been a server error.", delegate: self, cancelButtonTitle: "OK")
+                alert.show()
                     print("parse failure :(")
             }
         }
+    }
+
+    func showPresent(){
     }
 
 }

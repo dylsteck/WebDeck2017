@@ -13,6 +13,12 @@ import Parse
 class ReactionsViewController: UIViewController {
     private var reaction = Reaction()
     
+    func showPresentVC(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
+        self.present(viewController, animated: true)
+    }
+    
     @IBOutlet weak var reactionContent: UITextField!
     @IBOutlet weak var reactionTitle: UITextField!
     
@@ -27,11 +33,11 @@ class ReactionsViewController: UIViewController {
         
     }
     
-    
+
     
     @IBAction func sendReaction(_ sender: UIButton) {
-        reaction.sendReaction(reactionTitle: reactionTitle, reactionContent: reactionContent, sVar: ReactionsViewController)
-    
+
+        reaction.sendReaction(reactionTitle: reactionTitle, reactionContent: reactionContent, showPresent:showPresentVC())
         
     }
 }
