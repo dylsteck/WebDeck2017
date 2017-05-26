@@ -9,16 +9,12 @@ target 'WebDeck2017' do
     pod 'Alamofire', '~> 4.0'
  	pod 'SwiftyJSON', git: 'https://github.com/BaiduHiDeviOS/SwiftyJSON.git', branch: 'swift3'
     
-    pod 'Fabric'
-    pod 'Digits'
-    pod 'Answers'
-    
     pod 'TwitterAPI'
     pod 'Parse'
     pod 'ParseUI'
     
     pod 'TwicketSegmentedControl'
-    #pod 'ParseFacebookUtilsV4'
+    
   target 'WebDeck2017Tests' do
     inherit! :search_paths
     # Pods for testing

@@ -19,6 +19,19 @@
 		FC3765641E73D7020097B782 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765611E73D7020097B782 /* Bolts.framework */; };
 		FC3765651E73D7020097B782 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765621E73D7020097B782 /* Parse.framework */; };
 		FC3765661E73D7020097B782 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765631E73D7020097B782 /* ParseUI.framework */; };
+		FC8AD1111ED7A20D002C5854 /* Geog-MdIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AB1ED77ED400B99DDA /* Geog-MdIt.otf */; };
+		FC8AD1121ED7A20D002C5854 /* Geog-RgIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AC1ED77ED400B99DDA /* Geog-RgIt.otf */; };
+		FC8AD1131ED7A20D002C5854 /* Geog-SbIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AD1ED77ED400B99DDA /* Geog-SbIt.otf */; };
+		FC8AD1141ED7A20D002C5854 /* Geog-ThIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AE1ED77ED400B99DDA /* Geog-ThIt.otf */; };
+		FC8AD1151ED7A20D002C5854 /* Geog-UlIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AF1ED77ED400B99DDA /* Geog-UlIt.otf */; };
+		FC8AD1161ED7A20D002C5854 /* Geog-Bd.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B21ED77ED400B99DDA /* Geog-Bd.otf */; };
+		FC8AD1171ED7A20D002C5854 /* Geog-Lg.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B31ED77ED400B99DDA /* Geog-Lg.otf */; };
+		FC8AD1181ED7A20D002C5854 /* Geog-Md.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B41ED77ED400B99DDA /* Geog-Md.otf */; };
+		FC8AD1191ED7A20D002C5854 /* Geog-Rg.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B51ED77ED400B99DDA /* Geog-Rg.otf */; };
+		FC8AD11A1ED7A20D002C5854 /* Geog-Sb.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B61ED77ED400B99DDA /* Geog-Sb.otf */; };
+		FC8AD11B1ED7A20D002C5854 /* Geog-Th.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B71ED77ED400B99DDA /* Geog-Th.otf */; };
+		FC8AD11C1ED7A20D002C5854 /* Geog-Ul.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B81ED77ED400B99DDA /* Geog-Ul.otf */; };
+		FC8AD11D1ED7A20D002C5854 /* Nouvelle-Vague.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B91ED77ED400B99DDA /* Nouvelle-Vague.ttf */; };
 		FC8C74261ED7364000110481 /* NewsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8C74251ED7364000110481 /* NewsModule.swift */; };
 		FC8C742C1ED736A400110481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C742A1ED736A400110481 /* LaunchScreen.storyboard */; };
 		FC8C742D1ED736A400110481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C742B1ED736A400110481 /* Main.storyboard */; };
@@ -38,19 +51,6 @@
 		FCF76A601E8DDAB7007C83BA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF76A5F1E8DDAB7007C83BA /* Social.framework */; };
 		FCFA40861ED7789000B99DDA /* ReactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFA40851ED7789000B99DDA /* ReactionsViewController.swift */; };
 		FCFA40881ED7798100B99DDA /* Reaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFA40871ED7798100B99DDA /* Reaction.swift */; };
-		FCFA40BA1ED77ED400B99DDA /* Geog-MdIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AB1ED77ED400B99DDA /* Geog-MdIt.otf */; };
-		FCFA40BB1ED77ED400B99DDA /* Geog-RgIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AC1ED77ED400B99DDA /* Geog-RgIt.otf */; };
-		FCFA40BC1ED77ED400B99DDA /* Geog-SbIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AD1ED77ED400B99DDA /* Geog-SbIt.otf */; };
-		FCFA40BD1ED77ED400B99DDA /* Geog-ThIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AE1ED77ED400B99DDA /* Geog-ThIt.otf */; };
-		FCFA40BE1ED77ED400B99DDA /* Geog-UlIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AF1ED77ED400B99DDA /* Geog-UlIt.otf */; };
-		FCFA40C11ED77ED400B99DDA /* Geogtq-Bd.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B21ED77ED400B99DDA /* Geogtq-Bd.otf */; };
-		FCFA40C21ED77ED400B99DDA /* Geogtq-Lg.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B31ED77ED400B99DDA /* Geogtq-Lg.otf */; };
-		FCFA40C31ED77ED400B99DDA /* Geogtq-Md.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B41ED77ED400B99DDA /* Geogtq-Md.otf */; };
-		FCFA40C41ED77ED400B99DDA /* Geogtq-Rg.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B51ED77ED400B99DDA /* Geogtq-Rg.otf */; };
-		FCFA40C51ED77ED400B99DDA /* Geogtq-Sb.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B61ED77ED400B99DDA /* Geogtq-Sb.otf */; };
-		FCFA40C61ED77ED400B99DDA /* Geogtq-Th.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B71ED77ED400B99DDA /* Geogtq-Th.otf */; };
-		FCFA40C71ED77ED400B99DDA /* Geogtq-Ul.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B81ED77ED400B99DDA /* Geogtq-Ul.otf */; };
-		FCFA40C81ED77ED400B99DDA /* Nouvelle-Vague.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B91ED77ED400B99DDA /* Nouvelle-Vague.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,13 +130,13 @@
 		FCFA40AD1ED77ED400B99DDA /* Geog-SbIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-SbIt.otf"; path = "public/fonts/Geog-SbIt.otf"; sourceTree = "<group>"; };
 		FCFA40AE1ED77ED400B99DDA /* Geog-ThIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-ThIt.otf"; path = "public/fonts/Geog-ThIt.otf"; sourceTree = "<group>"; };
 		FCFA40AF1ED77ED400B99DDA /* Geog-UlIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-UlIt.otf"; path = "public/fonts/Geog-UlIt.otf"; sourceTree = "<group>"; };
-		FCFA40B21ED77ED400B99DDA /* Geogtq-Bd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Bd.otf"; path = "public/fonts/Geogtq-Bd.otf"; sourceTree = "<group>"; };
-		FCFA40B31ED77ED400B99DDA /* Geogtq-Lg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Lg.otf"; path = "public/fonts/Geogtq-Lg.otf"; sourceTree = "<group>"; };
-		FCFA40B41ED77ED400B99DDA /* Geogtq-Md.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Md.otf"; path = "public/fonts/Geogtq-Md.otf"; sourceTree = "<group>"; };
-		FCFA40B51ED77ED400B99DDA /* Geogtq-Rg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Rg.otf"; path = "public/fonts/Geogtq-Rg.otf"; sourceTree = "<group>"; };
-		FCFA40B61ED77ED400B99DDA /* Geogtq-Sb.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Sb.otf"; path = "public/fonts/Geogtq-Sb.otf"; sourceTree = "<group>"; };
-		FCFA40B71ED77ED400B99DDA /* Geogtq-Th.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Th.otf"; path = "public/fonts/Geogtq-Th.otf"; sourceTree = "<group>"; };
-		FCFA40B81ED77ED400B99DDA /* Geogtq-Ul.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geogtq-Ul.otf"; path = "public/fonts/Geogtq-Ul.otf"; sourceTree = "<group>"; };
+		FCFA40B21ED77ED400B99DDA /* Geog-Bd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Bd.otf"; path = "public/fonts/Geog-Bd.otf"; sourceTree = "<group>"; };
+		FCFA40B31ED77ED400B99DDA /* Geog-Lg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Lg.otf"; path = "public/fonts/Geog-Lg.otf"; sourceTree = "<group>"; };
+		FCFA40B41ED77ED400B99DDA /* Geog-Md.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Md.otf"; path = "public/fonts/Geog-Md.otf"; sourceTree = "<group>"; };
+		FCFA40B51ED77ED400B99DDA /* Geog-Rg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Rg.otf"; path = "public/fonts/Geog-Rg.otf"; sourceTree = "<group>"; };
+		FCFA40B61ED77ED400B99DDA /* Geog-Sb.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Sb.otf"; path = "public/fonts/Geog-Sb.otf"; sourceTree = "<group>"; };
+		FCFA40B71ED77ED400B99DDA /* Geog-Th.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Th.otf"; path = "public/fonts/Geog-Th.otf"; sourceTree = "<group>"; };
+		FCFA40B81ED77ED400B99DDA /* Geog-Ul.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Ul.otf"; path = "public/fonts/Geog-Ul.otf"; sourceTree = "<group>"; };
 		FCFA40B91ED77ED400B99DDA /* Nouvelle-Vague.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nouvelle-Vague.ttf"; path = "public/fonts/Nouvelle-Vague.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -280,13 +280,13 @@
 				FCFA40AD1ED77ED400B99DDA /* Geog-SbIt.otf */,
 				FCFA40AE1ED77ED400B99DDA /* Geog-ThIt.otf */,
 				FCFA40AF1ED77ED400B99DDA /* Geog-UlIt.otf */,
-				FCFA40B21ED77ED400B99DDA /* Geogtq-Bd.otf */,
-				FCFA40B31ED77ED400B99DDA /* Geogtq-Lg.otf */,
-				FCFA40B41ED77ED400B99DDA /* Geogtq-Md.otf */,
-				FCFA40B51ED77ED400B99DDA /* Geogtq-Rg.otf */,
-				FCFA40B61ED77ED400B99DDA /* Geogtq-Sb.otf */,
-				FCFA40B71ED77ED400B99DDA /* Geogtq-Th.otf */,
-				FCFA40B81ED77ED400B99DDA /* Geogtq-Ul.otf */,
+				FCFA40B21ED77ED400B99DDA /* Geog-Bd.otf */,
+				FCFA40B31ED77ED400B99DDA /* Geog-Lg.otf */,
+				FCFA40B41ED77ED400B99DDA /* Geog-Md.otf */,
+				FCFA40B51ED77ED400B99DDA /* Geog-Rg.otf */,
+				FCFA40B61ED77ED400B99DDA /* Geog-Sb.otf */,
+				FCFA40B71ED77ED400B99DDA /* Geog-Th.otf */,
+				FCFA40B81ED77ED400B99DDA /* Geog-Ul.otf */,
 				FCFA40B91ED77ED400B99DDA /* Nouvelle-Vague.ttf */,
 			);
 			name = fonts;
@@ -344,7 +344,6 @@
 				FC304DF81E70691B00D624DD /* Resources */,
 				494C4EDD3D07027D5A2C03C0 /* [CP] Embed Pods Frameworks */,
 				AFDF557D2D7BACCEC9DF330D /* [CP] Copy Pods Resources */,
-				FCE002D11E71C1FF0096D231 /* ShellScript */,
 				FC3765601E73D6630097B782 /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -452,28 +451,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8AD1111ED7A20D002C5854 /* Geog-MdIt.otf in Resources */,
+				FC8AD1121ED7A20D002C5854 /* Geog-RgIt.otf in Resources */,
+				FC8AD1131ED7A20D002C5854 /* Geog-SbIt.otf in Resources */,
+				FC8AD1141ED7A20D002C5854 /* Geog-ThIt.otf in Resources */,
+				FC8AD1151ED7A20D002C5854 /* Geog-UlIt.otf in Resources */,
+				FC8AD1161ED7A20D002C5854 /* Geog-Bd.otf in Resources */,
+				FC8AD1171ED7A20D002C5854 /* Geog-Lg.otf in Resources */,
+				FC8AD1181ED7A20D002C5854 /* Geog-Md.otf in Resources */,
+				FC8AD1191ED7A20D002C5854 /* Geog-Rg.otf in Resources */,
+				FC8AD11A1ED7A20D002C5854 /* Geog-Sb.otf in Resources */,
+				FC8AD11B1ED7A20D002C5854 /* Geog-Th.otf in Resources */,
+				FC8AD11C1ED7A20D002C5854 /* Geog-Ul.otf in Resources */,
+				FC8AD11D1ED7A20D002C5854 /* Nouvelle-Vague.ttf in Resources */,
 				FCE657011E75239400DE9D85 /* ContinueSignupViewController.swift in Resources */,
-				FCFA40C61ED77ED400B99DDA /* Geogtq-Th.otf in Resources */,
 				FCE657021E75239400DE9D85 /* SignInViewController.swift in Resources */,
-				FCFA40C11ED77ED400B99DDA /* Geogtq-Bd.otf in Resources */,
-				FCFA40BD1ED77ED400B99DDA /* Geog-ThIt.otf in Resources */,
-				FCFA40C51ED77ED400B99DDA /* Geogtq-Sb.otf in Resources */,
-				FCFA40C41ED77ED400B99DDA /* Geogtq-Rg.otf in Resources */,
-				FCFA40C71ED77ED400B99DDA /* Geogtq-Ul.otf in Resources */,
 				FCE657031E75239400DE9D85 /* SignUpViewController.swift in Resources */,
-				FCFA40BA1ED77ED400B99DDA /* Geog-MdIt.otf in Resources */,
 				FC8C742D1ED736A400110481 /* Main.storyboard in Resources */,
 				FC8C742C1ED736A400110481 /* LaunchScreen.storyboard in Resources */,
-				FCFA40C81ED77ED400B99DDA /* Nouvelle-Vague.ttf in Resources */,
 				FCD4B30F1EA9AA19008A413D /* WDIcon-Large.png in Resources */,
-				FCFA40BB1ED77ED400B99DDA /* Geog-RgIt.otf in Resources */,
 				FC304E051E70691C00D624DD /* Assets.xcassets in Resources */,
-				FCFA40BC1ED77ED400B99DDA /* Geog-SbIt.otf in Resources */,
 				FCE656EF1E75221F00DE9D85 /* WDIcon-Large.png in Resources */,
-				FCFA40C31ED77ED400B99DDA /* Geogtq-Md.otf in Resources */,
 				FCE656F01E75221F00DE9D85 /* WDSlogan-Large.png in Resources */,
-				FCFA40BE1ED77ED400B99DDA /* Geog-UlIt.otf in Resources */,
-				FCFA40C21ED77ED400B99DDA /* Geogtq-Lg.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,19 +627,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebDeck2017UITests/Pods-WebDeck2017UITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		FCE002D11E71C1FF0096D231 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" be38b5cc74fdfdf5317aee1167c9e96eae7763c5 a5d283250e87d8306551aca9c2f348a77b6c063e1673d86f5ed1050c53b3274d";
 		};
 /* End PBXShellScriptBuildPhase section */
 

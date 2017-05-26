@@ -22,15 +22,15 @@ class ReactionsViewController: UIViewController {
     
     override func viewDidLoad(){
         super.viewDidLoad()
-      //  headerLabel.font =  UIFont(name: "Nouvelle-Vague.ttf", size: 17)!
-      //  descriptionLabel.font =  UIFont(name: "Nouvelle-Vague.ttf", size: 14)!
+        headerLabel.font =  UIFont(name: "NouvelleVague-Black", size: 17)!
+       descriptionLabel.font =  UIFont(name: "NouvelleVague-Black", size: 14)!
         
     }
     
     
     
     @IBAction func sendReaction(_ sender: UIButton) {
-        reaction.sendReaction(reactionTitle: reactionTitle, reactionContent: reactionContent)
+        reaction.sendReaction(reactionTitle: reactionTitle, reactionContent: reactionContent, sVar: ReactionsViewController)
     
         
     }

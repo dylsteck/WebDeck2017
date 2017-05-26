@@ -12,8 +12,6 @@ import Parse
 
 class ContinueSignupViewController: UIViewController {
 
-        var userID = ""
-        var phoneNumber = ""
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var pinFIeld: UITextField!
@@ -30,18 +28,17 @@ class ContinueSignupViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
       @IBAction func saveUser(_ sender: UIButton) {
             let user = PFUser()
-            user["dgtsUserID"] = userID
             user["username"] = usernameField.text
             user["email"] = emailField.text
             user["password"] = pinFIeld.text
-            user["phonenumber"] = phoneNumber
             user.signUpInBackground { (succeeded, error) -> Void in
                 if succeeded{
                     print("Success with Parse yyyaboi")
+                    print(user)
                 }
                 else{
                     print("parse failure :(")
