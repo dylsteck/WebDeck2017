@@ -215,18 +215,18 @@
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Rr-Dx-4FT">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="207"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="C34-SH-8bZ">
-                                                        <size key="itemSize" width="50" height="50"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="C34-SH-8bZ">
+                                                        <size key="itemSize" width="80" height="110"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cnCell" id="yvt-4P-zbg">
-                                                            <rect key="frame" x="5" y="5" width="50" height="50"/>
+                                                            <rect key="frame" x="5" y="48.5" width="80" height="110"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="110"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                             </view>
                                                             <color key="backgroundColor" red="1" green="0.22044893766084561" blue="0.059594094250093654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -239,7 +239,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="8Rr-Dx-4FT" secondAttribute="bottom" id="24C-FZ-xqO"/>
+                                                <constraint firstAttribute="trailing" secondItem="8Rr-Dx-4FT" secondAttribute="trailing" id="HgR-e5-1D2"/>
                                                 <constraint firstAttribute="trailing" secondItem="8Rr-Dx-4FT" secondAttribute="trailing" id="Nes-b8-jb8"/>
+                                                <constraint firstItem="8Rr-Dx-4FT" firstAttribute="leading" secondItem="Rm0-hS-WoZ" secondAttribute="leading" id="OFf-aT-uZd"/>
                                                 <constraint firstItem="8Rr-Dx-4FT" firstAttribute="top" secondItem="Rm0-hS-WoZ" secondAttribute="top" id="Pa7-l4-mZb"/>
                                                 <constraint firstItem="8Rr-Dx-4FT" firstAttribute="leading" secondItem="Rm0-hS-WoZ" secondAttribute="leading" id="a4P-mc-qZ8"/>
                                             </constraints>
