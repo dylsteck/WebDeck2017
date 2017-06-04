@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MutableDataScanner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,7 +72,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1F17D0CBDBE199D632711D9E550DF3DF</key>
+		<key>2F365DAE8219D18EFED060C3B6C5AC82</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3EA5F3B1BD44006995E4802115C2A138</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,7 +92,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6601E60EB04879F77967A4261A2F87CA</key>
+		<key>78863C858124CAAEB0A8F5CD2B386405</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -93,11 +103,6 @@
 			<true/>
 		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8CA0807CE664CAF78BA895B9679CC0BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,7 +122,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EA047BF1C21B3147B79EC6C0362B0BDC</key>
+		<key>B6474575952834297CFD3B164123E125</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4944FEC314D1A66588651D006273ADE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

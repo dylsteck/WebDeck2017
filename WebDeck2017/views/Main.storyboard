@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G8c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G12b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,8 +23,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WDSlogan-Large.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Z0-Ml-od9">
-                                <rect key="frame" x="38" y="163" width="299" height="108"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WebDeckLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Z0-Ml-od9">
+                                <rect key="frame" x="92.5" y="109.5" width="190" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="QcB-vj-ERQ"/>
+                                    <constraint firstAttribute="width" constant="190" id="SO9-Zg-UW7"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JD-Mc-gdY">
                                 <rect key="frame" x="55" y="385" width="265" height="30"/>
@@ -356,7 +360,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="WDSlogan-Large.png" width="299" height="108"/>
+        <image name="WebDeckLogo" width="1007" height="1138"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="HNg-xC-K2l"/>

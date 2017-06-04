@@ -37,7 +37,6 @@
 		FC8C742D1ED736A400110481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C742B1ED736A400110481 /* Main.storyboard */; };
 		FC9B55031EDA214D0003A39B /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9B55021EDA214C0003A39B /* NewsCell.swift */; };
 		FCB094671ED5E572007A8E56 /* WeatherModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB094661ED5E572007A8E56 /* WeatherModule.swift */; };
-		FCD4B30F1EA9AA19008A413D /* WDIcon-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD4B30E1EA9AA19008A413D /* WDIcon-Large.png */; };
 		FCE3C0011EA90F0500CD9C2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */; };
 		FCE656EA1E75220E00DE9D85 /* ContinueSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */; };
 		FCE656EB1E75220E00DE9D85 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E81E75220E00DE9D85 /* SignInViewController.swift */; };
@@ -115,7 +114,6 @@
 		FC8C742B1ED736A400110481 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = views/Main.storyboard; sourceTree = "<group>"; };
 		FC9B55021EDA214C0003A39B /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsCell.swift; path = modules/NewsCell.swift; sourceTree = "<group>"; };
 		FCB094661ED5E572007A8E56 /* WeatherModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherModule.swift; path = modules/WeatherModule.swift; sourceTree = "<group>"; };
-		FCD4B30E1EA9AA19008A413D /* WDIcon-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WDIcon-Large.png"; sourceTree = "<group>"; };
 		FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = controllers/HomeViewController.swift; sourceTree = "<group>"; };
 		FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContinueSignupViewController.swift; path = controllers/ContinueSignupViewController.swift; sourceTree = "<group>"; };
 		FCE656E81E75220E00DE9D85 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = controllers/SignInViewController.swift; sourceTree = "<group>"; };
@@ -246,7 +244,6 @@
 			isa = PBXGroup;
 			children = (
 				FC0588261ED12FDE006C4F80 /* modules */,
-				FCD4B30E1EA9AA19008A413D /* WDIcon-Large.png */,
 				FC7BD7DB1E71BC9B000F33A6 /* controllers */,
 				FCEE727C1E70702D00D55C48 /* public */,
 				FC304DFD1E70691C00D624DD /* AppDelegate.swift */,
@@ -472,7 +469,6 @@
 				FCE657031E75239400DE9D85 /* SignUpViewController.swift in Resources */,
 				FC8C742D1ED736A400110481 /* Main.storyboard in Resources */,
 				FC8C742C1ED736A400110481 /* LaunchScreen.storyboard in Resources */,
-				FCD4B30F1EA9AA19008A413D /* WDIcon-Large.png in Resources */,
 				FC304E051E70691C00D624DD /* Assets.xcassets in Resources */,
 				FCE656EF1E75221F00DE9D85 /* WDIcon-Large.png in Resources */,
 				FCE656F01E75221F00DE9D85 /* WDSlogan-Large.png in Resources */,

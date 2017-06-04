@@ -18,8 +18,10 @@ import Alamofire
 class HomeViewController: UIViewController, UIScrollViewDelegate, UITableViewDataSource {
 
     var logoImageView = UIImageView(image: UIImage(named: "WebDeckLogo"))
+    
     var newsArray = [JSON]()
-    var newsString = [String]()
+    var newsTitles = [JSON]()
+    
     var calendar = CalendarModule()
 
     override func viewDidLoad() {
@@ -28,6 +30,8 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UITableViewDat
         calendar.checkCalendarAuthorizationStatus()
         calendar.requestAccessToCalendar()
         calendar.loadEvents()
+        
+        self.getNews()
         
         addSegmentedControl()
         

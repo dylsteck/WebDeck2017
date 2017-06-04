@@ -13,6 +13,8 @@ target 'WebDeck2017' do
     pod 'Parse'
     pod 'ParseUI'
     
+    pod 'Kingfisher'
+    
     pod 'TwicketSegmentedControl'
     
   target 'WebDeck2017Tests' do
