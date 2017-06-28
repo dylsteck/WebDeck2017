@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import Mixpanel
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -36,6 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
             
         // Override point for customization after application launch.
+
+        Mixpanel.initialize(token: "276d23edc9a2672e2f36569bb705431c")
+
         return true
     }
 

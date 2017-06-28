@@ -35,18 +35,14 @@
 	<string>$(PRODUCT_NAME) needs your location to get weather around you</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Geog-MdIt.otf</string>
-		<string>Geog-Rglt.otf</string>
-		<string>Geog-Sblt.otf</string>
-		<string>Geog-Thlt.otf</string>
-		<string>Geog-Ullt.otf</string>
-		<string>Geog-Bd.otf</string>
-		<string>Geog-Lg.otf</string>
-		<string>Geog-Md.otf</string>
-		<string>Geog-Rg.otf</string>
-		<string>Geog-Sb.otf</string>
-		<string>Geog-Th.otf</string>
-		<string>Geog-Ul.otf</string>
+		<string>Montserrat-Black.otf</string>
+		<string>Montserrat-Bold.otf</string>
+		<string>Montserrat-ExtraBold.otf</string>
+		<string>Montserrat-Hairline.otf</string>
+		<string>Montserrat-Light.otf</string>
+		<string>Montserrat-Regular.otf</string>
+		<string>Montserrat-SemiBold.otf</string>
+		<string>Montserrat-UltraLight.otf</string>
 		<string>Nouvelle-Vague.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

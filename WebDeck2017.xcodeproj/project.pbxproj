@@ -19,18 +19,16 @@
 		FC3765641E73D7020097B782 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765611E73D7020097B782 /* Bolts.framework */; };
 		FC3765651E73D7020097B782 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765621E73D7020097B782 /* Parse.framework */; };
 		FC3765661E73D7020097B782 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3765631E73D7020097B782 /* ParseUI.framework */; };
-		FC8AD1111ED7A20D002C5854 /* Geog-MdIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AB1ED77ED400B99DDA /* Geog-MdIt.otf */; };
-		FC8AD1121ED7A20D002C5854 /* Geog-RgIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AC1ED77ED400B99DDA /* Geog-RgIt.otf */; };
-		FC8AD1131ED7A20D002C5854 /* Geog-SbIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AD1ED77ED400B99DDA /* Geog-SbIt.otf */; };
-		FC8AD1141ED7A20D002C5854 /* Geog-ThIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AE1ED77ED400B99DDA /* Geog-ThIt.otf */; };
-		FC8AD1151ED7A20D002C5854 /* Geog-UlIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40AF1ED77ED400B99DDA /* Geog-UlIt.otf */; };
-		FC8AD1161ED7A20D002C5854 /* Geog-Bd.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B21ED77ED400B99DDA /* Geog-Bd.otf */; };
-		FC8AD1171ED7A20D002C5854 /* Geog-Lg.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B31ED77ED400B99DDA /* Geog-Lg.otf */; };
-		FC8AD1181ED7A20D002C5854 /* Geog-Md.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B41ED77ED400B99DDA /* Geog-Md.otf */; };
-		FC8AD1191ED7A20D002C5854 /* Geog-Rg.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B51ED77ED400B99DDA /* Geog-Rg.otf */; };
-		FC8AD11A1ED7A20D002C5854 /* Geog-Sb.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B61ED77ED400B99DDA /* Geog-Sb.otf */; };
-		FC8AD11B1ED7A20D002C5854 /* Geog-Th.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B71ED77ED400B99DDA /* Geog-Th.otf */; };
-		FC8AD11C1ED7A20D002C5854 /* Geog-Ul.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B81ED77ED400B99DDA /* Geog-Ul.otf */; };
+		FC5809BF1F01ECA6001D186A /* homepage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC5809BE1F01ECA6001D186A /* homepage.jpg */; };
+		FC5809C11F01ECDB001D186A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FC5809C01F01ECDB001D186A /* logo.png */; };
+		FC5809CA1F01EE82001D186A /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5809C21F01EE82001D186A /* Montserrat-Black.otf */; };
+		FC5809CB1F01EE82001D186A /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5809C31F01EE82001D186A /* Montserrat-Bold.otf */; };
+		FC5809CC1F01EE82001D186A /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5809C41F01EE82001D186A /* Montserrat-ExtraBold.otf */; };
+		FC5809CD1F01EE82001D186A /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5809C51F01EE82001D186A /* Montserrat-Hairline.otf */; };
+		FC5809CE1F01EE82001D186A /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5809C61F01EE82001D186A /* Montserrat-Light.otf */; };
+		FC5809CF1F01EE82001D186A /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5809C71F01EE82001D186A /* Montserrat-Regular.otf */; };
+		FC5809D01F01EE82001D186A /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5809C81F01EE82001D186A /* Montserrat-SemiBold.otf */; };
+		FC5809D11F01EE82001D186A /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC5809C91F01EE82001D186A /* Montserrat-UltraLight.otf */; };
 		FC8AD11D1ED7A20D002C5854 /* Nouvelle-Vague.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCFA40B91ED77ED400B99DDA /* Nouvelle-Vague.ttf */; };
 		FC8C74261ED7364000110481 /* NewsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8C74251ED7364000110481 /* NewsModule.swift */; };
 		FC8C742C1ED736A400110481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C742A1ED736A400110481 /* LaunchScreen.storyboard */; };
@@ -41,8 +39,6 @@
 		FCE656EA1E75220E00DE9D85 /* ContinueSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */; };
 		FCE656EB1E75220E00DE9D85 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E81E75220E00DE9D85 /* SignInViewController.swift */; };
 		FCE656EC1E75220E00DE9D85 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */; };
-		FCE656EF1E75221F00DE9D85 /* WDIcon-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE656ED1E75221F00DE9D85 /* WDIcon-Large.png */; };
-		FCE656F01E75221F00DE9D85 /* WDSlogan-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE656EE1E75221F00DE9D85 /* WDSlogan-Large.png */; };
 		FCE657011E75239400DE9D85 /* ContinueSignupViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */; };
 		FCE657021E75239400DE9D85 /* SignInViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E81E75220E00DE9D85 /* SignInViewController.swift */; };
 		FCE657031E75239400DE9D85 /* SignUpViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */; };
@@ -84,14 +80,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		623597E741861E97A0B47A9A /* Pods-WebDeck2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017/Pods-WebDeck2017.release.xcconfig"; sourceTree = "<group>"; };
-		6DAFD1330C1817C6C0D20FB0 /* Pods-WebDeck2017Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A963BE29E64D330E1571539 /* Pods-WebDeck2017UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017UITests/Pods-WebDeck2017UITests.release.xcconfig"; sourceTree = "<group>"; };
+		43FF7567E5A3985C0F405CB0 /* Pods-WebDeck2017UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017UITests/Pods-WebDeck2017UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F012B6BFA94F6C9B921511F /* Pods-WebDeck2017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.release.xcconfig"; sourceTree = "<group>"; };
+		63D8CF06C7BA687069AF3EFA /* Pods-WebDeck2017Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		64617530FEBF38DA7A978B7C /* Pods-WebDeck2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017/Pods-WebDeck2017.debug.xcconfig"; sourceTree = "<group>"; };
 		7B1B2292D92951D2B475E674 /* Pods_WebDeck2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA9B2EC427B1753136FDC0F /* Pods_WebDeck2017UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck2017UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C33CEA1232CDA0D863A910 /* Pods_WebDeck2017Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck2017Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90DDBA0B5E39310E9CAE4D4E /* Pods-WebDeck2017UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017UITests/Pods-WebDeck2017UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A178E76B6B2B9BCA56E83719 /* Pods-WebDeck2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017/Pods-WebDeck2017.debug.xcconfig"; sourceTree = "<group>"; };
-		BFBDA9EE32FA85926D140EB7 /* Pods-WebDeck2017UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017UITests/Pods-WebDeck2017UITests.release.xcconfig"; sourceTree = "<group>"; };
+		E3DEF22B114A32B1DA9BF040 /* Pods-WebDeck2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017/Pods-WebDeck2017.release.xcconfig"; sourceTree = "<group>"; };
 		FC0588271ED12FF6006C4F80 /* CalendarModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarModule.swift; path = modules/CalendarModule.swift; sourceTree = "<group>"; };
 		FC304DFA1E70691C00D624DD /* WebDeck2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDeck2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC304DFD1E70691C00D624DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +105,16 @@
 		FC3765611E73D7020097B782 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework"; sourceTree = "<group>"; };
 		FC3765621E73D7020097B782 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/Parse/Parse.framework"; sourceTree = "<group>"; };
 		FC3765631E73D7020097B782 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WebDeck2017-cnfgalhkffsupbauupcqglqjyozc/Build/Products/Debug-iphonesimulator/ParseUI/ParseUI.framework"; sourceTree = "<group>"; };
-		FC886721C5F885D6F8E9C8A4 /* Pods-WebDeck2017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017Tests/Pods-WebDeck2017Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FC5809BE1F01ECA6001D186A /* homepage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = homepage.jpg; path = public/images/homepage.jpg; sourceTree = "<group>"; };
+		FC5809C01F01ECDB001D186A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = public/images/logo.png; sourceTree = "<group>"; };
+		FC5809C21F01EE82001D186A /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.otf"; path = "public/fonts/Montserrat-Black.otf"; sourceTree = "<group>"; };
+		FC5809C31F01EE82001D186A /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.otf"; path = "public/fonts/Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		FC5809C41F01EE82001D186A /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBold.otf"; path = "public/fonts/Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		FC5809C51F01EE82001D186A /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Hairline.otf"; path = "public/fonts/Montserrat-Hairline.otf"; sourceTree = "<group>"; };
+		FC5809C61F01EE82001D186A /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Light.otf"; path = "public/fonts/Montserrat-Light.otf"; sourceTree = "<group>"; };
+		FC5809C71F01EE82001D186A /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "public/fonts/Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		FC5809C81F01EE82001D186A /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.otf"; path = "public/fonts/Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
+		FC5809C91F01EE82001D186A /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-UltraLight.otf"; path = "public/fonts/Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
 		FC8C74251ED7364000110481 /* NewsModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsModule.swift; path = modules/NewsModule.swift; sourceTree = "<group>"; };
 		FC8C742A1ED736A400110481 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = views/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC8C742B1ED736A400110481 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = views/Main.storyboard; sourceTree = "<group>"; };
@@ -118,25 +124,11 @@
 		FCE656E71E75220E00DE9D85 /* ContinueSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContinueSignupViewController.swift; path = controllers/ContinueSignupViewController.swift; sourceTree = "<group>"; };
 		FCE656E81E75220E00DE9D85 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = controllers/SignInViewController.swift; sourceTree = "<group>"; };
 		FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = controllers/SignUpViewController.swift; sourceTree = "<group>"; };
-		FCE656ED1E75221F00DE9D85 /* WDIcon-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WDIcon-Large.png"; path = "public/images/WDIcon-Large.png"; sourceTree = "<group>"; };
-		FCE656EE1E75221F00DE9D85 /* WDSlogan-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WDSlogan-Large.png"; path = "public/images/WDSlogan-Large.png"; sourceTree = "<group>"; };
 		FCE657051E75251E00DE9D85 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		FCE657061E75251E00DE9D85 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		FCF76A5F1E8DDAB7007C83BA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		FCFA40851ED7789000B99DDA /* ReactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReactionsViewController.swift; path = controllers/ReactionsViewController.swift; sourceTree = "<group>"; };
 		FCFA40871ED7798100B99DDA /* Reaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reaction.swift; path = modules/Reaction.swift; sourceTree = "<group>"; };
-		FCFA40AB1ED77ED400B99DDA /* Geog-MdIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-MdIt.otf"; path = "public/fonts/Geog-MdIt.otf"; sourceTree = "<group>"; };
-		FCFA40AC1ED77ED400B99DDA /* Geog-RgIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-RgIt.otf"; path = "public/fonts/Geog-RgIt.otf"; sourceTree = "<group>"; };
-		FCFA40AD1ED77ED400B99DDA /* Geog-SbIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-SbIt.otf"; path = "public/fonts/Geog-SbIt.otf"; sourceTree = "<group>"; };
-		FCFA40AE1ED77ED400B99DDA /* Geog-ThIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-ThIt.otf"; path = "public/fonts/Geog-ThIt.otf"; sourceTree = "<group>"; };
-		FCFA40AF1ED77ED400B99DDA /* Geog-UlIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-UlIt.otf"; path = "public/fonts/Geog-UlIt.otf"; sourceTree = "<group>"; };
-		FCFA40B21ED77ED400B99DDA /* Geog-Bd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Bd.otf"; path = "public/fonts/Geog-Bd.otf"; sourceTree = "<group>"; };
-		FCFA40B31ED77ED400B99DDA /* Geog-Lg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Lg.otf"; path = "public/fonts/Geog-Lg.otf"; sourceTree = "<group>"; };
-		FCFA40B41ED77ED400B99DDA /* Geog-Md.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Md.otf"; path = "public/fonts/Geog-Md.otf"; sourceTree = "<group>"; };
-		FCFA40B51ED77ED400B99DDA /* Geog-Rg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Rg.otf"; path = "public/fonts/Geog-Rg.otf"; sourceTree = "<group>"; };
-		FCFA40B61ED77ED400B99DDA /* Geog-Sb.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Sb.otf"; path = "public/fonts/Geog-Sb.otf"; sourceTree = "<group>"; };
-		FCFA40B71ED77ED400B99DDA /* Geog-Th.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Th.otf"; path = "public/fonts/Geog-Th.otf"; sourceTree = "<group>"; };
-		FCFA40B81ED77ED400B99DDA /* Geog-Ul.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Geog-Ul.otf"; path = "public/fonts/Geog-Ul.otf"; sourceTree = "<group>"; };
 		FCFA40B91ED77ED400B99DDA /* Nouvelle-Vague.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nouvelle-Vague.ttf"; path = "public/fonts/Nouvelle-Vague.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,15 +185,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BCFBE8A82E5885ED3C94C67C /* Pods */ = {
+		CDFD694691B50E9BAE0FDA61 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A178E76B6B2B9BCA56E83719 /* Pods-WebDeck2017.debug.xcconfig */,
-				623597E741861E97A0B47A9A /* Pods-WebDeck2017.release.xcconfig */,
-				6DAFD1330C1817C6C0D20FB0 /* Pods-WebDeck2017Tests.debug.xcconfig */,
-				FC886721C5F885D6F8E9C8A4 /* Pods-WebDeck2017Tests.release.xcconfig */,
-				90DDBA0B5E39310E9CAE4D4E /* Pods-WebDeck2017UITests.debug.xcconfig */,
-				BFBDA9EE32FA85926D140EB7 /* Pods-WebDeck2017UITests.release.xcconfig */,
+				64617530FEBF38DA7A978B7C /* Pods-WebDeck2017.debug.xcconfig */,
+				E3DEF22B114A32B1DA9BF040 /* Pods-WebDeck2017.release.xcconfig */,
+				63D8CF06C7BA687069AF3EFA /* Pods-WebDeck2017Tests.debug.xcconfig */,
+				5F012B6BFA94F6C9B921511F /* Pods-WebDeck2017Tests.release.xcconfig */,
+				43FF7567E5A3985C0F405CB0 /* Pods-WebDeck2017UITests.debug.xcconfig */,
+				1A963BE29E64D330E1571539 /* Pods-WebDeck2017UITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -225,8 +217,8 @@
 				FC304E111E70691D00D624DD /* WebDeck2017Tests */,
 				FC304E1C1E70691D00D624DD /* WebDeck2017UITests */,
 				FC304DFB1E70691C00D624DD /* Products */,
-				BCFBE8A82E5885ED3C94C67C /* Pods */,
 				7B7DCAD8D2AF18BB9181C57A /* Frameworks */,
+				CDFD694691B50E9BAE0FDA61 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,18 +267,14 @@
 		FC7BD7D51E71BB24000F33A6 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FCFA40AB1ED77ED400B99DDA /* Geog-MdIt.otf */,
-				FCFA40AC1ED77ED400B99DDA /* Geog-RgIt.otf */,
-				FCFA40AD1ED77ED400B99DDA /* Geog-SbIt.otf */,
-				FCFA40AE1ED77ED400B99DDA /* Geog-ThIt.otf */,
-				FCFA40AF1ED77ED400B99DDA /* Geog-UlIt.otf */,
-				FCFA40B21ED77ED400B99DDA /* Geog-Bd.otf */,
-				FCFA40B31ED77ED400B99DDA /* Geog-Lg.otf */,
-				FCFA40B41ED77ED400B99DDA /* Geog-Md.otf */,
-				FCFA40B51ED77ED400B99DDA /* Geog-Rg.otf */,
-				FCFA40B61ED77ED400B99DDA /* Geog-Sb.otf */,
-				FCFA40B71ED77ED400B99DDA /* Geog-Th.otf */,
-				FCFA40B81ED77ED400B99DDA /* Geog-Ul.otf */,
+				FC5809C21F01EE82001D186A /* Montserrat-Black.otf */,
+				FC5809C31F01EE82001D186A /* Montserrat-Bold.otf */,
+				FC5809C41F01EE82001D186A /* Montserrat-ExtraBold.otf */,
+				FC5809C51F01EE82001D186A /* Montserrat-Hairline.otf */,
+				FC5809C61F01EE82001D186A /* Montserrat-Light.otf */,
+				FC5809C71F01EE82001D186A /* Montserrat-Regular.otf */,
+				FC5809C81F01EE82001D186A /* Montserrat-SemiBold.otf */,
+				FC5809C91F01EE82001D186A /* Montserrat-UltraLight.otf */,
 				FCFA40B91ED77ED400B99DDA /* Nouvelle-Vague.ttf */,
 			);
 			name = fonts;
@@ -295,8 +283,8 @@
 		FC7BD7D61E71BB2E000F33A6 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				FCE656ED1E75221F00DE9D85 /* WDIcon-Large.png */,
-				FCE656EE1E75221F00DE9D85 /* WDSlogan-Large.png */,
+				FC5809C01F01ECDB001D186A /* logo.png */,
+				FC5809BE1F01ECA6001D186A /* homepage.jpg */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -451,27 +439,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC8AD1111ED7A20D002C5854 /* Geog-MdIt.otf in Resources */,
-				FC8AD1121ED7A20D002C5854 /* Geog-RgIt.otf in Resources */,
-				FC8AD1131ED7A20D002C5854 /* Geog-SbIt.otf in Resources */,
-				FC8AD1141ED7A20D002C5854 /* Geog-ThIt.otf in Resources */,
-				FC8AD1151ED7A20D002C5854 /* Geog-UlIt.otf in Resources */,
-				FC8AD1161ED7A20D002C5854 /* Geog-Bd.otf in Resources */,
-				FC8AD1171ED7A20D002C5854 /* Geog-Lg.otf in Resources */,
-				FC8AD1181ED7A20D002C5854 /* Geog-Md.otf in Resources */,
-				FC8AD1191ED7A20D002C5854 /* Geog-Rg.otf in Resources */,
-				FC8AD11A1ED7A20D002C5854 /* Geog-Sb.otf in Resources */,
-				FC8AD11B1ED7A20D002C5854 /* Geog-Th.otf in Resources */,
-				FC8AD11C1ED7A20D002C5854 /* Geog-Ul.otf in Resources */,
+				FC5809CC1F01EE82001D186A /* Montserrat-ExtraBold.otf in Resources */,
+				FC5809BF1F01ECA6001D186A /* homepage.jpg in Resources */,
+				FC5809C11F01ECDB001D186A /* logo.png in Resources */,
 				FC8AD11D1ED7A20D002C5854 /* Nouvelle-Vague.ttf in Resources */,
 				FCE657011E75239400DE9D85 /* ContinueSignupViewController.swift in Resources */,
+				FC5809CE1F01EE82001D186A /* Montserrat-Light.otf in Resources */,
 				FCE657021E75239400DE9D85 /* SignInViewController.swift in Resources */,
 				FCE657031E75239400DE9D85 /* SignUpViewController.swift in Resources */,
+				FC5809CF1F01EE82001D186A /* Montserrat-Regular.otf in Resources */,
+				FC5809D01F01EE82001D186A /* Montserrat-SemiBold.otf in Resources */,
+				FC5809CD1F01EE82001D186A /* Montserrat-Hairline.otf in Resources */,
+				FC5809CA1F01EE82001D186A /* Montserrat-Black.otf in Resources */,
+				FC5809D11F01EE82001D186A /* Montserrat-UltraLight.otf in Resources */,
 				FC8C742D1ED736A400110481 /* Main.storyboard in Resources */,
 				FC8C742C1ED736A400110481 /* LaunchScreen.storyboard in Resources */,
 				FC304E051E70691C00D624DD /* Assets.xcassets in Resources */,
-				FCE656EF1E75221F00DE9D85 /* WDIcon-Large.png in Resources */,
-				FCE656F01E75221F00DE9D85 /* WDSlogan-Large.png in Resources */,
+				FC5809CB1F01EE82001D186A /* Montserrat-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,13 +482,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebDeck2017UITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		23FCF7268839CCBC15970E6D /* [CP] Embed Pods Frameworks */ = {
@@ -543,9 +530,34 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WebDeck2017/Pods-WebDeck2017-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Mixpanel-swift/Mixpanel.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TwicketSegmentedControl/TwicketSegmentedControl.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mixpanel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwicketSegmentedControl.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -558,13 +570,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebDeck2017-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5A4F9CC13D096DF894F50C3A /* [CP] Check Pods Manifest.lock */ = {
@@ -573,13 +588,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebDeck2017Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		805E72E3C6F56E535FCAFB77 /* [CP] Copy Pods Resources */ = {
@@ -773,7 +791,7 @@
 		};
 		FC304E231E70691D00D624DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A178E76B6B2B9BCA56E83719 /* Pods-WebDeck2017.debug.xcconfig */;
+			baseConfigurationReference = 64617530FEBF38DA7A978B7C /* Pods-WebDeck2017.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -793,7 +811,7 @@
 		};
 		FC304E241E70691D00D624DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 623597E741861E97A0B47A9A /* Pods-WebDeck2017.release.xcconfig */;
+			baseConfigurationReference = E3DEF22B114A32B1DA9BF040 /* Pods-WebDeck2017.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -813,7 +831,7 @@
 		};
 		FC304E261E70691D00D624DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DAFD1330C1817C6C0D20FB0 /* Pods-WebDeck2017Tests.debug.xcconfig */;
+			baseConfigurationReference = 63D8CF06C7BA687069AF3EFA /* Pods-WebDeck2017Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -829,7 +847,7 @@
 		};
 		FC304E271E70691D00D624DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC886721C5F885D6F8E9C8A4 /* Pods-WebDeck2017Tests.release.xcconfig */;
+			baseConfigurationReference = 5F012B6BFA94F6C9B921511F /* Pods-WebDeck2017Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -845,7 +863,7 @@
 		};
 		FC304E291E70691D00D624DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90DDBA0B5E39310E9CAE4D4E /* Pods-WebDeck2017UITests.debug.xcconfig */;
+			baseConfigurationReference = 43FF7567E5A3985C0F405CB0 /* Pods-WebDeck2017UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = CG8RAYC636;
@@ -860,7 +878,7 @@
 		};
 		FC304E2A1E70691D00D624DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFBDA9EE32FA85926D140EB7 /* Pods-WebDeck2017UITests.release.xcconfig */;
+			baseConfigurationReference = 1A963BE29E64D330E1571539 /* Pods-WebDeck2017UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = CG8RAYC636;

@@ -1,28 +1,43 @@
 PODS:
-  - Alamofire (4.4.0)
+  - Alamofire (4.5.0)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
-  - Kingfisher (3.5.2)
-  - MutableDataScanner (1.1.0)
-  - OAuthSwift (1.0.0)
-  - Parse (1.14.2):
+  - FacebookCore (0.2.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.15)
+  - FacebookLogin (0.2.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.2)
+    - FBSDKCoreKit (~> 4.15)
+    - FBSDKLoginKit (~> 4.15)
+  - FBSDKCoreKit (4.24.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.24.0):
+    - FBSDKCoreKit
+  - Kingfisher (3.10.2)
+  - Mixpanel-swift (2.1.8)
+  - Parse (1.14.5):
     - Bolts/Tasks (~> 1.8)
   - ParseUI (1.2.0):
     - Bolts/Tasks (~> 1.3)
     - Parse (~> 1.9)
   - SwiftyJSON (2.3.2)
   - TwicketSegmentedControl (0.1.2)
-  - TwitterAPI (0.4.0):
-    - MutableDataScanner
-    - OAuthSwift (= 1.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - FacebookCore
+  - FacebookLogin
   - Kingfisher
+  - Mixpanel-swift
   - Parse
   - ParseUI
   - SwiftyJSON (from `https://github.com/BaiduHiDeviOS/SwiftyJSON.git`, branch `swift3`)
   - TwicketSegmentedControl
-  - TwitterAPI
 
 EXTERNAL SOURCES:
   SwiftyJSON:
@@ -35,17 +50,19 @@ CHECKOUT OPTIONS:
     :git: https://github.com/BaiduHiDeviOS/SwiftyJSON.git
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
-  MutableDataScanner: 07330dfa3b4ec383f342e25d2b1e8697f85a3894
-  OAuthSwift: dd4f502ffd4f6e122b861b5e4529bf6454a30fe6
-  Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
+  FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
+  FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
+  FBSDKCoreKit: f8c9eb0dd34a9cd277c7b60da4b32226d142502d
+  FBSDKLoginKit: 1214c6d5a1c4995b694d8db8a9ba6910c6028acf
+  Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
+  Mixpanel-swift: 05695617653760d15d5aee1414f1ae7c336de1a2
+  Parse: 2a70ed917845ffda3a534ba70300c108006b975d
   ParseUI: af2eba584799da4a9fbdac0e178662d7438b502e
   SwiftyJSON: 6118fb49d7519c4d31a0c1f3d5af936e9047b556
   TwicketSegmentedControl: 6d7a4cf243657e0ac3f00d06d873a25334c04042
-  TwitterAPI: 092e249cc69fbb9b955940766d42da01573d688f
 
-PODFILE CHECKSUM: 50894baf58e55b48771f1c8d678375c77a69844e
+PODFILE CHECKSUM: 9bcdca4c8346994be080e4fee73b7951b3830542
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.3.0.beta.2

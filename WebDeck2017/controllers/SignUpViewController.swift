@@ -13,10 +13,15 @@ import Parse
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        animateLogo()
+        //animateLogo()
+        
+        titleLabel.font = UIFont(name: "Montserrat-Bold", size: 15)
+        titleLabel.textColor = UIColor(red:0.87, green:0.87, blue:0.87, alpha:1.0)
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -9,11 +9,17 @@ target 'WebDeck2017' do
     pod 'Alamofire', '~> 4.0'
  	pod 'SwiftyJSON', git: 'https://github.com/BaiduHiDeviOS/SwiftyJSON.git', branch: 'swift3'
     
-    pod 'TwitterAPI'
+    # pod 'TwitterAPI'
     pod 'Parse'
     pod 'ParseUI'
+
+    pod 'Mixpanel-swift'
     
     pod 'Kingfisher'
+    
+    pod 'FacebookCore'
+    pod 'FacebookLogin'
+    # pod 'FacebookShare'
     
     pod 'TwicketSegmentedControl'
     
