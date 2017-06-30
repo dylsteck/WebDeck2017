@@ -12,6 +12,9 @@ target 'WebDeck2017' do
     # pod 'TwitterAPI'
     pod 'Parse'
     pod 'ParseUI'
+    
+    pod 'Firebase/Auth'
+    pod 'Firebase/Core'
 
     pod 'Mixpanel-swift'
     

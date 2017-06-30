@@ -9,11 +9,13 @@
 import Foundation
 import UIKit
 import Parse
+import FacebookLogin
 
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var signInButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,7 @@ class SignUpViewController: UIViewController {
         
         titleLabel.font = UIFont(name: "Montserrat-Bold", size: 15)
         titleLabel.textColor = UIColor(red:0.87, green:0.87, blue:0.87, alpha:1.0)
-        
+        animateLogo()
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,15 +33,21 @@ class SignUpViewController: UIViewController {
 
 
 
-//    @IBAction func saveUser(_ sender: Any) {
-//        var user = PFUser()
-//        user["username"] = usernameField.text
-//        user["email"] = emailField.text
-//        user["password"] = pinField.text
-//        user.signUpInBackground { (succeeded, error) -> Void in
-//
-//        }
-//    }
+    @IBAction func signInButtonClicked(_ sender: UIButton) {
+        let loginManager = LoginManager()
+        loginManager.logIn([ .PublicProfile ], viewController: self) { loginResult in
+            switch loginResult {
+            case .Failed(let error):
+                print(error)
+            case .Cancelled:
+                print("User cancelled login.")
+            case .Success(let grantedPermissions, let declinedPermissions, let accessToken):
+                print("Logged in!")
+            }
+        
+    }
+    
+    
     func animateLogo() {
         logo.alpha = 0.0
         UIView.animate(withDuration: 3.0) {

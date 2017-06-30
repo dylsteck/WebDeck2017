@@ -46,6 +46,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6W-JY-Ax4">
+                                <rect key="frame" x="72" y="281.5" width="230" height="37"/>
+                                <state key="normal" image="sign-in-button.png"/>
+                                <connections>
+                                    <action selector="signInButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lf4-d4-KKo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -54,12 +61,15 @@
                             <constraint firstItem="QIW-9l-T3w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E1g-AE-ogC"/>
                             <constraint firstAttribute="trailing" secondItem="QIW-9l-T3w" secondAttribute="trailing" id="Hjf-QY-EHP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QIW-9l-T3w" secondAttribute="bottom" id="HvX-LO-XvD"/>
+                            <constraint firstItem="i6W-JY-Ax4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.9" id="Ie3-A0-v5f"/>
                             <constraint firstItem="kR2-4a-nvw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="Lhv-OR-ah2"/>
+                            <constraint firstItem="i6W-JY-Ax4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O2D-vp-1Pr"/>
                             <constraint firstItem="oQg-9N-xdd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.7" id="p9z-5t-hJt"/>
                             <constraint firstItem="kR2-4a-nvw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rnS-KR-0bD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="signInButton" destination="i6W-JY-Ax4" id="Q4Q-CP-WbY"/>
                         <outlet property="titleLabel" destination="oQg-9N-xdd" id="pUl-aq-ucb"/>
                     </connections>
                 </viewController>
@@ -367,6 +377,7 @@
     <resources>
         <image name="WebDeckLogo" width="1007" height="1138"/>
         <image name="homepage.jpg" width="3413" height="5119"/>
+        <image name="sign-in-button.png" width="230" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6jE-oo-jqg"/>

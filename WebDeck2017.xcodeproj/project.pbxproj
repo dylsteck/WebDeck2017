@@ -44,6 +44,8 @@
 		FCE657031E75239400DE9D85 /* SignUpViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */; };
 		FCE657071E75251E00DE9D85 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE657051E75251E00DE9D85 /* EventKit.framework */; };
 		FCE657081E75251E00DE9D85 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE657061E75251E00DE9D85 /* EventKitUI.framework */; };
+		FCED87211F070B23007450E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCED87201F070B23007450E6 /* GoogleService-Info.plist */; };
+		FCED87231F071591007450E6 /* sign-in-button.png in Resources */ = {isa = PBXBuildFile; fileRef = FCED87221F071591007450E6 /* sign-in-button.png */; };
 		FCF76A601E8DDAB7007C83BA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF76A5F1E8DDAB7007C83BA /* Social.framework */; };
 		FCFA40861ED7789000B99DDA /* ReactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFA40851ED7789000B99DDA /* ReactionsViewController.swift */; };
 		FCFA40881ED7798100B99DDA /* Reaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFA40871ED7798100B99DDA /* Reaction.swift */; };
@@ -126,6 +128,8 @@
 		FCE656E91E75220E00DE9D85 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = controllers/SignUpViewController.swift; sourceTree = "<group>"; };
 		FCE657051E75251E00DE9D85 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		FCE657061E75251E00DE9D85 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		FCED87201F070B23007450E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCED87221F071591007450E6 /* sign-in-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sign-in-button.png"; path = "public/images/sign-in-button.png"; sourceTree = "<group>"; };
 		FCF76A5F1E8DDAB7007C83BA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		FCFA40851ED7789000B99DDA /* ReactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReactionsViewController.swift; path = controllers/ReactionsViewController.swift; sourceTree = "<group>"; };
 		FCFA40871ED7798100B99DDA /* Reaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reaction.swift; path = modules/Reaction.swift; sourceTree = "<group>"; };
@@ -242,6 +246,7 @@
 				FC8C74271ED7367200110481 /* views */,
 				FC304E041E70691C00D624DD /* Assets.xcassets */,
 				FC304E091E70691C00D624DD /* Info.plist */,
+				FCED87201F070B23007450E6 /* GoogleService-Info.plist */,
 			);
 			path = WebDeck2017;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 		FC7BD7D61E71BB2E000F33A6 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				FCED87221F071591007450E6 /* sign-in-button.png */,
 				FC5809C01F01ECDB001D186A /* logo.png */,
 				FC5809BE1F01ECA6001D186A /* homepage.jpg */,
 			);
@@ -441,6 +447,7 @@
 			files = (
 				FC5809CC1F01EE82001D186A /* Montserrat-ExtraBold.otf in Resources */,
 				FC5809BF1F01ECA6001D186A /* homepage.jpg in Resources */,
+				FCED87231F071591007450E6 /* sign-in-button.png in Resources */,
 				FC5809C11F01ECDB001D186A /* logo.png in Resources */,
 				FC8AD11D1ED7A20D002C5854 /* Nouvelle-Vague.ttf in Resources */,
 				FCE657011E75239400DE9D85 /* ContinueSignupViewController.swift in Resources */,
@@ -450,6 +457,7 @@
 				FC5809CF1F01EE82001D186A /* Montserrat-Regular.otf in Resources */,
 				FC5809D01F01EE82001D186A /* Montserrat-SemiBold.otf in Resources */,
 				FC5809CD1F01EE82001D186A /* Montserrat-Hairline.otf in Resources */,
+				FCED87211F070B23007450E6 /* GoogleService-Info.plist in Resources */,
 				FC5809CA1F01EE82001D186A /* Montserrat-Black.otf in Resources */,
 				FC5809D11F01EE82001D186A /* Montserrat-UltraLight.otf in Resources */,
 				FC8C742D1ED736A400110481 /* Main.storyboard in Resources */,
@@ -537,6 +545,8 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Mixpanel-swift/Mixpanel.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
@@ -552,6 +562,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mixpanel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
