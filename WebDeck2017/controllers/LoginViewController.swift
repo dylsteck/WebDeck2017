@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  WebDeck2017
 //
 //  Created by Dylan Steck on 3/8/17.
@@ -8,14 +8,13 @@
 
 import Foundation
 import UIKit
-import Parse
+import FacebookCore
 import FacebookLogin
 
-class SignUpViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var signInButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +22,30 @@ class SignUpViewController: UIViewController {
         
         titleLabel.font = UIFont(name: "Montserrat-Bold", size: 15)
         titleLabel.textColor = UIColor(red:0.87, green:0.87, blue:0.87, alpha:1.0)
-        animateLogo()
+        
+        let loginButton = LoginButton(readPermissions: [ .publicProfile, .email])
+        loginButton.center = view.center
+        
+        view.addSubview(loginButton)
+        
+        if let accessToken = AccessToken.current {
+            print("signed in")
+        }
+        
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: LoginButton){
+        print("logged out of fb")
+        
+    }
+    
+    func loginButton(_ loginButton: LoginButton!, didCompleteWith result: LoginResult!, error: Error!) {
+        if error != nil {
+            print(error)
+            return
+        }
+        
+        print("Successfully logged in with facebook...")
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,21 +54,6 @@ class SignUpViewController: UIViewController {
     }
 
 
-
-    @IBAction func signInButtonClicked(_ sender: UIButton) {
-        let loginManager = LoginManager()
-        loginManager.logIn([ .PublicProfile ], viewController: self) { loginResult in
-            switch loginResult {
-            case .Failed(let error):
-                print(error)
-            case .Cancelled:
-                print("User cancelled login.")
-            case .Success(let grantedPermissions, let declinedPermissions, let accessToken):
-                print("Logged in!")
-            }
-        
-    }
-    
     
     func animateLogo() {
         logo.alpha = 0.0
@@ -56,5 +63,6 @@ class SignUpViewController: UIViewController {
     }
 
 
+ 
 }
 

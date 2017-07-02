@@ -12,10 +12,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sign Up View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignUpViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -46,13 +46,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6W-JY-Ax4">
-                                <rect key="frame" x="72" y="281.5" width="230" height="37"/>
-                                <state key="normal" image="sign-in-button.png"/>
-                                <connections>
-                                    <action selector="signInButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lf4-d4-KKo"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -61,151 +54,19 @@
                             <constraint firstItem="QIW-9l-T3w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E1g-AE-ogC"/>
                             <constraint firstAttribute="trailing" secondItem="QIW-9l-T3w" secondAttribute="trailing" id="Hjf-QY-EHP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QIW-9l-T3w" secondAttribute="bottom" id="HvX-LO-XvD"/>
-                            <constraint firstItem="i6W-JY-Ax4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.9" id="Ie3-A0-v5f"/>
                             <constraint firstItem="kR2-4a-nvw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="Lhv-OR-ah2"/>
-                            <constraint firstItem="i6W-JY-Ax4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O2D-vp-1Pr"/>
                             <constraint firstItem="oQg-9N-xdd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.7" id="p9z-5t-hJt"/>
                             <constraint firstItem="kR2-4a-nvw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rnS-KR-0bD"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="signInButton" destination="i6W-JY-Ax4" id="Q4Q-CP-WbY"/>
                         <outlet property="titleLabel" destination="oQg-9N-xdd" id="pUl-aq-ucb"/>
+                        <segue destination="c0K-zo-7Ma" kind="modal" identifier="signInSegue" id="XtY-xc-7pR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-671.20000000000005" y="36.431784107946029"/>
-        </scene>
-        <!--Sign In View Controller-->
-        <scene sceneID="FSI-aQ-C6y">
-            <objects>
-                <viewController id="3xQ-Qa-MgE" customClass="SignInViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Atd-C2-3Fg"/>
-                        <viewControllerLayoutGuide type="bottom" id="9N6-MR-tVe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Htd-m9-uNa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PIN" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bae-zX-RQw">
-                                <rect key="frame" x="165.5" y="85" width="44" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXZ-GM-4Pg">
-                                <rect key="frame" x="164" y="118.5" width="47" height="30"/>
-                                <state key="normal" title="Sign In"/>
-                                <connections>
-                                    <action selector="signIn:" destination="3xQ-Qa-MgE" eventType="touchUpInside" id="M0M-Db-k8b"/>
-                                    <segue destination="c0K-zo-7Ma" kind="modal" identifier="signInSegue" id="6jE-oo-jqg"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="73R-8e-fVP">
-                                <rect key="frame" x="143.5" y="51.5" width="88" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
-                            </textField>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Krd-L6-YWv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="WebDeck" id="gDd-sn-dNL">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="VWm-ro-cpk">
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="9BO-4y-8ST"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="0.95686274509803915" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="EXZ-GM-4Pg" firstAttribute="centerX" secondItem="Htd-m9-uNa" secondAttribute="centerX" id="30Y-Ae-iyc"/>
-                            <constraint firstItem="Bae-zX-RQw" firstAttribute="centerX" secondItem="Htd-m9-uNa" secondAttribute="centerX" id="3Kt-B1-jNl"/>
-                            <constraint firstItem="Krd-L6-YWv" firstAttribute="top" secondItem="Htd-m9-uNa" secondAttribute="top" id="LdM-3j-e9w"/>
-                            <constraint firstItem="Krd-L6-YWv" firstAttribute="leading" secondItem="Htd-m9-uNa" secondAttribute="leading" id="csG-k1-flw"/>
-                            <constraint firstItem="EXZ-GM-4Pg" firstAttribute="centerY" secondItem="Htd-m9-uNa" secondAttribute="centerY" multiplier="0.4" id="d6s-nT-Eec"/>
-                            <constraint firstAttribute="trailing" secondItem="Krd-L6-YWv" secondAttribute="trailing" id="gmJ-wN-S6l"/>
-                            <constraint firstItem="73R-8e-fVP" firstAttribute="centerX" secondItem="Htd-m9-uNa" secondAttribute="centerX" id="kmS-Jb-b2R"/>
-                            <constraint firstItem="73R-8e-fVP" firstAttribute="centerY" secondItem="Htd-m9-uNa" secondAttribute="centerY" multiplier="0.2" id="qFB-jH-57o"/>
-                            <constraint firstItem="Bae-zX-RQw" firstAttribute="centerY" secondItem="Htd-m9-uNa" secondAttribute="centerY" multiplier="0.3" id="u4Q-zf-KqJ"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="pinField" destination="Bae-zX-RQw" id="d6e-9J-rVS"/>
-                        <outlet property="signInButton" destination="EXZ-GM-4Pg" id="CXZ-jJ-ywx"/>
-                        <outlet property="usernameTextField" destination="73R-8e-fVP" id="P2p-kc-nHG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Xu-tY-axX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="33" y="37"/>
-        </scene>
-        <!--Continue Signup View Controller-->
-        <scene sceneID="rup-pC-IQr">
-            <objects>
-                <viewController id="baq-i3-cPO" customClass="ContinueSignupViewController" customModule="WebDeck2017" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AA3-Yi-xTZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="abt-fJ-OTk"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="x9A-z3-AAa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DFC-cO-Nj5">
-                                <rect key="frame" x="143.5" y="86" width="88" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7yN-6z-reV">
-                                <rect key="frame" x="159.5" y="153" width="56" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PIN" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eKl-pE-csA">
-                                <rect key="frame" x="165.5" y="219.5" width="44" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wh1-7s-OeC">
-                                <rect key="frame" x="156.5" y="253" width="62" height="30"/>
-                                <state key="normal" title="Continue"/>
-                                <connections>
-                                    <action selector="saveUser:" destination="baq-i3-cPO" eventType="touchUpInside" id="qVb-d1-rMg"/>
-                                    <segue destination="c0K-zo-7Ma" kind="modal" identifier="digitSegue" id="HNg-xC-K2l"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.95686274509803915" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="DFC-cO-Nj5" firstAttribute="centerY" secondItem="x9A-z3-AAa" secondAttribute="centerY" multiplier="0.3" constant="1" id="E1Z-is-8G2"/>
-                            <constraint firstItem="DFC-cO-Nj5" firstAttribute="centerX" secondItem="x9A-z3-AAa" secondAttribute="centerX" id="FFD-kV-IQZ"/>
-                            <constraint firstItem="eKl-pE-csA" firstAttribute="centerY" secondItem="x9A-z3-AAa" secondAttribute="centerY" multiplier="0.7" constant="1" id="Kzj-HM-6JX"/>
-                            <constraint firstItem="wh1-7s-OeC" firstAttribute="centerX" secondItem="x9A-z3-AAa" secondAttribute="centerX" id="NY0-SD-LBh"/>
-                            <constraint firstItem="wh1-7s-OeC" firstAttribute="centerY" secondItem="x9A-z3-AAa" secondAttribute="centerY" multiplier="0.8" constant="1" id="Q3q-xl-xYm"/>
-                            <constraint firstItem="7yN-6z-reV" firstAttribute="centerX" secondItem="x9A-z3-AAa" secondAttribute="centerX" id="jNV-X3-q0s"/>
-                            <constraint firstItem="eKl-pE-csA" firstAttribute="centerX" secondItem="x9A-z3-AAa" secondAttribute="centerX" id="s8h-PP-fBT"/>
-                            <constraint firstItem="7yN-6z-reV" firstAttribute="centerY" secondItem="x9A-z3-AAa" secondAttribute="centerY" multiplier="0.5" constant="1" id="tvH-SV-dnk"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="button" destination="wh1-7s-OeC" id="uOw-4u-e1n"/>
-                        <outlet property="emailField" destination="7yN-6z-reV" id="GLA-UA-Bok"/>
-                        <outlet property="pinFIeld" destination="eKl-pE-csA" id="Adv-H3-S33"/>
-                        <outlet property="usernameField" destination="DFC-cO-Nj5" id="Rfy-R6-OSJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kch-wd-FEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="772" y="38"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="AYF-rA-2Sy">
@@ -280,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0fV-zk-VQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1490.4000000000001" y="36.431784107946029"/>
+            <point key="canvasLocation" x="130" y="54"/>
         </scene>
         <!--Reactions View Controller-->
         <scene sceneID="cEy-NC-6uh">
@@ -371,15 +232,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0A-Gb-Cm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2256.8000000000002" y="36.431784107946029"/>
+            <point key="canvasLocation" x="894" y="36"/>
         </scene>
     </scenes>
     <resources>
         <image name="WebDeckLogo" width="1007" height="1138"/>
         <image name="homepage.jpg" width="3413" height="5119"/>
-        <image name="sign-in-button.png" width="230" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6jE-oo-jqg"/>
+        <segue reference="XtY-xc-7pR"/>
     </inferredMetricsTieBreakers>
 </document>
