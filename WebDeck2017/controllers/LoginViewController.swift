@@ -46,6 +46,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                 return
             }
             print("user logged in via fb")
+            self.performSegue(withIdentifier: "signInSegue", sender: self)
         })
     }
 
