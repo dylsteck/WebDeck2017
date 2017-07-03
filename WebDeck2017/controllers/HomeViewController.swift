@@ -10,7 +10,8 @@ import Foundation
 
 import TwicketSegmentedControl
 
-import Parse
+import Firebase
+import FBSDKLoginKit
 
 import SwiftyJSON
 import Alamofire
@@ -81,17 +82,11 @@ extension HomeViewController: TwicketSegmentedControlDelegate {
     func didSelect(_ segmentIndex: Int) {
         print("Selected index: \(segmentIndex)")
         if segmentIndex == 2 {
-            PFUser.logOut()
-            let currentUser = PFUser.current()
-            if currentUser == nil {
-                print("user is nil(logged out)")
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let viewController = storyboard.instantiateViewController(withIdentifier: "SignUpViewController")
-                self.present(viewController, animated: true)
-                
-            } else {
-                print("user is not nil")
-            };
+            try! Auth.auth().signOut()
+            print("User logged out via FB")
+            let loginManager = FBSDKLoginManager()
+            loginManager.logOut()
+            performSegue(withIdentifier: "signOutSegue", sender: self)
         }
         if segmentIndex == 1 {
             performSegue(withIdentifier: "reactionTriggerSegue", sender: self)

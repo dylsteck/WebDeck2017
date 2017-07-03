@@ -144,6 +144,7 @@
                     </view>
                     <connections>
                         <segue destination="3DQ-3x-5eo" kind="show" identifier="reactionTriggerSegue" id="fOH-Yb-aG4"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="signOutSegue" id="HXk-e4-tr8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0fV-zk-VQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -239,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0A-Gb-Cm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="36"/>
+            <point key="canvasLocation" x="847" y="54"/>
         </scene>
     </scenes>
     <resources>
@@ -248,6 +249,6 @@
         <image name="sign-in-button.png" width="230" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XtY-xc-7pR"/>
+        <segue reference="eTP-GY-Hht"/>
     </inferredMetricsTieBreakers>
 </document>
