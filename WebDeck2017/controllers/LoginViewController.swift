@@ -8,59 +8,62 @@
 
 import Foundation
 import UIKit
-import FacebookCore
-import FacebookLogin
+import Firebase
+import FirebaseAuth
+import FBSDKLoginKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
 
+    @IBOutlet weak var facebookLoginButton: FBSDKLoginButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //animateLogo()
-        
+        //styling
         titleLabel.font = UIFont(name: "Montserrat-Bold", size: 15)
         titleLabel.textColor = UIColor(red:0.87, green:0.87, blue:0.87, alpha:1.0)
         
-        let loginButton = LoginButton(readPermissions: [ .publicProfile, .email])
-        loginButton.center = view.center
-        
-        view.addSubview(loginButton)
-        
-        if let accessToken = AccessToken.current {
-            print("signed in")
-        }
-        
+        facebookLoginButton.delegate = self
     }
     
-    func loginButtonDidLogOut(_ loginButton: LoginButton){
-        print("logged out of fb")
-        
-    }
-    
-    func loginButton(_ loginButton: LoginButton!, didCompleteWith result: LoginResult!, error: Error!) {
-        if error != nil {
-            print(error)
-            return
-        }
-        
-        print("Successfully logged in with facebook...")
-    }
-
+       
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
-    
-    func animateLogo() {
-        logo.alpha = 0.0
-        UIView.animate(withDuration: 3.0) {
-            self.logo.alpha = 1.0
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        if error != nil {
+            print(error!.localizedDescription)
+            return
         }
+        let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+        Auth.auth().signIn(with: credential, completion:{ (user , error) in
+            if error != nil {
+                print(error!.localizedDescription)
+                return
+            }
+            print("user logged in via fb")
+        })
     }
+
+    func loginButtonWillLogin(_ loginButton: FBSDKLoginButton!) -> Bool {
+          return true
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        try! Auth.auth().signOut()
+        print("User logged out via FB")
+    }
+    
+//    func animateLogo() {
+//        logo.alpha = 0.0
+//        UIView.animate(withDuration: 3.0) {
+//            self.logo.alpha = 1.0
+//        }
+//    }
 
 
  

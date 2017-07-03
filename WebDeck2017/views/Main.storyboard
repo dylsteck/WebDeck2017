@@ -46,6 +46,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvJ-GY-NSQ" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="72.5" y="315" width="230" height="37"/>
+                                <state key="normal" image="sign-in-button.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -54,12 +58,15 @@
                             <constraint firstItem="QIW-9l-T3w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E1g-AE-ogC"/>
                             <constraint firstAttribute="trailing" secondItem="QIW-9l-T3w" secondAttribute="trailing" id="Hjf-QY-EHP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QIW-9l-T3w" secondAttribute="bottom" id="HvX-LO-XvD"/>
+                            <constraint firstItem="dvJ-GY-NSQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J8c-IQ-0gJ"/>
                             <constraint firstItem="kR2-4a-nvw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="Lhv-OR-ah2"/>
+                            <constraint firstItem="dvJ-GY-NSQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eQv-7Y-zey"/>
                             <constraint firstItem="oQg-9N-xdd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.7" id="p9z-5t-hJt"/>
                             <constraint firstItem="kR2-4a-nvw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rnS-KR-0bD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="facebookLoginButton" destination="dvJ-GY-NSQ" id="0Jz-aR-mkW"/>
                         <outlet property="titleLabel" destination="oQg-9N-xdd" id="pUl-aq-ucb"/>
                         <segue destination="c0K-zo-7Ma" kind="modal" identifier="signInSegue" id="XtY-xc-7pR"/>
                     </connections>
@@ -238,6 +245,7 @@
     <resources>
         <image name="WebDeckLogo" width="1007" height="1138"/>
         <image name="homepage.jpg" width="3413" height="5119"/>
+        <image name="sign-in-button.png" width="230" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XtY-xc-7pR"/>

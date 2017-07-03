@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import Parse
 import Mixpanel
 import Firebase
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,36 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
         FirebaseApp.configure()
         
-        // Set up the Parse SDK
-        let configuration = ParseClientConfiguration {
-            $0.applicationId = "WebDeck"
-            $0.server = "https://webdeck-ios-dcs.herokuapp.com/parse"
-        }
-        Parse.initialize(with: configuration)
-        
-        if PFUser.current() != nil {
-            // Code to execute if user is logged in
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
-            
-            self.window?.rootViewController = viewController
-            self.window?.makeKeyAndVisible()
-            print("Current user")
-        } else {
-            // Default screen you set in info plist.
-            print("Not current user")
-        }
-            
-        // Override point for customization after application launch.
-
+        //Mixpanel analytics
         Mixpanel.initialize(token: "276d23edc9a2672e2f36569bb705431c")
 
-        return true
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url as URL!, sourceApplication: sourceApplication, annotation: annotation)
+    }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
