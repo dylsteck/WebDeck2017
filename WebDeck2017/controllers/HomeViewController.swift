@@ -15,13 +15,18 @@ import FBSDKLoginKit
 
 import SwiftyJSON
 import Alamofire
+import Kingfisher
 
-class HomeViewController: UIViewController, UIScrollViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController {
 
-    var logoImageView = UIImageView(image: UIImage(named: "WebDeckLogo"))
+    var logoImageView : UIImageView!
     
     var newsArray = [JSON]()
     var newsTitles = [JSON]()
+    
+    @IBOutlet weak var navBar: UINavigationBar!
+    @IBOutlet weak var navBarTitle: UINavigationItem!
+    @IBOutlet weak var navBarUserImage: UIBarButtonItem!
     
     var calendar = CalendarModule()
 
@@ -32,41 +37,39 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UITableViewDat
         calendar.requestAccessToCalendar()
         calendar.loadEvents()
         
+        
         self.getNews()
         
         addSegmentedControl()
-        
-        //logoImageView.center = view.center
-        //view.addSubview(logoImageView)
-        
+   
         
     } // end of viewDidLoad
     
-    //table view try
-    var categories = ["News"]
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return categories[section]
+    override func viewDidAppear(_ animated: Bool) {
+        logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 39, height: 44))
+        logoImageView.contentMode = .scaleAspectFit
+        let image = UIImage(named: "logo.png")
+        logoImageView.image = image
+        
+        self.navBarTitle.titleView = logoImageView
+        
+        getFacebookPicture()
+    
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return categories.count
+    func getFacebookPicture(){
+        let userID = FBSDKAccessToken.current().userID
+        let facebookProfileUrl = "http://graph.facebook.com/\(userID as! String)/picture?type=large"
+        ImageDownloader.default.downloadImage(with: facebookProfileUrl as! URL, options: [], progressBlock: nil) {
+            (image, error, url, data) in
+            self.navBarUserImage.image = image
+        }
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! NewsCell
-        return cell
-    }
-// tv end
-    
     
     func addSegmentedControl(){
         let titles = ["Home", "Reactions", "Sign Out"]
         //x is where it is on the x axis, y is where it is on the y axis, width is width, and height is height. Higher numbers in the y column get closer to the top of the frame, and smaller get it closer to the bottom.
-        let frame = CGRect(x: 2, y: view.frame.height / 7, width: view.frame.width - 10, height: 40)
+        let frame = CGRect(x: 2, y: view.frame.height / 9, width: view.frame.width - 10, height: 40)
         let segmentedControl = TwicketSegmentedControl(frame: frame)
         segmentedControl.setSegmentItems(titles)
         segmentedControl.setSegmentItems(titles)

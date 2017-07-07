@@ -8,9 +8,12 @@
 
 import Foundation
 import UIKit
+
 import Firebase
 import FirebaseAuth
+
 import FBSDKLoginKit
+
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 
@@ -46,6 +49,10 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                 return
             }
             print("user logged in via fb")
+            let userID = FBSDKAccessToken.current().userID
+            let facebookProfileUrl = "http://graph.facebook.com/\(userID as! String)/picture?type=large"
+            print(facebookProfileUrl)
+            
             self.performSegue(withIdentifier: "signInSegue", sender: self)
         })
     }
@@ -56,6 +63,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         try! Auth.auth().signOut()
+        self.performSegue(withIdentifier: "signInSegue", sender: self)
         print("User logged out via FB")
     }
     

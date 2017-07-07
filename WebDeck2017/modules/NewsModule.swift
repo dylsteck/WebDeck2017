@@ -34,11 +34,10 @@ extension HomeViewController {
                         print (title.stringValue)
                         ImageDownloader.default.downloadImage(with: imageURL!, options: [], progressBlock: nil) {
                             (image, error, url, data) in
-                            print("Downloaded Image: \(image)")
+                      //      print("Downloaded Image: \(image)")
                           //  let image = NewsCell().newsImage
                         }
                         self.newsTitles.append(title)
-                        let newsTitles = NewsCell().newsTitles
                     }
                     print (self.newsTitles)
                 case .failure(let error):

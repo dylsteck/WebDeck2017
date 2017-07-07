@@ -16,7 +16,6 @@ target 'WebDeck2017' do
     pod 'Firebase/Auth'
     pod 'Firebase/Core'
 
-    pod 'Mixpanel-swift'
     
     pod 'Kingfisher'
     

@@ -33,7 +33,6 @@
 		FC8C74261ED7364000110481 /* NewsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8C74251ED7364000110481 /* NewsModule.swift */; };
 		FC8C742C1ED736A400110481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C742A1ED736A400110481 /* LaunchScreen.storyboard */; };
 		FC8C742D1ED736A400110481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C742B1ED736A400110481 /* Main.storyboard */; };
-		FC9B55031EDA214D0003A39B /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9B55021EDA214C0003A39B /* NewsCell.swift */; };
 		FCB094671ED5E572007A8E56 /* WeatherModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB094661ED5E572007A8E56 /* WeatherModule.swift */; };
 		FCE3C0011EA90F0500CD9C2A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */; };
 		FCE656EC1E75220E00DE9D85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE656E91E75220E00DE9D85 /* LoginViewController.swift */; };
@@ -116,7 +115,6 @@
 		FC8C74251ED7364000110481 /* NewsModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsModule.swift; path = modules/NewsModule.swift; sourceTree = "<group>"; };
 		FC8C742A1ED736A400110481 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = views/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC8C742B1ED736A400110481 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = views/Main.storyboard; sourceTree = "<group>"; };
-		FC9B55021EDA214C0003A39B /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsCell.swift; path = modules/NewsCell.swift; sourceTree = "<group>"; };
 		FCB094661ED5E572007A8E56 /* WeatherModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherModule.swift; path = modules/WeatherModule.swift; sourceTree = "<group>"; };
 		FCE3C0001EA90F0500CD9C2A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = controllers/HomeViewController.swift; sourceTree = "<group>"; };
 		FCE656E91E75220E00DE9D85 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = controllers/LoginViewController.swift; sourceTree = "<group>"; };
@@ -204,7 +202,6 @@
 				FCB094661ED5E572007A8E56 /* WeatherModule.swift */,
 				FC8C74251ED7364000110481 /* NewsModule.swift */,
 				FCFA40871ED7798100B99DDA /* Reaction.swift */,
-				FC9B55021EDA214C0003A39B /* NewsCell.swift */,
 			);
 			name = modules;
 			sourceTree = "<group>";
@@ -664,7 +661,6 @@
 				FCFA40861ED7789000B99DDA /* ReactionsViewController.swift in Sources */,
 				FCE3C0011EA90F0500CD9C2A /* HomeViewController.swift in Sources */,
 				FCB094671ED5E572007A8E56 /* WeatherModule.swift in Sources */,
-				FC9B55031EDA214D0003A39B /* NewsCell.swift in Sources */,
 				FC0588281ED12FF6006C4F80 /* CalendarModule.swift in Sources */,
 				FCFA40881ED7798100B99DDA /* Reaction.swift in Sources */,
 				FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */,

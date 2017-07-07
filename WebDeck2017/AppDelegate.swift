@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Mixpanel
 import Firebase
 import FBSDKCoreKit
 
@@ -33,11 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // User is not logged in
             print("Not current user")
         }
-        
-        
-        //Mixpanel analytics
-        Mixpanel.initialize(token: "276d23edc9a2672e2f36569bb705431c")
-
+    
       
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
