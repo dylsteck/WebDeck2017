@@ -18,15 +18,12 @@ import Alamofire
 import Kingfisher
 
 class HomeViewController: UIViewController {
-
-    var logoImageView : UIImageView!
     
     var newsArray = [JSON]()
     var newsTitles = [JSON]()
     
-    @IBOutlet weak var navBar: UINavigationBar!
-    @IBOutlet weak var navBarTitle: UINavigationItem!
-    @IBOutlet weak var navBarUserImage: UIBarButtonItem!
+    @IBOutlet weak var facebookImageView: UIImageView!
+    @IBOutlet weak var usernameString: UILabel!
     
     var calendar = CalendarModule()
 
@@ -46,13 +43,6 @@ class HomeViewController: UIViewController {
     } // end of viewDidLoad
     
     override func viewDidAppear(_ animated: Bool) {
-        logoImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 39, height: 44))
-        logoImageView.contentMode = .scaleAspectFit
-        let image = UIImage(named: "logo.png")
-        logoImageView.image = image
-        
-        self.navBarTitle.titleView = logoImageView
-        
         getFacebookPicture()
     
     }
@@ -60,10 +50,15 @@ class HomeViewController: UIViewController {
     func getFacebookPicture(){
         let userID = FBSDKAccessToken.current().userID
         let facebookProfileUrl = "http://graph.facebook.com/\(userID as! String)/picture?type=large"
-        ImageDownloader.default.downloadImage(with: facebookProfileUrl as! URL, options: [], progressBlock: nil) {
-            (image, error, url, data) in
-            self.navBarUserImage.image = image
+        print (facebookProfileUrl)
+        ImageDownloader.default.downloadImage(with: NSURL(string: facebookProfileUrl) as! URL, options: [], progressBlock: nil) {
+       (image, error, url, data) in
+              self.facebookImageView.image = image
         }
+        let username = FBSDKProfile.current().name
+        let welcomeString = "Welcome,\(username)!"
+        usernameString.text = welcomeString
+        usernameString.font = UIFont(name: "NouvelleVague-Black", size: 17)!
     }
     
     func addSegmentedControl(){
