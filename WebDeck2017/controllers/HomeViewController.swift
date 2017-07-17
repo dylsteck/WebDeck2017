@@ -53,10 +53,10 @@ class HomeViewController: UIViewController {
         print (facebookProfileUrl)
         ImageDownloader.default.downloadImage(with: NSURL(string: facebookProfileUrl) as! URL, options: [], progressBlock: nil) {
        (image, error, url, data) in
-              self.facebookImageView.image = image
+            self.facebookImageView.image = image
         }
-        let username = FBSDKProfile.current().name
-        let welcomeString = "Welcome,\(username)!"
+        let username = Auth.auth().currentUser?.displayName!
+        let welcomeString = "Welcome, \(username as! String)!"
         usernameString.text = welcomeString
         usernameString.font = UIFont(name: "NouvelleVague-Black", size: 17)!
     }

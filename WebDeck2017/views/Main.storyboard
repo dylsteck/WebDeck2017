@@ -101,8 +101,8 @@
                                     <constraint firstAttribute="width" constant="100" id="9a4-Tq-2QP"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="user string" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ds-0v-hzb">
-                                <rect key="frame" x="125" y="190" width="82" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user string" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ds-0v-hzb">
+                                <rect key="frame" x="146.5" y="123" width="82" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -111,10 +111,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HHY-bd-DAT" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.6" id="7Wi-cA-iK2"/>
+                            <constraint firstItem="8Ds-0v-hzb" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.4" id="LaB-L9-Le7"/>
+                            <constraint firstItem="8Ds-0v-hzb" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" id="Obe-sE-GZu"/>
                             <constraint firstItem="HHY-bd-DAT" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" multiplier="0.3" id="RNM-K7-Kq8"/>
-                            <constraint firstItem="8Ds-0v-hzb" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" multiplier="0.85" id="YUv-Ut-9Nq"/>
                             <constraint firstItem="E8o-3m-okj" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" id="ZCZ-UD-qWZ"/>
-                            <constraint firstItem="8Ds-0v-hzb" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.6" id="gfu-q4-c1i"/>
                             <constraint firstItem="E8o-3m-okj" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.15" id="pDj-bX-ker"/>
                         </constraints>
                     </view>
