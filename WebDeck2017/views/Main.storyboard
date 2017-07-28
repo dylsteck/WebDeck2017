@@ -87,13 +87,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WebDeckLogo" translatesAutoresizingMaskIntoConstraints="NO" id="E8o-3m-okj">
-                                <rect key="frame" x="168" y="28" width="39" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="5cc-Hc-kkR"/>
-                                    <constraint firstAttribute="width" constant="39" id="jon-16-YSO"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HHY-bd-DAT">
                                 <rect key="frame" x="6.5" y="150" width="100" height="100"/>
                                 <constraints>
@@ -104,24 +97,61 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user string" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ds-0v-hzb">
                                 <rect key="frame" x="146.5" y="123" width="82" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" red="0.96654459239502277" green="0.99676943361064352" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WebDeckLogo" translatesAutoresizingMaskIntoConstraints="NO" id="E8o-3m-okj">
+                                <rect key="frame" x="18" y="28" width="39" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="q2B-RX-uJr"/>
+                                    <constraint firstAttribute="height" constant="44" id="x3T-nr-lqF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yng-5J-1vr">
+                                <rect key="frame" x="72" y="35" width="62" height="30"/>
+                                <state key="normal" title="Your Day">
+                                    <color key="titleColor" red="0.98217713053665157" green="0.99031576120540954" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WM4-p3-s7K">
+                                <rect key="frame" x="257.5" y="35" width="48" height="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="1" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="c0K-zo-7Ma" eventType="touchUpInside" id="s1t-aG-V5O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgh-df-9nD">
+                                <rect key="frame" x="163" y="35" width="68" height="30"/>
+                                <state key="normal" title="Reactions">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Yng-5J-1vr" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" multiplier="0.55" id="2XM-El-S2h"/>
                             <constraint firstItem="HHY-bd-DAT" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.6" id="7Wi-cA-iK2"/>
                             <constraint firstItem="8Ds-0v-hzb" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.4" id="LaB-L9-Le7"/>
                             <constraint firstItem="8Ds-0v-hzb" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" id="Obe-sE-GZu"/>
+                            <constraint firstItem="Yng-5J-1vr" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.15" id="R12-0l-KCh"/>
                             <constraint firstItem="HHY-bd-DAT" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" multiplier="0.3" id="RNM-K7-Kq8"/>
-                            <constraint firstItem="E8o-3m-okj" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" id="ZCZ-UD-qWZ"/>
-                            <constraint firstItem="E8o-3m-okj" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.15" id="pDj-bX-ker"/>
+                            <constraint firstItem="WM4-p3-s7K" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" multiplier="1.5" id="grD-Fg-y93"/>
+                            <constraint firstItem="E8o-3m-okj" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.15" id="i5q-rg-oTG"/>
+                            <constraint firstItem="Mgh-df-9nD" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" multiplier="1.05" id="lxK-bE-5Nx"/>
+                            <constraint firstItem="WM4-p3-s7K" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.15" id="orj-Y5-VKh"/>
+                            <constraint firstItem="E8o-3m-okj" firstAttribute="centerX" secondItem="NTH-jc-dvR" secondAttribute="centerX" multiplier="0.2" id="rD1-X7-fzL"/>
+                            <constraint firstItem="Mgh-df-9nD" firstAttribute="centerY" secondItem="NTH-jc-dvR" secondAttribute="centerY" multiplier="0.15" id="yOa-lH-usp"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
                         <outlet property="facebookImageView" destination="HHY-bd-DAT" id="nwn-xi-Pl0"/>
+                        <outlet property="logoutButton" destination="WM4-p3-s7K" id="cWd-Tr-fo5"/>
+                        <outlet property="reactionsButton" destination="Mgh-df-9nD" id="Q7i-3H-hf1"/>
                         <outlet property="usernameString" destination="8Ds-0v-hzb" id="f94-UK-tdq"/>
+                        <outlet property="yourDayButton" destination="Yng-5J-1vr" id="Tvq-MI-MF4"/>
                         <segue destination="3DQ-3x-5eo" kind="show" identifier="reactionTriggerSegue" id="fOH-Yb-aG4"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="signOutSegue" id="HXk-e4-tr8"/>
                     </connections>
