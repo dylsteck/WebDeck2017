@@ -7,28 +7,25 @@
 //
 import Foundation
 import UIKit
-import Parse
+import Firebase
 
 class Reaction {
 
-
     func sendReaction(reactionTitle: UITextField!, reactionContent: UITextField!, showPresent: ()) {
-        let reaction = PFObject(className: "Reactions")
-        reaction["title"] = reactionTitle.text
-        reaction["content"] = reactionContent.text
-        reaction["parent"] = PFUser.current()
-        reaction.saveInBackground { (succeeded, error) -> Void in
-            if succeeded {
-                print("Success with Parse yyyaboi")
-                print(reaction)
-                self.showPresent()
-            }
-                else {
-                let alert = UIAlertView(title: "Error", message: "There has been a server error.", delegate: self, cancelButtonTitle: "OK")
-                alert.show()
-                    print("parse failure :(")
-            }
-        }
+
+        let text = reactionTitle.text
+        let content = reactionContent.text
+        let user = Auth.auth().currentUser?.displayName
+        
+        let reaction:[String : AnyObject] = [
+            "text": text as AnyObject,
+            "content": content as AnyObject,
+            "belongs_to": user! as AnyObject
+        ]
+        
+        let firebaseRef = Database.database().reference()
+        firebaseRef.child("Reactions").childByAutoId().setValue(reaction)
+        
     }
 
     func showPresent(){

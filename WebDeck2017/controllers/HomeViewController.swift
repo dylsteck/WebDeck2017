@@ -71,6 +71,10 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func logoutButtonPressed(_ sender: Any) {
-        
+        try! Auth.auth().signOut()
+        let manager = FBSDKLoginManager()
+        manager.logOut()
+        self.performSegue(withIdentifier: "logoutSegue", sender: self)
+        print("User logged out via FB")
     }
 } //end of Class

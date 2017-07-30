@@ -24,6 +24,9 @@ PODS:
   - Firebase/Core (4.0.2):
     - FirebaseAnalytics (= 4.0.1)
     - FirebaseCore (= 4.0.2)
+  - Firebase/Database (4.0.2):
+    - Firebase/Core
+    - FirebaseDatabase (= 4.0.0)
   - FirebaseAnalytics (4.0.1):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -34,6 +37,8 @@ PODS:
     - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseCore (4.0.2):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseDatabase (4.0.0):
+    - FirebaseAnalytics (~> 4.0)
   - FirebaseInstanceID (2.0.0):
     - FirebaseCore (~> 4.0)
   - GoogleToolboxForMac/DebugUtils (2.1.1):
@@ -48,7 +53,6 @@ PODS:
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.10)
   - Kingfisher (3.10.2)
-  - Mixpanel-swift (2.1.8)
   - Parse (1.14.5):
     - Bolts/Tasks (~> 1.8)
   - ParseUI (1.2.0):
@@ -63,8 +67,8 @@ DEPENDENCIES:
   - FacebookLogin
   - Firebase/Auth
   - Firebase/Core
+  - Firebase/Database
   - Kingfisher
-  - Mixpanel-swift
   - Parse
   - ParseUI
   - SwiftyJSON (from `https://github.com/BaiduHiDeviOS/SwiftyJSON.git`, branch `swift3`)
@@ -91,16 +95,16 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: 4d7040fefc3cd8b291cde35f12cf063d7963f15d
   FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
   FirebaseCore: 1a8bf6c795ad07d2918278657954ffd2552e9c17
+  FirebaseDatabase: d829b3a8c3e2ac7a16773c5df226966b0805dfc2
   FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
   Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
-  Mixpanel-swift: 05695617653760d15d5aee1414f1ae7c336de1a2
   Parse: 2a70ed917845ffda3a534ba70300c108006b975d
   ParseUI: af2eba584799da4a9fbdac0e178662d7438b502e
   SwiftyJSON: 6118fb49d7519c4d31a0c1f3d5af936e9047b556
   TwicketSegmentedControl: 6d7a4cf243657e0ac3f00d06d873a25334c04042
 
-PODFILE CHECKSUM: a454ae724c018dbdfa7bf3407727536cb2d4eaa9
+PODFILE CHECKSUM: d1077c77668fd3016e2f6f218c2661a0efc35e1a
 
 COCOAPODS: 1.3.0.beta.2

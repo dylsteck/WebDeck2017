@@ -15,6 +15,7 @@ target 'WebDeck2017' do
     
     pod 'Firebase/Auth'
     pod 'Firebase/Core'
+    pod 'Firebase/Database'
 
     
     pod 'Kingfisher'

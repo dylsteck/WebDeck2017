@@ -120,6 +120,7 @@
                                 </state>
                                 <connections>
                                     <action selector="logoutButtonPressed:" destination="c0K-zo-7Ma" eventType="touchUpInside" id="s1t-aG-V5O"/>
+                                    <segue destination="BYZ-38-t0r" kind="modal" identifier="logoutSegue" id="oft-c6-KPd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgh-df-9nD">
@@ -127,6 +128,9 @@
                                 <state key="normal" title="Reactions">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3DQ-3x-5eo" kind="show" id="pwg-eK-dct"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
@@ -258,6 +262,8 @@
         <image name="sign-in-button.png" width="230" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="oft-c6-KPd"/>
         <segue reference="eTP-GY-Hht"/>
+        <segue reference="pwg-eK-dct"/>
     </inferredMetricsTieBreakers>
 </document>
