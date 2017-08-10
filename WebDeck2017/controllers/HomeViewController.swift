@@ -41,7 +41,15 @@ class HomeViewController: UIViewController {
         
         self.getNews()
         self.navBar()
-   
+        
+        var ref: DatabaseReference!
+        
+        ref = Database.database().reference()
+        
+        ref.observe(.value, with: { snapshot in
+            print(snapshot.value)
+        })
+        
         
     } // end of viewDidLoad
     

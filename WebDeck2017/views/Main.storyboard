@@ -176,45 +176,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TZ-wp-gsI">
-                                <rect key="frame" x="37" y="89.5" width="76" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyW-oJ-R2g">
-                                <rect key="frame" x="26.5" y="122" width="322" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="ROS-ep-jeU"/>
-                                    <constraint firstAttribute="width" constant="322" id="un5-OD-mtQ"/>
-                                </constraints>
-                                <string key="text">Add attachments like work you have done, comment on news, react and more. Experience reactions and post your own to the community.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V2k-Bo-dBa">
-                                <rect key="frame" x="137.5" y="318.5" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="rUQ-df-xWI"/>
-                                    <constraint firstAttribute="height" constant="30" id="uW4-9X-q8U"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypn-zE-u7V">
                                 <rect key="frame" x="163" y="585.5" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="sendReaction:" destination="3DQ-3x-5eo" eventType="touchUpInside" id="U8e-iY-zgo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxS-XL-j1O">
-                                <rect key="frame" x="149" y="18.5" width="77" height="30"/>
-                                <state key="normal" title="Back home"/>
-                                <connections>
-                                    <segue destination="c0K-zo-7Ma" kind="show" id="eTP-GY-Hht"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Content" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSj-Cx-D6p">
@@ -226,29 +192,84 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compose a Reaction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HG4-oS-n7Z">
+                                <rect key="frame" x="33.5" y="73" width="158" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WebDeckLogo" translatesAutoresizingMaskIntoConstraints="NO" id="zuA-JG-Zts">
+                                <rect key="frame" x="18" y="28" width="39" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NMl-2p-VSj"/>
+                                    <constraint firstAttribute="width" constant="39" id="g22-pd-1mw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF8-4a-FSv">
+                                <rect key="frame" x="72" y="35" width="62" height="30"/>
+                                <state key="normal" title="Your Day">
+                                    <color key="titleColor" red="0.9821771305" green="0.99031576119999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="c0K-zo-7Ma" kind="show" id="UOC-yF-eZG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JJ-4r-S8a">
+                                <rect key="frame" x="163" y="35" width="68" height="30"/>
+                                <state key="normal" title="Reactions">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUC-cd-KvL">
+                                <rect key="frame" x="257.5" y="35" width="48" height="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="1" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="c0K-zo-7Ma" eventType="touchUpInside" id="XVJ-2O-naD"/>
+                                    <action selector="logoutButtonPressed:" destination="3DQ-3x-5eo" eventType="touchUpInside" id="uLu-Ce-jIW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V2k-Bo-dBa">
+                                <rect key="frame" x="44" y="101.5" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.12561224400997162" green="0.12560583651065826" blue="0.12561018764972687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="rUQ-df-xWI"/>
+                                    <constraint firstAttribute="height" constant="30" id="uW4-9X-q8U"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.96078431372549022" green="0.97647058823529409" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ypn-zE-u7V" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="1.8" id="5RO-K3-9pA"/>
                             <constraint firstItem="ypn-zE-u7V" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" id="7I9-U8-OKf"/>
-                            <constraint firstItem="LxS-XL-j1O" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="0.1" id="HyJ-57-5k8"/>
+                            <constraint firstItem="1JJ-4r-S8a" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="0.15" id="DkW-yx-zTz"/>
+                            <constraint firstItem="HG4-oS-n7Z" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" multiplier="0.6" id="HCo-aI-jQV"/>
+                            <constraint firstItem="HG4-oS-n7Z" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="0.25" id="L3R-M6-ePL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pSj-Cx-D6p" secondAttribute="trailing" constant="32" id="Mhm-Mn-nPU"/>
-                            <constraint firstItem="LxS-XL-j1O" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" id="SeU-6R-zw2"/>
-                            <constraint firstItem="V2k-Bo-dBa" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" id="UH4-QC-cZB"/>
+                            <constraint firstItem="aUC-cd-KvL" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" multiplier="1.5" id="S3x-4e-mFn"/>
+                            <constraint firstItem="V2k-Bo-dBa" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="0.35" id="UH4-QC-cZB"/>
+                            <constraint firstItem="1JJ-4r-S8a" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" multiplier="1.05" id="VhR-Tu-z2g"/>
                             <constraint firstItem="pSj-Cx-D6p" firstAttribute="leading" secondItem="TC3-OO-PBR" secondAttribute="leadingMargin" constant="56" id="WYa-wk-Nrs"/>
-                            <constraint firstItem="6TZ-wp-gsI" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="0.3" id="YGU-9Z-JMs"/>
-                            <constraint firstItem="6TZ-wp-gsI" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" multiplier="0.4" id="a0m-9P-EPp"/>
-                            <constraint firstItem="eyW-oJ-R2g" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" id="dh1-BQ-5aN"/>
-                            <constraint firstItem="eyW-oJ-R2g" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="0.5" id="m5i-AU-2mS"/>
-                            <constraint firstItem="V2k-Bo-dBa" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" id="ssH-Ar-Epe"/>
+                            <constraint firstItem="aUC-cd-KvL" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="0.15" id="WYf-e7-Kgq"/>
+                            <constraint firstItem="V2k-Bo-dBa" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" multiplier="0.5" id="ssH-Ar-Epe"/>
                             <constraint firstItem="ypn-zE-u7V" firstAttribute="top" secondItem="pSj-Cx-D6p" secondAttribute="bottom" constant="60" id="swx-PW-4K6"/>
+                            <constraint firstItem="aF8-4a-FSv" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="0.15" id="tdh-FS-6eA"/>
+                            <constraint firstItem="aF8-4a-FSv" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" multiplier="0.55" id="tgy-Ta-wvJ"/>
+                            <constraint firstItem="zuA-JG-Zts" firstAttribute="centerX" secondItem="TC3-OO-PBR" secondAttribute="centerX" multiplier="0.2" id="v5m-2e-dB9"/>
+                            <constraint firstItem="zuA-JG-Zts" firstAttribute="centerY" secondItem="TC3-OO-PBR" secondAttribute="centerY" multiplier="0.15" id="vr5-x0-sdm"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="descriptionLabel" destination="eyW-oJ-R2g" id="Hw9-Et-IS1"/>
-                        <outlet property="headerLabel" destination="6TZ-wp-gsI" id="v8v-rQ-XVh"/>
+                        <outlet property="composeLabel" destination="HG4-oS-n7Z" id="TQy-d6-NDg"/>
+                        <outlet property="logoutButton" destination="aUC-cd-KvL" id="MyK-57-vC4"/>
                         <outlet property="reactionContent" destination="pSj-Cx-D6p" id="sgg-Qo-uvy"/>
                         <outlet property="reactionTitle" destination="V2k-Bo-dBa" id="a9P-4b-Pto"/>
+                        <outlet property="reactionsButton" destination="1JJ-4r-S8a" id="huw-sy-pZG"/>
+                        <outlet property="yourDayButton" destination="aF8-4a-FSv" id="6Q8-a7-rjT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0A-Gb-Cm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -262,8 +283,8 @@
         <image name="sign-in-button.png" width="230" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oft-c6-KPd"/>
-        <segue reference="eTP-GY-Hht"/>
+        <segue reference="HXk-e4-tr8"/>
+        <segue reference="UOC-yF-eZG"/>
         <segue reference="pwg-eK-dct"/>
     </inferredMetricsTieBreakers>
 </document>

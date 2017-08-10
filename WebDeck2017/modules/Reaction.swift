@@ -17,14 +17,15 @@ class Reaction {
         let content = reactionContent.text
         let user = Auth.auth().currentUser?.displayName
         
-        let reaction:[String : AnyObject] = [
-            "text": text as AnyObject,
-            "content": content as AnyObject,
-            "belongs_to": user! as AnyObject
-        ]
+//        let reaction:[String : AnyObject] = [
+//            "title" : text as AnyObject,
+//            "content": content as AnyObject,
+//            "belongs_to": user! as AnyObject
+//        ]
+        let reaction = ReactionModel(user: user!, title: text!, content: content!)
         
         let firebaseRef = Database.database().reference()
-        firebaseRef.child("Reactions").childByAutoId().setValue(reaction)
+        firebaseRef.child("Reactions").childByAutoId().setValue(reaction as! AnyObject)
         
     }
 

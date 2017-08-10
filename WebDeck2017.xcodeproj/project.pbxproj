@@ -11,6 +11,7 @@
 		28855BD8057CE258AC0D32F1 /* Pods_WebDeck2017Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C33CEA1232CDA0D863A910 /* Pods_WebDeck2017Tests.framework */; };
 		C83C22B6C3653CF790AF0660 /* Pods_WebDeck2017UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA9B2EC427B1753136FDC0F /* Pods_WebDeck2017UITests.framework */; };
 		FC0588281ED12FF6006C4F80 /* CalendarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0588271ED12FF6006C4F80 /* CalendarModule.swift */; };
+		FC20FDE51F3D0FA10073E62E /* ReactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC20FDE41F3D0FA10073E62E /* ReactionModel.swift */; };
 		FC304DFE1E70691C00D624DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304DFD1E70691C00D624DD /* AppDelegate.swift */; };
 		FC304E051E70691C00D624DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC304E041E70691C00D624DD /* Assets.xcassets */; };
 		FC304E131E70691D00D624DD /* WebDeck2017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC304E121E70691D00D624DD /* WebDeck2017Tests.swift */; };
@@ -87,6 +88,7 @@
 		84C33CEA1232CDA0D863A910 /* Pods_WebDeck2017Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebDeck2017Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DEF22B114A32B1DA9BF040 /* Pods-WebDeck2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDeck2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebDeck2017/Pods-WebDeck2017.release.xcconfig"; sourceTree = "<group>"; };
 		FC0588271ED12FF6006C4F80 /* CalendarModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarModule.swift; path = modules/CalendarModule.swift; sourceTree = "<group>"; };
+		FC20FDE41F3D0FA10073E62E /* ReactionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReactionModel.swift; path = modules/ReactionModel.swift; sourceTree = "<group>"; };
 		FC304DFA1E70691C00D624DD /* WebDeck2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDeck2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC304DFD1E70691C00D624DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC304E041E70691C00D624DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				FCB094661ED5E572007A8E56 /* WeatherModule.swift */,
 				FC8C74251ED7364000110481 /* NewsModule.swift */,
 				FCFA40871ED7798100B99DDA /* Reaction.swift */,
+				FC20FDE41F3D0FA10073E62E /* ReactionModel.swift */,
 			);
 			name = modules;
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 			files = (
 				FCFA40861ED7789000B99DDA /* ReactionsViewController.swift in Sources */,
 				FCE3C0011EA90F0500CD9C2A /* HomeViewController.swift in Sources */,
+				FC20FDE51F3D0FA10073E62E /* ReactionModel.swift in Sources */,
 				FCB094671ED5E572007A8E56 /* WeatherModule.swift in Sources */,
 				FC0588281ED12FF6006C4F80 /* CalendarModule.swift in Sources */,
 				FCFA40881ED7798100B99DDA /* Reaction.swift in Sources */,
