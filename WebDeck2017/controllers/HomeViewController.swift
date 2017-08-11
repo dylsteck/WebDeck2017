@@ -47,7 +47,9 @@ class HomeViewController: UIViewController {
         ref = Database.database().reference()
         
         ref.observe(.value, with: { snapshot in
-            print(snapshot.value)
+            for child in snapshot.children {
+                print(child)
+            }
         })
         
         

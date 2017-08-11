@@ -13,7 +13,7 @@ class Reaction {
 
     func sendReaction(reactionTitle: UITextField!, reactionContent: UITextField!, showPresent: ()) {
 
-        let text = reactionTitle.text
+        let name = reactionTitle.text
         let content = reactionContent.text
         let user = Auth.auth().currentUser?.displayName
         
@@ -22,10 +22,10 @@ class Reaction {
 //            "content": content as AnyObject,
 //            "belongs_to": user! as AnyObject
 //        ]
-        let reaction = ReactionModel(user: user!, title: text!, content: content!)
+        let reaction = ReactionModel(user: user!, name: name!, content: content!)
         
         let firebaseRef = Database.database().reference()
-        firebaseRef.child("Reactions").childByAutoId().setValue(reaction as! AnyObject)
+        firebaseRef.child("Reactions").childByAutoId().setValue(reaction.toAnyObject())
         
     }
 
