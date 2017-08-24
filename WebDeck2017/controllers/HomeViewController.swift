@@ -22,9 +22,9 @@ class HomeViewController: UIViewController {
     var newsArray = [JSON]()
     var newsTitles = [JSON]()
     
+    @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var yourDayButton: UIButton!
     @IBOutlet weak var reactionsButton: UIButton!
-    @IBOutlet weak var logoutButton: UIButton!
     
     @IBOutlet weak var facebookImageView: UIImageView!
     @IBOutlet weak var usernameString: UILabel!
@@ -75,16 +75,9 @@ class HomeViewController: UIViewController {
     }
     
     func navBar(){
-        self.yourDayButton.titleLabel?.font = UIFont(name: "Montserrat-Bold", size: 15)
+        self.homeButton.titleLabel?.font = UIFont(name: "Montserrat-Bold", size: 15)
+        self.yourDayButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 15)
         self.reactionsButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 15)
-        self.logoutButton.titleLabel?.font = UIFont(name: "Montserrat-Bold", size: 15)
     }
     
-    @IBAction func logoutButtonPressed(_ sender: Any) {
-        try! Auth.auth().signOut()
-        let manager = FBSDKLoginManager()
-        manager.logOut()
-        self.performSegue(withIdentifier: "logoutSegue", sender: self)
-        print("User logged out via FB")
-    }
 } //end of Class

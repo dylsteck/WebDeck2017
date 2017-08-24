@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WebDeckLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kR2-4a-nvw">
-                                <rect key="frame" x="170" y="147.5" width="35" height="39"/>
+                                <rect key="frame" x="170" y="148" width="35" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kR2-4a-nvw" secondAttribute="height" multiplier="35:39" id="JT0-xn-Gll"/>
                                     <constraint firstAttribute="height" constant="39" id="Zd5-3R-8du"/>
@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvJ-GY-NSQ" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="72.5" y="315" width="230" height="37"/>
+                                <rect key="frame" x="73" y="315" width="230" height="37"/>
                                 <state key="normal" image="sign-in-button.png"/>
                             </button>
                         </subviews>
@@ -68,12 +68,12 @@
                     <connections>
                         <outlet property="facebookLoginButton" destination="dvJ-GY-NSQ" id="0Jz-aR-mkW"/>
                         <outlet property="titleLabel" destination="oQg-9N-xdd" id="pUl-aq-ucb"/>
-                        <segue destination="c0K-zo-7Ma" kind="modal" identifier="signInSegue" id="XtY-xc-7pR"/>
+                        <segue destination="c0K-zo-7Ma" kind="modal" identifier="signInSegue" id="M2H-sN-GaQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-671.20000000000005" y="36.431784107946029"/>
+            <point key="canvasLocation" x="-868" y="54"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="AYF-rA-2Sy">
@@ -88,14 +88,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HHY-bd-DAT">
-                                <rect key="frame" x="6.5" y="150" width="100" height="100"/>
+                                <rect key="frame" x="7" y="150" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="7wb-OQ-C3P"/>
                                     <constraint firstAttribute="width" constant="100" id="9a4-Tq-2QP"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user string" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ds-0v-hzb">
-                                <rect key="frame" x="146.5" y="123" width="82" height="21"/>
+                                <rect key="frame" x="147" y="123" width="82" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.96654459239502277" green="0.99676943361064352" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -107,29 +107,28 @@
                                     <constraint firstAttribute="height" constant="44" id="x3T-nr-lqF"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yng-5J-1vr">
-                                <rect key="frame" x="72" y="35" width="62" height="30"/>
-                                <state key="normal" title="Your Day">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yng-5J-1vr" userLabel="Home Button">
+                                <rect key="frame" x="83" y="35" width="41" height="30"/>
+                                <state key="normal" title="Home">
                                     <color key="titleColor" red="0.98217713053665157" green="0.99031576120540954" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WM4-p3-s7K">
-                                <rect key="frame" x="257.5" y="35" width="48" height="30"/>
-                                <state key="normal" title="Logout">
-                                    <color key="titleColor" red="1" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WM4-p3-s7K" userLabel="Reactions Button">
+                                <rect key="frame" x="248" y="35" width="68" height="30"/>
+                                <state key="normal" title="Reactions">
+                                    <color key="titleColor" red="0.99891451515375884" green="1" blue="0.99506977634621718" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="logoutButtonPressed:" destination="c0K-zo-7Ma" eventType="touchUpInside" id="s1t-aG-V5O"/>
-                                    <segue destination="BYZ-38-t0r" kind="modal" identifier="logoutSegue" id="oft-c6-KPd"/>
+                                    <segue destination="3DQ-3x-5eo" kind="show" id="IW0-Ta-zFp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgh-df-9nD">
-                                <rect key="frame" x="163" y="35" width="68" height="30"/>
-                                <state key="normal" title="Reactions">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgh-df-9nD" userLabel="Your Day Button">
+                                <rect key="frame" x="166" y="35" width="62" height="30"/>
+                                <state key="normal" title="Your Day">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3DQ-3x-5eo" kind="show" id="pwg-eK-dct"/>
+                                    <segue destination="JOT-RR-BDz" kind="show" id="mCj-oC-mhc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -152,17 +151,15 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
                         <outlet property="facebookImageView" destination="HHY-bd-DAT" id="nwn-xi-Pl0"/>
-                        <outlet property="logoutButton" destination="WM4-p3-s7K" id="cWd-Tr-fo5"/>
-                        <outlet property="reactionsButton" destination="Mgh-df-9nD" id="Q7i-3H-hf1"/>
+                        <outlet property="homeButton" destination="Yng-5J-1vr" id="Pzs-XC-3aO"/>
+                        <outlet property="reactionsButton" destination="WM4-p3-s7K" id="o44-l7-CFE"/>
                         <outlet property="usernameString" destination="8Ds-0v-hzb" id="f94-UK-tdq"/>
-                        <outlet property="yourDayButton" destination="Yng-5J-1vr" id="Tvq-MI-MF4"/>
-                        <segue destination="3DQ-3x-5eo" kind="show" identifier="reactionTriggerSegue" id="fOH-Yb-aG4"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="signOutSegue" id="HXk-e4-tr8"/>
+                        <outlet property="yourDayButton" destination="Mgh-df-9nD" id="zuA-4f-5kB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0fV-zk-VQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="54"/>
+            <point key="canvasLocation" x="-78" y="54"/>
         </scene>
         <!--Reactions View Controller-->
         <scene sceneID="cEy-NC-6uh">
@@ -177,14 +174,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypn-zE-u7V">
-                                <rect key="frame" x="163" y="585.5" width="49" height="30"/>
+                                <rect key="frame" x="163" y="586" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="sendReaction:" destination="3DQ-3x-5eo" eventType="touchUpInside" id="U8e-iY-zgo"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Content" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSj-Cx-D6p">
-                                <rect key="frame" x="72" y="375.5" width="255" height="150"/>
+                                <rect key="frame" x="72" y="376" width="255" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="ZV7-MY-MFt"/>
                                 </constraints>
@@ -193,7 +190,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compose a Reaction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HG4-oS-n7Z">
-                                <rect key="frame" x="33.5" y="73" width="158" height="21"/>
+                                <rect key="frame" x="34" y="73" width="158" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -205,33 +202,32 @@
                                     <constraint firstAttribute="width" constant="39" id="g22-pd-1mw"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF8-4a-FSv">
-                                <rect key="frame" x="72" y="35" width="62" height="30"/>
-                                <state key="normal" title="Your Day">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF8-4a-FSv" userLabel="Home Button">
+                                <rect key="frame" x="83" y="35" width="41" height="30"/>
+                                <state key="normal" title="Home">
                                     <color key="titleColor" red="0.9821771305" green="0.99031576119999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="c0K-zo-7Ma" kind="show" id="UOC-yF-eZG"/>
+                                    <segue destination="c0K-zo-7Ma" kind="show" id="wMl-lO-jLf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JJ-4r-S8a">
-                                <rect key="frame" x="163" y="35" width="68" height="30"/>
-                                <state key="normal" title="Reactions">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JJ-4r-S8a" userLabel="Your Day Button">
+                                <rect key="frame" x="166" y="35" width="62" height="30"/>
+                                <state key="normal" title="Your Day">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUC-cd-KvL">
-                                <rect key="frame" x="257.5" y="35" width="48" height="30"/>
-                                <state key="normal" title="Logout">
-                                    <color key="titleColor" red="1" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
                                 <connections>
-                                    <action selector="logoutButtonPressed:" destination="c0K-zo-7Ma" eventType="touchUpInside" id="XVJ-2O-naD"/>
-                                    <action selector="logoutButtonPressed:" destination="3DQ-3x-5eo" eventType="touchUpInside" id="uLu-Ce-jIW"/>
+                                    <segue destination="JOT-RR-BDz" kind="show" id="WX4-qx-2yh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUC-cd-KvL" userLabel="Reactions Button">
+                                <rect key="frame" x="248" y="35" width="68" height="30"/>
+                                <state key="normal" title="Reactions">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V2k-Bo-dBa">
-                                <rect key="frame" x="44" y="101.5" width="100" height="30"/>
+                                <rect key="frame" x="44" y="102" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.12561224400997162" green="0.12560583651065826" blue="0.12561018764972687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="rUQ-df-xWI"/>
@@ -265,16 +261,78 @@
                     </view>
                     <connections>
                         <outlet property="composeLabel" destination="HG4-oS-n7Z" id="TQy-d6-NDg"/>
-                        <outlet property="logoutButton" destination="aUC-cd-KvL" id="MyK-57-vC4"/>
+                        <outlet property="homeButton" destination="aF8-4a-FSv" id="JDC-Lg-I2H"/>
                         <outlet property="reactionContent" destination="pSj-Cx-D6p" id="sgg-Qo-uvy"/>
                         <outlet property="reactionTitle" destination="V2k-Bo-dBa" id="a9P-4b-Pto"/>
-                        <outlet property="reactionsButton" destination="1JJ-4r-S8a" id="huw-sy-pZG"/>
-                        <outlet property="yourDayButton" destination="aF8-4a-FSv" id="6Q8-a7-rjT"/>
+                        <outlet property="reactionsButton" destination="aUC-cd-KvL" id="hAs-xk-NEJ"/>
+                        <outlet property="yourDayButton" destination="1JJ-4r-S8a" id="IAE-qC-RVG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0A-Gb-Cm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847" y="54"/>
+            <point key="canvasLocation" x="1303" y="54"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fB8-ji-qls">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JOT-RR-BDz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dX2-Fp-NXU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cby-KX-gYD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G2x-9G-oJb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WebDeckLogo" translatesAutoresizingMaskIntoConstraints="NO" id="RJY-WY-bVz">
+                                <rect key="frame" x="18" y="28" width="39" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="EmM-Ua-6h0"/>
+                                    <constraint firstAttribute="width" constant="39" id="msW-pE-PzV"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Z0-t8-Ycj" userLabel="Home Button">
+                                <rect key="frame" x="83" y="35" width="41" height="30"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.9821771305" green="0.99031576119999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="c0K-zo-7Ma" kind="show" id="rdX-Su-dNZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D17-5n-6lg" userLabel="Reactions Button">
+                                <rect key="frame" x="248" y="35" width="68" height="30"/>
+                                <state key="normal" title="Reactions">
+                                    <color key="titleColor" red="0.99891451519999996" green="1" blue="0.99506977630000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3DQ-3x-5eo" kind="show" id="MTh-RH-Eoc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaX-MQ-kWj" userLabel="Your Day Button">
+                                <rect key="frame" x="166" y="35" width="62" height="30"/>
+                                <state key="normal" title="Your Day">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kaX-MQ-kWj" firstAttribute="centerX" secondItem="G2x-9G-oJb" secondAttribute="centerX" multiplier="1.05" id="111-3O-xVR"/>
+                            <constraint firstItem="7Z0-t8-Ycj" firstAttribute="centerX" secondItem="G2x-9G-oJb" secondAttribute="centerX" multiplier="0.55" id="3Xa-rC-f7V"/>
+                            <constraint firstItem="RJY-WY-bVz" firstAttribute="centerY" secondItem="G2x-9G-oJb" secondAttribute="centerY" multiplier="0.15" id="64W-EP-I58"/>
+                            <constraint firstItem="kaX-MQ-kWj" firstAttribute="centerY" secondItem="G2x-9G-oJb" secondAttribute="centerY" multiplier="0.15" id="7lE-ml-FyQ"/>
+                            <constraint firstItem="7Z0-t8-Ycj" firstAttribute="centerY" secondItem="G2x-9G-oJb" secondAttribute="centerY" multiplier="0.15" id="AKg-vT-2sY"/>
+                            <constraint firstItem="D17-5n-6lg" firstAttribute="centerX" secondItem="G2x-9G-oJb" secondAttribute="centerX" multiplier="1.5" id="IiT-RZ-wOX"/>
+                            <constraint firstItem="D17-5n-6lg" firstAttribute="centerY" secondItem="G2x-9G-oJb" secondAttribute="centerY" multiplier="0.15" id="jxG-gY-5Co"/>
+                            <constraint firstItem="RJY-WY-bVz" firstAttribute="centerX" secondItem="G2x-9G-oJb" secondAttribute="centerX" multiplier="0.2" id="sSZ-73-YMh"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nen-Uj-zEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="54"/>
         </scene>
     </scenes>
     <resources>
@@ -283,8 +341,8 @@
         <image name="sign-in-button.png" width="230" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HXk-e4-tr8"/>
-        <segue reference="UOC-yF-eZG"/>
-        <segue reference="pwg-eK-dct"/>
+        <segue reference="IW0-Ta-zFp"/>
+        <segue reference="wMl-lO-jLf"/>
+        <segue reference="WX4-qx-2yh"/>
     </inferredMetricsTieBreakers>
 </document>

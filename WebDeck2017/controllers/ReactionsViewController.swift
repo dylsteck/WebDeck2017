@@ -16,9 +16,9 @@ import FBSDKLoginKit
 class ReactionsViewController: UIViewController {
     private var reaction = Reaction()
     
+    @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var yourDayButton: UIButton!
     @IBOutlet weak var reactionsButton: UIButton!
-    @IBOutlet weak var logoutButton: UIButton!
     
     func showPresentVC(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -45,9 +45,9 @@ class ReactionsViewController: UIViewController {
     
 
     func navBar(){
+        self.homeButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 15)
         self.yourDayButton.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 15)
         self.reactionsButton.titleLabel?.font = UIFont(name: "Montserrat-Bold", size: 15)
-        self.logoutButton.titleLabel?.font = UIFont(name: "Montserrat-Bold", size: 15)
     }
     
     @IBAction func logoutButtonPressed(_ sender: Any) {
