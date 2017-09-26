@@ -6,3 +6,4 @@ xcuserdata
 *.ipa
 Podfile.lock
 Pods
+WebDeck2017/GoogleService-Info.plist
